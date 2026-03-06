@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stoneblock4-agent"
+version = "0.1.0"
+description = "Foundational architecture for an autonomous Minecraft Java agent targeting FTB StoneBlock 4."
+requires-python = ">=3.11"
+dependencies = [
+  "pydantic>=2.6,<3.0",
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest>=8.0,<9.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="stoneblock4bridge"
+version="${mod_version}"
+displayName="StoneBlock 4 Client Bridge"
+authors="NY Studios"
+description='''
+Client-side bridge/body mod for external AI control experiments in FTB StoneBlock 4.
+'''
+
+displayTest="IGNORE_SERVER_VERSION"
+
+[[dependencies.stoneblock4bridge]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.170,)"
+ordering="NONE"
+side="CLIENT"
+
+[[dependencies.stoneblock4bridge]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.22)"
+ordering="NONE"
+side="CLIENT"

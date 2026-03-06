@@ -7,4 +7,8 @@ public interface BridgeServer {
     void start();
 
     void stop();
+
+    BridgeStatus status();
+
+    String lastError();
 }

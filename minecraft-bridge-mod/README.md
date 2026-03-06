@@ -10,7 +10,7 @@ Client-side bridge/body mod for an external Python AI brain.
 - `GET /screen` → `OpenScreenState`
 - `POST /action` → `ActionResult` or `ErrorResponse`
 
-Bridge startup is now resilient: if port binding fails, the mod logs the failure and continues client runtime without crashing.
+Bridge startup is now resilient: if port binding fails, the mod logs the failure, reports `failed_to_bind` status in heartbeat semantics, and continues client runtime without crashing.
 
 ## Real state capture now implemented
 

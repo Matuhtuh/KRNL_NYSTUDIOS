@@ -95,6 +95,7 @@ def test_python_can_call_bridge() -> None:
         hb = bridge.heartbeat()
         state = bridge.read_state_snapshot()
         assert hb.status == "ok"
+        assert hb.bridge_status == "running"
         assert state.player.dimension == "minecraft:overworld"
     finally:
         server.stop()

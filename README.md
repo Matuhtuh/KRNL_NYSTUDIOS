@@ -6,7 +6,7 @@ This repository contains a Python autonomous-agent brain and a NeoForge 1.21.1 c
 
 ### Already implemented
 - Deterministic Python brain architecture (planner/executor/recovery/research/memory/state/bridge/builder modules).
-- Typed Python↔Java localhost HTTP transport contracts and bridge client.
+- Typed Python↔Java localhost HTTP transport contracts and bridge client, including heartbeat bridge status reporting (`running`/`unavailable`/`failed_to_bind`).
 - Real NeoForge client state capture for player, inventory/hotbar, open screen, nearby entities, and nearby block sampling.
 - Deterministic action loop with safety checks, no-progress detection, failure tracking, and research fallback hook.
 - Local mock bridge mode for repeatable integration tests.
@@ -72,4 +72,4 @@ Real state capture:
 Run:
 - `pytest -q`
 
-The test suite covers schema validation, bridge serialization/error handling, skill/task registry behavior, plan progression, repeated-failure escalation, no-progress detection, and end-to-end mock action flow.
+The test suite covers schema validation, bridge serialization/error handling, bridge status heartbeat parsing, skill/task registry behavior, plan progression, repeated-failure escalation, no-progress detection, and end-to-end mock action flow.

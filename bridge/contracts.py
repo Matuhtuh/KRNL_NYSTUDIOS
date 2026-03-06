@@ -122,3 +122,5 @@ class HeartbeatResponse(BaseModel):
     status: str = Field(..., min_length=1)
     protocol_version: str = Field(..., min_length=1)
     bridge_mode: str = Field(..., min_length=1)
+    bridge_status: str = Field(..., min_length=1)
+    detail: str = ""

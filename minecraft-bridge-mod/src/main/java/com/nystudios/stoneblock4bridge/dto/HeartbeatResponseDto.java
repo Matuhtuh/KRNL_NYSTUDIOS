@@ -6,6 +6,8 @@ package com.nystudios.stoneblock4bridge.dto;
 public record HeartbeatResponseDto(
         String status,
         String protocolVersion,
-        String bridgeMode
+        String bridgeMode,
+        String bridgeStatus,
+        String detail
 ) {
 }

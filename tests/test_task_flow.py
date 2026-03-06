@@ -43,6 +43,12 @@ def test_plan_progression_completes_goal_after_successful_actions() -> None:
 
         assert "g_progress" in loop.memory.completed_goals
         assert loop.memory.current_plan_id is None
+        assert server.action_history[:4] == [
+            "select_hotbar_slot",
+            "turn_to_yaw_pitch",
+            "move_forward_short",
+            "interact_use",
+        ]
     finally:
         server.stop()
 

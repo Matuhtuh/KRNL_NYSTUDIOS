@@ -16,6 +16,7 @@ class MockBridgeServer:
         self._server: HTTPServer | None = None
         self._thread: Thread | None = None
         self.last_action: dict | None = None
+        self.action_history: list[str] = []
         self.tick = 0
         self.player_x = 0.0
         self.player_yaw = 0.0
@@ -37,7 +38,7 @@ class MockBridgeServer:
 
             def do_GET(self):  # noqa: N802
                 if self.path == "/heartbeat":
-                    self._write(200, {"status": "ok", "protocol_version": "v1alpha1", "bridge_mode": "mock"})
+                    self._write(200, {"status": "ok", "protocol_version": "v1alpha1", "bridge_mode": "mock", "bridge_status": "running", "detail": ""})
                     return
                 if self.path == "/state":
                     outer.tick += 1
@@ -84,6 +85,7 @@ class MockBridgeServer:
                 length = int(self.headers.get("Content-Length", "0"))
                 body = json.loads(self.rfile.read(length).decode("utf-8"))
                 outer.last_action = body
+                outer.action_history.append(str(body.get("action_type", "")))
                 action_type = body.get("action_type")
                 params = body.get("parameters", {})
                 if not action_type:

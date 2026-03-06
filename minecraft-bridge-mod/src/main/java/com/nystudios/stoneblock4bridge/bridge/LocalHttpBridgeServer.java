@@ -36,6 +36,8 @@ public final class LocalHttpBridgeServer implements BridgeServer {
             .create();
     private final AtomicLong tickCounter = new AtomicLong();
     private HttpServer server;
+    private BridgeStatus status = BridgeStatus.UNAVAILABLE;
+    private String lastError = "not_started";
 
     public LocalHttpBridgeServer(StateProvider stateProvider, ActionExecutor actionExecutor) {
         this.stateProvider = stateProvider;
@@ -52,8 +54,12 @@ public final class LocalHttpBridgeServer implements BridgeServer {
             this.server.createContext("/screen", new ScreenHandler());
             this.server.createContext("/action", new ActionHandler());
             this.server.start();
+            this.status = BridgeStatus.RUNNING;
+            this.lastError = "";
             LOGGER.info("StoneBlock4 bridge server started on 127.0.0.1:8765");
         } catch (IOException exception) {
+            this.status = BridgeStatus.FAILED_TO_BIND;
+            this.lastError = exception.getMessage();
             LOGGER.error("Bridge server could not bind to 127.0.0.1:8765; continuing without HTTP bridge", exception);
             this.server = null;
         }
@@ -66,12 +72,30 @@ public final class LocalHttpBridgeServer implements BridgeServer {
             this.server.stop(0);
             this.server = null;
         }
+        if (this.status == BridgeStatus.RUNNING) {
+            this.status = BridgeStatus.UNAVAILABLE;
+            this.lastError = "stopped";
+        }
+    }
+
+    @Override
+    public BridgeStatus status() {
+        return status;
+    }
+
+    @Override
+    public String lastError() {
+        return lastError;
     }
 
     private final class HeartbeatHandler implements HttpHandler {
         @Override
         public void handle(HttpExchange exchange) throws IOException {
-            writeJson(exchange, 200, new HeartbeatResponseDto("ok", BridgeProtocol.VERSION, "client_local_http"));
+            writeJson(
+                    exchange,
+                    200,
+                    new HeartbeatResponseDto("ok", BridgeProtocol.VERSION, "client_local_http", status.name().toLowerCase(), lastError)
+            );
         }
     }
 
@@ -115,8 +139,8 @@ public final class LocalHttpBridgeServer implements BridgeServer {
             }
 
             ActionResultDto result = actionExecutor.performAction(request);
-            int status = result.accepted() ? 200 : 400;
-            writeJson(exchange, status, result);
+            int statusCode = result.accepted() ? 200 : 400;
+            writeJson(exchange, statusCode, result);
         }
 
         private String readBody(InputStream stream) throws IOException {
@@ -124,10 +148,10 @@ public final class LocalHttpBridgeServer implements BridgeServer {
         }
     }
 
-    private void writeJson(HttpExchange exchange, int status, Object payload) throws IOException {
+    private void writeJson(HttpExchange exchange, int statusCode, Object payload) throws IOException {
         byte[] bytes = gson.toJson(payload).getBytes(StandardCharsets.UTF_8);
         exchange.getResponseHeaders().set("Content-Type", "application/json");
-        exchange.sendResponseHeaders(status, bytes.length);
+        exchange.sendResponseHeaders(statusCode, bytes.length);
         try (OutputStream output = exchange.getResponseBody()) {
             output.write(bytes);
         }

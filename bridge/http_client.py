@@ -25,7 +25,10 @@ class HttpGameBridge(GameBridge):
 
     def read_state_snapshot(self) -> GameStateSnapshot:
         payload = self._request_json("GET", "/state")
-        return GameStateSnapshot.model_validate(payload)
+        snapshot = GameStateSnapshot.model_validate(payload)
+        if snapshot.player.dimension.strip() == "":
+            raise RuntimeError("bridge returned empty dimension identifier")
+        return snapshot
 
     def read_state(self) -> GameState:
         snapshot = self.read_state_snapshot()
@@ -45,24 +48,11 @@ class HttpGameBridge(GameBridge):
                 if not i.empty and i.count > 0
             ],
             nearby_entities=[
-                EntityState(
-                    entity_id=e.entity_id,
-                    x=e.x,
-                    y=e.y,
-                    z=e.z,
-                    health=e.health,
-                    hostile=e.hostile,
-                )
+                EntityState(entity_id=e.entity_id, x=e.x, y=e.y, z=e.z, health=e.health, hostile=e.hostile)
                 for e in snapshot.nearby_entities
             ],
             observed_blocks=[
-                BlockObservation(
-                    block_id=b.block_id,
-                    x=b.x,
-                    y=b.y,
-                    z=b.z,
-                    breakable=b.hardness >= 0,
-                )
+                BlockObservation(block_id=b.block_id, x=b.x, y=b.y, z=b.z, breakable=b.hardness >= 0)
                 for b in snapshot.nearby_blocks
             ],
             in_danger=any(entity.hostile for entity in snapshot.nearby_entities),

@@ -1,91 +1,76 @@
 # StoneBlock 4 Autonomous Agent Workspace
 
-This workspace now includes a **real local end-to-end control loop scaffold** between:
+This repository contains a Python autonomous-agent brain and a NeoForge 1.21.1 client bridge mod for FTB StoneBlock 4.
 
-1. Python autonomous-agent brain (deterministic executor + hierarchical planning hooks)
-2. NeoForge 1.21.1 client bridge mod (local HTTP bridge/body)
+## Audit of existing foundation (before this change)
 
-## Integration architecture (current)
+Already present before this update:
+- layered Python architecture (`planner`, `executor`, `recovery`, `research`, `memory`, `state`, `bridge`, `builder`)
+- typed Python↔Java contracts and local HTTP bridge integration
+- deterministic action loop scaffolding with retries/failure history/research hook
+- NeoForge client-side bridge with typed endpoints and placeholder action handling
+- local mock bridge test mode
 
-- Python uses `HttpGameBridge` to call bridge endpoints over localhost HTTP JSON.
-- Java bridge exposes `/heartbeat`, `/state`, `/inventory`, `/screen`, and `/action`.
-- Python `BridgeAgentLoop` executes one deterministic action per step:
-  1) read state
-  2) safety/recovery checks
-  3) create/load tiny plan
-  4) execute one action
-  5) verify result + update memory
-  6) retry/fail tracking + research hook after repeated failure
+This change extends that scaffold with real client state capture and stricter runtime safety/progress checks.
 
-## Why localhost HTTP first
+## Transport choice
 
-HTTP on `127.0.0.1` is the simplest reliable transport for early debugging:
-- inspectable with curl and logs
-- language-agnostic across Python and Java
-- low setup friction and easy failure diagnosis
-- easy later migration to websocket streaming if needed
+The project continues to use localhost HTTP JSON (`127.0.0.1:8765`) because it is the simplest reliable debug transport for mixed Python/Java development and Codex CLI live troubleshooting.
 
-## Current shared contract
+## What real state is now captured (NeoForge side)
 
-Python and Java now align on typed payloads for:
-- `GameStateSnapshot`
-- `InventorySnapshot`
-- `NearbyBlockObservation`
-- `NearbyEntityObservation`
-- `OpenScreenState`
-- `ActionRequest`
-- `ActionResult`
-- `ErrorResponse`
-- `HeartbeatResponse`
+`ClientStateProvider` now pulls live client values (when player/level are available):
+- player position (`x/y/z`)
+- yaw/pitch
+- health
+- hunger
+- dimension id
+- held main/offhand items
+- selected hotbar slot
+- hotbar snapshot (first 9 slots)
+- full inventory snapshot via player inventory container size
+- open screen type/title/slot count
+- nearby entities within radius (+hostile heuristic)
+- nearby blocks in configurable small sample volume
 
-## Action surface implemented in loop
+All of the above are exposed through `/state`, with `/inventory` and `/screen` still available separately.
 
-Minimal deterministic action types are wired through schema and handler validation:
-- `noop`
-- `move_look` (placeholder)
-- `interact_use` (placeholder)
-- `inventory_click` (placeholder)
-- `mine_block` (placeholder)
-- `place_block` (placeholder)
+## What is still partial or placeholder
 
-These are honest placeholders for now: typed, routable, and testable, but not full gameplay automation.
+- action execution remains intentionally partial (`noop`, `move_look`, `interact_use`, `inventory_click`, `mine_block`, `place_block` are validated but not fully wired to gameplay input yet)
+- nearby block/entity observation is bounded sampling (not a full world-model or pathfinding graph)
+- modded GUI semantics are captured as screen class/title/slot count but not yet deeply parsed per-mod screen logic
+- no full pathfinding, full combat, or web research automation yet
 
-## What is real vs placeholder
+## Python integration improvements
 
-Real now:
-- local Python↔Java transport contract and bridge calls
-- deterministic action dispatch path with typed responses
-- memory updates, failure persistence, stuck counting
-- repeated-failure research trigger hook
-- mock local mode for repeatable tests without Minecraft runtime
+- bridge client now validates and normalizes richer snapshots
+- memory persists recent snapshots for progress/stuck analysis
+- deterministic safety checks now block unsafe actions for:
+  - low health
+  - low hunger
+  - missing main-hand tool for tool-requiring actions
+  - open screen blocking gameplay actions
+- no-progress detector compares consecutive snapshots across:
+  - position delta
+  - inventory delta
+  - open-screen state delta
+- executor now reports precondition/postcondition outcomes and checks likely state change after action dispatch
 
-Placeholder still:
-- full in-game movement/pathfinding
-- full combat execution
-- full mining/build automation wiring in NeoForge runtime
-- external web research
+## Open-source inspiration (adopted vs rejected)
 
-## Inspiration adopted vs rejected
+Adopted conceptually:
+- **Voyager**: iterative plan → execute → verify → retry flow and skill/research hooks
+- **Baritone / AltoClef**: deterministic small-task decomposition and strict low-level control boundaries
+- **Mineflayer ecosystem**: practical state/action API abstractions and orchestration patterns
 
-Adopted ideas:
-- **Voyager-inspired looping**: plan -> execute -> self-verify -> retry/fallback hook
-- **Baritone/AltoClef-inspired decomposition**: small deterministic actions and task steps
-- **Mineflayer-style abstraction**: explicit action/state bridge contract and orchestration loop
+Rejected for direct reuse:
+- direct code copy from those projects due runtime mismatch (NeoForge client internals, modpack constraints, and this repository’s strict typed contract structure)
+- LLM per-tick control, which remains disallowed for deterministic StoneBlock 4 execution reliability
 
-Rejected or deferred (and why):
-- direct reuse of those codebases (mismatch in runtime, APIs, and mod-loader constraints)
-- LLM per-tick control (too nondeterministic for reliable StoneBlock 4 execution)
-- premature full autonomy claims before deterministic low-level control is actually implemented
+## Testing
 
-## Testing locally
+Run:
+- `pytest -q`
 
-- Python unit/integration tests:
-  - `pytest -q`
-
-## Next steps
-
-1. Replace Java placeholders with real `Minecraft.getInstance()` state capture.
-2. Add strict JSON serializers/deserializers shared by both sides.
-3. Wire deterministic client input for movement/interact/mine/place actions.
-4. Add action timeout enforcement against game ticks.
-5. Expand planner/executor skills while preserving deterministic low-level control.
+The Python tests cover snapshot validation, bridge serialization behavior, malformed payload handling, safety checks, no-progress detection, and end-to-end loop execution in mock mode.

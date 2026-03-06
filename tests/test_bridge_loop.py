@@ -8,8 +8,10 @@ import urllib.request
 
 import pytest
 
+from agent.progress import NoProgressDetector
+from agent.safety import evaluate_safety
 from agent_loop import BridgeAgentLoop
-from bridge.contracts import ActionResult
+from bridge.contracts import ActionResult, GameStateSnapshot
 from bridge.http_client import HttpGameBridge
 from bridge.interfaces import GameBridge
 from bridge.mock_server import MockBridgeServer
@@ -24,6 +26,35 @@ from state.models import GameState
 class AlwaysFailBridge(GameBridge):
     def __init__(self) -> None:
         self.calls = 0
+
+    def read_state_snapshot(self) -> GameStateSnapshot:
+        return GameStateSnapshot.model_validate(
+            {
+                "player": {
+                    "tick": self.calls,
+                    "dimension": "minecraft:overworld",
+                    "x": 0,
+                    "y": 64,
+                    "z": 0,
+                    "yaw": 0,
+                    "pitch": 0,
+                    "health": 20,
+                    "hunger": 20,
+                    "on_ground": True,
+                    "in_fluid": False,
+                    "held_main_hand_item": "minecraft:stone_pickaxe",
+                    "held_off_hand_item": "minecraft:air",
+                    "selected_hotbar_slot": 0,
+                },
+                "inventory": {"items": [], "hotbar": [], "partial": False, "note": None},
+                "nearby_blocks": [],
+                "nearby_entities": [],
+                "open_screen": {"screen_open": False, "screen_class": "none", "title": "No screen", "slot_count": 0},
+                "observation_radius": 4,
+                "partial": False,
+                "warnings": [],
+            }
+        )
 
     def read_state(self) -> GameState:
         return GameState(
@@ -51,6 +82,8 @@ class AlwaysFailBridge(GameBridge):
             success=False,
             error_code="timeout",
             message="deterministic fail",
+            preconditions=[],
+            postconditions=[],
         )
 
 
@@ -141,5 +174,77 @@ def test_memory_updates_after_action_result() -> None:
         loop.step()
         assert len(loop.memory.action_log) == 1
         assert loop.memory.current_plan_id is not None
+        assert len(loop.memory.recent_snapshots) == 1
     finally:
         server.stop()
+
+
+def test_safety_check_triggering() -> None:
+    snapshot = GameStateSnapshot.model_validate(
+        {
+            "player": {
+                "tick": 1,
+                "dimension": "minecraft:overworld",
+                "x": 0,
+                "y": 64,
+                "z": 0,
+                "yaw": 0,
+                "pitch": 0,
+                "health": 4,
+                "hunger": 3,
+                "on_ground": True,
+                "in_fluid": False,
+                "held_main_hand_item": "minecraft:air",
+                "held_off_hand_item": "minecraft:air",
+                "selected_hotbar_slot": 0,
+            },
+            "inventory": {"items": [], "hotbar": [], "partial": True, "note": "partial"},
+            "nearby_blocks": [],
+            "nearby_entities": [],
+            "open_screen": {"screen_open": True, "screen_class": "ChestScreen", "title": "Chest", "slot_count": 27},
+            "observation_radius": 4,
+            "partial": True,
+            "warnings": [],
+        }
+    )
+    issues = evaluate_safety(snapshot, Action(action_type="mine_block", parameters={}, timeout_ticks=10))
+    assert "low_health" in issues
+    assert "low_hunger" in issues
+    assert "missing_main_hand_tool" in issues
+    assert "open_screen_blocks_action" in issues
+
+
+def test_no_progress_detector() -> None:
+    detector = NoProgressDetector(min_move_delta=0.1)
+    snapshots = []
+    for tick in [1, 2, 3]:
+        snapshots.append(
+            GameStateSnapshot.model_validate(
+                {
+                    "player": {
+                        "tick": tick,
+                        "dimension": "minecraft:overworld",
+                        "x": 0,
+                        "y": 64,
+                        "z": 0,
+                        "yaw": 0,
+                        "pitch": 0,
+                        "health": 20,
+                        "hunger": 20,
+                        "on_ground": True,
+                        "in_fluid": False,
+                        "held_main_hand_item": "minecraft:stone_pickaxe",
+                        "held_off_hand_item": "minecraft:air",
+                        "selected_hotbar_slot": 0,
+                    },
+                    "inventory": {"items": [], "hotbar": [], "partial": False, "note": None},
+                    "nearby_blocks": [],
+                    "nearby_entities": [],
+                    "open_screen": {"screen_open": False, "screen_class": "none", "title": "No screen", "slot_count": 0},
+                    "observation_radius": 4,
+                    "partial": False,
+                    "warnings": [],
+                }
+            )
+        )
+    assert detector.no_progress(snapshots) is True

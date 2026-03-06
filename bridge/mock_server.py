@@ -16,6 +16,7 @@ class MockBridgeServer:
         self._server: HTTPServer | None = None
         self._thread: Thread | None = None
         self.last_action: dict | None = None
+        self.tick = 0
 
     def start(self) -> None:
         outer = self
@@ -34,11 +35,12 @@ class MockBridgeServer:
                     self._write(200, {"status": "ok", "protocol_version": "v1alpha1", "bridge_mode": "mock"})
                     return
                 if self.path == "/state":
+                    outer.tick += 1
                     self._write(
                         200,
                         {
                             "player": {
-                                "tick": 1,
+                                "tick": outer.tick,
                                 "dimension": "minecraft:overworld",
                                 "x": 0,
                                 "y": 64,
@@ -51,11 +53,20 @@ class MockBridgeServer:
                                 "in_fluid": False,
                                 "held_main_hand_item": "minecraft:stone_pickaxe",
                                 "held_off_hand_item": "minecraft:air",
+                                "selected_hotbar_slot": 0,
                             },
-                            "inventory": {"items": [{"slot": 0, "item_id": "minecraft:cobblestone", "count": 16, "empty": False}]},
+                            "inventory": {
+                                "items": [{"slot": 0, "item_id": "minecraft:cobblestone", "count": 16, "empty": False}],
+                                "hotbar": [{"slot": 0, "item_id": "minecraft:stone_pickaxe", "count": 1, "empty": False}],
+                                "partial": False,
+                                "note": None,
+                            },
                             "nearby_blocks": [{"block_id": "minecraft:stone", "x": 1, "y": 64, "z": 0, "replaceable": False, "hardness": 1.5}],
                             "nearby_entities": [],
                             "open_screen": {"screen_open": False, "screen_class": "none", "title": "No screen", "slot_count": 0},
+                            "observation_radius": 4,
+                            "partial": False,
+                            "warnings": [],
                         },
                     )
                     return
@@ -80,6 +91,8 @@ class MockBridgeServer:
                         "success": True,
                         "error_code": None,
                         "message": "mock action completed",
+                        "preconditions": [],
+                        "postconditions": ["state_changed"],
                     },
                 )
 

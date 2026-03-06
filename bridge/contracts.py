@@ -13,17 +13,18 @@ class NearbyBlockObservation(BaseModel):
     y: int
     z: int
     replaceable: bool = False
-    hardness: float = Field(default=0.0, ge=0.0)
+    hardness: float = Field(default=0.0)
 
 
 class NearbyEntityObservation(BaseModel):
     """Observed entity near player used for safety and task interruption logic."""
 
     entity_id: str = Field(..., min_length=1)
+    name: str = Field(default="unknown", min_length=1)
     x: float
     y: float
     z: float
-    health: float = Field(default=0.0, ge=0.0)
+    health: float = Field(default=0.0)
     hostile: bool = False
 
 
@@ -43,6 +44,7 @@ class PlayerStateSnapshot(BaseModel):
     in_fluid: bool = False
     held_main_hand_item: str = Field(default="minecraft:air", min_length=1)
     held_off_hand_item: str = Field(default="minecraft:air", min_length=1)
+    selected_hotbar_slot: int = Field(default=0, ge=0, le=8)
 
 
 class InventoryItemSnapshot(BaseModel):
@@ -58,6 +60,9 @@ class InventorySnapshot(BaseModel):
     """Inventory snapshot used by deterministic planning/execution logic."""
 
     items: list[InventoryItemSnapshot] = Field(default_factory=list)
+    hotbar: list[InventoryItemSnapshot] = Field(default_factory=list)
+    partial: bool = False
+    note: str | None = None
 
 
 class OpenScreenState(BaseModel):
@@ -77,6 +82,9 @@ class GameStateSnapshot(BaseModel):
     nearby_blocks: list[NearbyBlockObservation] = Field(default_factory=list)
     nearby_entities: list[NearbyEntityObservation] = Field(default_factory=list)
     open_screen: OpenScreenState
+    observation_radius: int = Field(default=4, ge=1)
+    partial: bool = False
+    warnings: list[str] = Field(default_factory=list)
 
 
 class ActionRequest(BaseModel):
@@ -97,6 +105,8 @@ class ActionResult(BaseModel):
     success: bool
     error_code: str | None = None
     message: str = Field(..., min_length=1)
+    preconditions: list[str] = Field(default_factory=list)
+    postconditions: list[str] = Field(default_factory=list)
 
 
 class ErrorResponse(BaseModel):

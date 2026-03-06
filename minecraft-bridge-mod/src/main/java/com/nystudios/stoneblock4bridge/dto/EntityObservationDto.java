@@ -5,6 +5,7 @@ package com.nystudios.stoneblock4bridge.dto;
  */
 public record EntityObservationDto(
         String entityId,
+        String name,
         double x,
         double y,
         double z,

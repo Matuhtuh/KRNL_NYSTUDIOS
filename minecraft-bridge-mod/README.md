@@ -1,8 +1,8 @@
 # StoneBlock 4 Client Bridge Mod (NeoForge, Minecraft 1.21.1)
 
-Client-side bridge/body mod for an external AI brain.
+Client-side bridge/body mod for an external Python AI brain.
 
-## Implemented bridge endpoints
+## Endpoints
 
 - `GET /heartbeat` → `HeartbeatResponse`
 - `GET /state` → `GameStateSnapshot`
@@ -10,10 +10,24 @@ Client-side bridge/body mod for an external AI brain.
 - `GET /screen` → `OpenScreenState`
 - `POST /action` → `ActionResult` or `ErrorResponse`
 
-All endpoints use localhost HTTP JSON (`127.0.0.1:8765`) for first-stage reliability and debuggability.
+## Real state capture now implemented
 
-## Action types accepted
+`ClientStateProvider` now reads real client data when available:
+- player position, yaw/pitch
+- health + hunger
+- dimension identifier
+- main/offhand held items
+- selected hotbar slot
+- hotbar and full inventory snapshot from player inventory container
+- current open screen class/title/slot count
+- nearby entity sample with hostile heuristic
+- nearby block sample in a small radius window
 
+If player/level is unavailable, typed partial snapshots are returned with `partial/warnings` metadata.
+
+## Action surface (still intentionally partial)
+
+Accepted action types:
 - `noop`
 - `move_look`
 - `interact_use`
@@ -21,24 +35,15 @@ All endpoints use localhost HTTP JSON (`127.0.0.1:8765`) for first-stage reliabi
 - `mine_block`
 - `place_block`
 
-Currently these are placeholder handlers: accepted and typed, but intentionally not wired to full Minecraft controls yet.
+Handlers validate and return typed results, but full movement/combat/pathfinding/control wiring is not complete yet.
 
-## What is real today
+## Limitations
 
-- typed transport contracts and endpoint handlers
-- malformed action rejection (`400 bad_request` / `bad_json`)
-- deterministic action dispatch surface for external executor integration
+- no full pathfinding graph
+- no full combat automation
+- no deep per-mod GUI semantic parsing yet
+- nearby observations are bounded samples, not a complete world model
 
-## What remains
+## Inspiration and compatibility notes
 
-- real state capture from Minecraft runtime objects
-- real input wiring for movement/look/interact/mine/place
-- strict shared JSON schema tooling across Python and Java
-
-## Design notes and inspiration
-
-- Uses Voyager-like loop boundaries (plan/execute/verify/fallback) at the system level.
-- Uses Baritone/AltoClef-like deterministic small-step action surface.
-- Uses Mineflayer-like split between state query and action API.
-
-We intentionally do **not** copy those projects directly because NeoForge client internals, StoneBlock 4 modpack constraints, and this repository’s architecture differ significantly.
+Conceptually inspired by Voyager (verify/retry loops), Baritone/AltoClef (deterministic task decomposition), and Mineflayer (clear state/action API boundaries). Direct code reuse was intentionally avoided due NeoForge + StoneBlock 4 compatibility constraints.

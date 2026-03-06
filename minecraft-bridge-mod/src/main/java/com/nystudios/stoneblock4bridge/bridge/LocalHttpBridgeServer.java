@@ -87,7 +87,7 @@ public final class LocalHttpBridgeServer implements BridgeServer {
     private final class ScreenHandler implements HttpHandler {
         @Override
         public void handle(HttpExchange exchange) throws IOException {
-            writeJson(exchange, 200, stateProvider.getFullStateSnapshot(tickCounter.get()).openScreen());
+            writeJson(exchange, 200, stateProvider.getOpenScreenState());
         }
     }
 

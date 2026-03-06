@@ -10,6 +10,9 @@ public record GameStateSnapshotDto(
         InventorySnapshotDto inventory,
         List<BlockObservationDto> nearbyBlocks,
         List<EntityObservationDto> nearbyEntities,
-        OpenScreenStateDto openScreen
+        OpenScreenStateDto openScreen,
+        int observationRadius,
+        boolean partial,
+        List<String> warnings
 ) {
 }

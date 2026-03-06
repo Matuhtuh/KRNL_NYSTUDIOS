@@ -1,5 +1,7 @@
 package com.nystudios.stoneblock4bridge.dto;
 
+import java.util.List;
+
 /**
  * Result payload for each attempted action.
  */
@@ -9,6 +11,8 @@ public record ActionResultDto(
         boolean completed,
         boolean success,
         String errorCode,
-        String message
+        String message,
+        List<String> preconditions,
+        List<String> postconditions
 ) {
 }

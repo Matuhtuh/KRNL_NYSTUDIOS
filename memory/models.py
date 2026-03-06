@@ -4,6 +4,8 @@ from __future__ import annotations
 
 from pydantic import BaseModel, Field
 
+from bridge.contracts import GameStateSnapshot
+
 
 class FailureRecord(BaseModel):
     """Failure event captured for planner/recovery analysis and future strategy updates."""
@@ -28,3 +30,11 @@ class AgentMemory(BaseModel):
     repeated_failure_count: int = 0
     stuck_counter: int = 0
     research_triggered: bool = False
+    recent_snapshots: list[GameStateSnapshot] = Field(default_factory=list)
+
+    def push_snapshot(self, snapshot: GameStateSnapshot, limit: int = 8) -> None:
+        """Persist a bounded rolling window of recent snapshots for no-progress checks."""
+
+        self.recent_snapshots.append(snapshot)
+        if len(self.recent_snapshots) > limit:
+            self.recent_snapshots = self.recent_snapshots[-limit:]

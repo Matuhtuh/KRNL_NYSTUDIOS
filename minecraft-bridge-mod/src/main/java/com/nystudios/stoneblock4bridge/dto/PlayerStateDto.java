@@ -16,6 +16,7 @@ public record PlayerStateDto(
         boolean onGround,
         boolean inFluid,
         String heldMainHandItem,
-        String heldOffHandItem
+        String heldOffHandItem,
+        int selectedHotbarSlot
 ) {
 }

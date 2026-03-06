@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from agent.progress import NoProgressDetector
+from agent.safety import evaluate_safety
 from memory.models import AgentMemory, FailureRecord
 from planner.interfaces import Planner
 from planner.models import Goal, Plan
@@ -21,6 +23,7 @@ class BridgeAgentLoop:
         self.recovery_manager = recovery_manager
         self.research = research
         self.skills = SkillRegistry()
+        self.progress_detector = NoProgressDetector()
         self.memory = AgentMemory()
         self.current_goal: Goal | None = None
         self.current_plan: Plan | None = None
@@ -32,10 +35,16 @@ class BridgeAgentLoop:
         self.memory.active_goal_id = goal.goal_id
 
     def step(self) -> None:
+        snapshot = self.bridge.read_state_snapshot()
+        self.memory.push_snapshot(snapshot)
         state = self.bridge.read_state()
+
         if not self.skills.run("inspect_state", state):
             self._record_failure(state.tick, "state", "InvalidState", "State inspection skill failed.", "noop")
             return
+
+        if self.progress_detector.no_progress(self.memory.recent_snapshots):
+            self.memory.stuck_counter += 1
 
         if self.recovery_manager.requires_recovery(state):
             recovered = self.recovery_manager.recover(state)
@@ -53,9 +62,20 @@ class BridgeAgentLoop:
         if action is None:
             return
 
+        safety_issues = evaluate_safety(snapshot, action)
+        if safety_issues:
+            self._record_failure(
+                state.tick,
+                "safety",
+                "UnsafeAction",
+                f"Blocked by safety checks: {', '.join(safety_issues)}",
+                action.action_type,
+            )
+            return
+
         result = self.executor.execute_one(action, state)
         signature = f"{action.action_type}:{action.parameters}"
-        self.memory.action_log.append(f"{state.tick}:{signature}:{result.success}")
+        self.memory.action_log.append(f"{state.tick}:{signature}:{result.success}:{result.postconditions}")
 
         verified = self.skills.run("verify_action_result", state, action, result)
         if not verified:
@@ -65,7 +85,6 @@ class BridgeAgentLoop:
 
         self.memory.last_action_signature = None
         self.memory.repeated_failure_count = 0
-        self.memory.stuck_counter = 0
         self._advance_action_cursor()
 
     def _next_action(self):
@@ -115,6 +134,6 @@ class BridgeAgentLoop:
         query = ResearchQuery(
             query_id=f"rq_{tick}",
             objective="Resolve repeated deterministic action failure",
-            local_context={"stuck_counter": self.memory.stuck_counter},
+            local_context={"stuck_counter": self.memory.stuck_counter, "plan_id": self.memory.current_plan_id or "none"},
         )
         self.research.research(query)

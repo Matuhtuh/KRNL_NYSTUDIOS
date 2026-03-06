@@ -1,46 +1,91 @@
 # StoneBlock 4 Autonomous Agent Workspace
 
-This repository now contains two coordinated foundations:
+This workspace now includes a **real local end-to-end control loop scaffold** between:
 
-1. **Python AI architecture** for hierarchical planning/execution/recovery/research/builder logic.
-2. **NeoForge client bridge mod** for Minecraft Java 1.21.1 that will expose deterministic state/actions to the external AI brain.
+1. Python autonomous-agent brain (deterministic executor + hierarchical planning hooks)
+2. NeoForge 1.21.1 client bridge mod (local HTTP bridge/body)
 
-## 1) Python agent foundation
+## Integration architecture (current)
 
-The Python side defines strict Pydantic schemas and interfaces for:
-- deterministic game control boundaries
-- state/perception contracts
-- planner/executor contracts
-- stuck recovery
-- research I/O
-- blueprint/build verification
-- long-term memory/failure tracking
+- Python uses `HttpGameBridge` to call bridge endpoints over localhost HTTP JSON.
+- Java bridge exposes `/heartbeat`, `/state`, `/inventory`, `/screen`, and `/action`.
+- Python `BridgeAgentLoop` executes one deterministic action per step:
+  1) read state
+  2) safety/recovery checks
+  3) create/load tiny plan
+  4) execute one action
+  5) verify result + update memory
+  6) retry/fail tracking + research hook after repeated failure
 
-See package directories at repository root (`state/`, `planner/`, etc.) and `tests/`.
+## Why localhost HTTP first
 
-## 2) Minecraft client bridge mod
+HTTP on `127.0.0.1` is the simplest reliable transport for early debugging:
+- inspectable with curl and logs
+- language-agnostic across Python and Java
+- low setup friction and easy failure diagnosis
+- easy later migration to websocket streaming if needed
 
-Located in: `minecraft-bridge-mod/`
+## Current shared contract
 
-Highlights:
-- Target: **Minecraft 1.21.1**
-- Loader: **NeoForge**
-- Scope: **client-side only**
-- Purpose: local bridge/body for an external AI process (not a standalone cheating bot)
-- Includes DTO contracts, interfaces, and localhost HTTP transport skeleton
+Python and Java now align on typed payloads for:
+- `GameStateSnapshot`
+- `InventorySnapshot`
+- `NearbyBlockObservation`
+- `NearbyEntityObservation`
+- `OpenScreenState`
+- `ActionRequest`
+- `ActionResult`
+- `ErrorResponse`
+- `HeartbeatResponse`
 
-Read `minecraft-bridge-mod/README.md` for architecture and communication flow details.
+## Action surface implemented in loop
 
-## Design stance across both modules
+Minimal deterministic action types are wired through schema and handler validation:
+- `noop`
+- `move_look` (placeholder)
+- `interact_use` (placeholder)
+- `inventory_click` (placeholder)
+- `mine_block` (placeholder)
+- `place_block` (placeholder)
 
-- LLMs are used for high-level planning/research/build design only.
-- Per-tick movement/inventory/combat/build inputs remain deterministic.
-- Interfaces and validated schemas come before deep implementation.
-- No fake claims of complete automation.
+These are honest placeholders for now: typed, routable, and testable, but not full gameplay automation.
 
-## What to implement next
+## What is real vs placeholder
 
-- Concrete Minecraft state capture and deterministic input wiring in the bridge mod.
-- JSON protocol serialization/parsing for bridge endpoints.
-- External brain process that consumes `/state` and sends bounded `/action` requests.
-- End-to-end integration tests between Python planner/executor and bridge transport.
+Real now:
+- local Python↔Java transport contract and bridge calls
+- deterministic action dispatch path with typed responses
+- memory updates, failure persistence, stuck counting
+- repeated-failure research trigger hook
+- mock local mode for repeatable tests without Minecraft runtime
+
+Placeholder still:
+- full in-game movement/pathfinding
+- full combat execution
+- full mining/build automation wiring in NeoForge runtime
+- external web research
+
+## Inspiration adopted vs rejected
+
+Adopted ideas:
+- **Voyager-inspired looping**: plan -> execute -> self-verify -> retry/fallback hook
+- **Baritone/AltoClef-inspired decomposition**: small deterministic actions and task steps
+- **Mineflayer-style abstraction**: explicit action/state bridge contract and orchestration loop
+
+Rejected or deferred (and why):
+- direct reuse of those codebases (mismatch in runtime, APIs, and mod-loader constraints)
+- LLM per-tick control (too nondeterministic for reliable StoneBlock 4 execution)
+- premature full autonomy claims before deterministic low-level control is actually implemented
+
+## Testing locally
+
+- Python unit/integration tests:
+  - `pytest -q`
+
+## Next steps
+
+1. Replace Java placeholders with real `Minecraft.getInstance()` state capture.
+2. Add strict JSON serializers/deserializers shared by both sides.
+3. Wire deterministic client input for movement/interact/mine/place actions.
+4. Add action timeout enforcement against game ticks.
+5. Expand planner/executor skills while preserving deterministic low-level control.

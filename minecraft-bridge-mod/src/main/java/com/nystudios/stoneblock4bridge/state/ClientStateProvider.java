@@ -1,6 +1,7 @@
 package com.nystudios.stoneblock4bridge.state;
 
-import com.nystudios.stoneblock4bridge.dto.BridgeStateSnapshotDto;
+import com.nystudios.stoneblock4bridge.dto.BlockObservationDto;
+import com.nystudios.stoneblock4bridge.dto.GameStateSnapshotDto;
 import com.nystudios.stoneblock4bridge.dto.InventoryItemDto;
 import com.nystudios.stoneblock4bridge.dto.InventorySnapshotDto;
 import com.nystudios.stoneblock4bridge.dto.NearbyObservationDto;
@@ -11,8 +12,6 @@ import java.util.List;
 
 /**
  * Client-side state provider with explicit placeholders.
- *
- * <p>Methods are intentionally conservative until backed by tested Minecraft integration code.</p>
  */
 public final class ClientStateProvider implements StateProvider {
     private final ScreenInspector screenInspector = new ClientScreenInspector();
@@ -20,15 +19,16 @@ public final class ClientStateProvider implements StateProvider {
     @Override
     public PlayerStateDto getCurrentPlayerState() {
         return new PlayerStateDto(
-                "unknown",
+                0L,
+                "minecraft:overworld",
                 0.0,
-                0.0,
+                64.0,
                 0.0,
                 0.0f,
                 0.0f,
                 20.0f,
                 20,
-                false,
+                true,
                 false,
                 "minecraft:air",
                 "minecraft:air"
@@ -42,15 +42,36 @@ public final class ClientStateProvider implements StateProvider {
 
     @Override
     public NearbyObservationDto getNearbyObservation() {
-        return new NearbyObservationDto(List.of(), List.of(), 6);
+        return new NearbyObservationDto(
+                List.of(new BlockObservationDto("minecraft:stone", 1, 64, 0, false, 1.5f)),
+                List.of(),
+                6
+        );
     }
 
     @Override
-    public BridgeStateSnapshotDto getFullStateSnapshot() {
-        return new BridgeStateSnapshotDto(
-                getCurrentPlayerState(),
+    public GameStateSnapshotDto getFullStateSnapshot(long tick) {
+        PlayerStateDto player = getCurrentPlayerState();
+        NearbyObservationDto nearby = getNearbyObservation();
+        return new GameStateSnapshotDto(
+                new PlayerStateDto(
+                        tick,
+                        player.dimension(),
+                        player.x(),
+                        player.y(),
+                        player.z(),
+                        player.yaw(),
+                        player.pitch(),
+                        player.health(),
+                        player.hunger(),
+                        player.onGround(),
+                        player.inFluid(),
+                        player.heldMainHandItem(),
+                        player.heldOffHandItem()
+                ),
                 getInventoryContents(),
-                getNearbyObservation(),
+                nearby.blocks(),
+                nearby.entities(),
                 screenInspector.inspectCurrentScreen()
         );
     }

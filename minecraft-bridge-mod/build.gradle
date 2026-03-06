@@ -36,4 +36,5 @@ neoForge {
 
 dependencies {
     implementation "net.neoforged:neoforge:${project.neoforge_version}"
+    implementation "com.google.code.gson:gson:2.11.0"
 }

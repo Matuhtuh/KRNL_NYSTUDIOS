@@ -16,21 +16,18 @@ class Goal(BaseModel):
 
 
 class Action(BaseModel):
-    """Deterministic low-level command to be executed by the bridge (never by the LLM per tick)."""
+    """Deterministic low-level command sent to the bridge; never delegated to per-tick LLM control."""
 
     action_type: Literal[
-        "move_to",
-        "look_at",
+        "noop",
+        "move_look",
+        "interact_use",
+        "inventory_click",
         "mine_block",
         "place_block",
-        "attack_entity",
-        "use_item",
-        "craft_item",
-        "open_ui",
-        "wait",
     ]
     parameters: dict[str, str | int | float | bool] = Field(default_factory=dict)
-    timeout_ticks: int = Field(default=200, ge=1)
+    timeout_ticks: int = Field(default=120, ge=1)
 
 
 class Subtask(BaseModel):

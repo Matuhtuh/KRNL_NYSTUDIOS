@@ -1,6 +1,6 @@
 package com.nystudios.stoneblock4bridge.state;
 
-import com.nystudios.stoneblock4bridge.dto.BridgeStateSnapshotDto;
+import com.nystudios.stoneblock4bridge.dto.GameStateSnapshotDto;
 import com.nystudios.stoneblock4bridge.dto.InventorySnapshotDto;
 import com.nystudios.stoneblock4bridge.dto.NearbyObservationDto;
 import com.nystudios.stoneblock4bridge.dto.PlayerStateDto;
@@ -15,5 +15,5 @@ public interface StateProvider {
 
     NearbyObservationDto getNearbyObservation();
 
-    BridgeStateSnapshotDto getFullStateSnapshot();
+    GameStateSnapshotDto getFullStateSnapshot(long tick);
 }

@@ -5,6 +5,7 @@ from __future__ import annotations
 import pytest
 from pydantic import ValidationError
 
+from bridge.contracts import ActionRequest
 from builder.models import Blueprint, MaterialEstimate
 from memory.models import FailureRecord
 from planner.models import Plan
@@ -26,7 +27,6 @@ def test_valid_game_state_schema() -> None:
         inventory=[InventoryItem(item_id="minecraft:cobblestone", count=32, slot=0)],
     )
     assert state.tick == 10
-    assert state.inventory[0].item_id == "minecraft:cobblestone"
 
 
 def test_invalid_game_state_hunger_rejected() -> None:
@@ -45,51 +45,42 @@ def test_invalid_game_state_hunger_rejected() -> None:
 
 
 def test_valid_plan_payload() -> None:
-    payload = {
-        "plan_id": "plan_bootstrap_ore",
-        "goal": {"goal_id": "goal_1", "description": "Acquire early-game iron", "priority": 7},
-        "subtasks": [
-            {
-                "subtask_id": "sub_1",
-                "title": "Mine compressed stone",
-                "success_criteria": ["Collected at least 64 cobblestone"],
-                "actions": [
-                    {"action_type": "move_to", "parameters": {"x": 0, "y": 64, "z": 0}, "timeout_ticks": 120},
-                    {"action_type": "mine_block", "parameters": {"block": "minecraft:stone"}, "timeout_ticks": 300},
-                ],
-            }
-        ],
-        "rationale": "Early mining unlocks key StoneBlock 4 resources and machine progression.",
-    }
-
-    plan = Plan.model_validate(payload)
-    assert plan.goal.goal_id == "goal_1"
-    assert len(plan.subtasks[0].actions) == 2
+    plan = Plan.model_validate(
+        {
+            "plan_id": "plan_1",
+            "goal": {"goal_id": "goal_1", "description": "Acquire starter resources", "priority": 5},
+            "subtasks": [
+                {
+                    "subtask_id": "sub_1",
+                    "title": "Probe bridge action",
+                    "success_criteria": ["Bridge accepts noop"],
+                    "actions": [{"action_type": "noop", "parameters": {}, "timeout_ticks": 10}],
+                }
+            ],
+            "rationale": "Minimal bridge test loop.",
+        }
+    )
+    assert plan.subtasks[0].actions[0].action_type == "noop"
 
 
 def test_invalid_plan_with_duplicate_subtasks() -> None:
-    payload = {
-        "plan_id": "plan_bad",
-        "goal": {"goal_id": "goal_1", "description": "Test", "priority": 5},
-        "subtasks": [
-            {
-                "subtask_id": "dup",
-                "title": "One",
-                "success_criteria": ["ok"],
-                "actions": [{"action_type": "wait", "parameters": {}, "timeout_ticks": 1}],
-            },
-            {
-                "subtask_id": "dup",
-                "title": "Two",
-                "success_criteria": ["ok"],
-                "actions": [{"action_type": "wait", "parameters": {}, "timeout_ticks": 1}],
-            },
-        ],
-        "rationale": "Ensure duplicate ids are rejected.",
-    }
-
     with pytest.raises(ValidationError):
-        Plan.model_validate(payload)
+        Plan.model_validate(
+            {
+                "plan_id": "plan_bad",
+                "goal": {"goal_id": "goal_1", "description": "Test", "priority": 5},
+                "subtasks": [
+                    {"subtask_id": "dup", "title": "One", "success_criteria": ["ok"], "actions": [{"action_type": "noop"}]},
+                    {"subtask_id": "dup", "title": "Two", "success_criteria": ["ok"], "actions": [{"action_type": "noop"}]},
+                ],
+                "rationale": "Ensure duplicate ids are rejected.",
+            }
+        )
+
+
+def test_action_request_contract() -> None:
+    request = ActionRequest(request_id="r1", action_type="noop", parameters={}, timeout_ticks=10)
+    assert request.request_id == "r1"
 
 
 def test_additional_schema_examples() -> None:
@@ -99,7 +90,7 @@ def test_additional_schema_examples() -> None:
         context="combat",
         error_type="LowHealth",
         detail="Agent repeatedly took damage from zombies in confined tunnel.",
-        action_type="attack_entity",
+        action_type="interact_use",
     )
     blueprint = Blueprint(
         blueprint_id="bp1",

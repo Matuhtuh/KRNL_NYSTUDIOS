@@ -16,10 +16,15 @@ class FailureRecord(BaseModel):
 
 
 class AgentMemory(BaseModel):
-    """Persistent summary of goals, plans, and failures across control loops."""
+    """Persistent summary of goals, plans, failures, and stuck-tracking across control loops."""
 
     active_goal_id: str | None = None
     current_plan_id: str | None = None
     completed_goals: list[str] = Field(default_factory=list)
     known_constraints: list[str] = Field(default_factory=list)
     failure_history: list[FailureRecord] = Field(default_factory=list)
+    action_log: list[str] = Field(default_factory=list)
+    last_action_signature: str | None = None
+    repeated_failure_count: int = 0
+    stuck_counter: int = 0
+    research_triggered: bool = False

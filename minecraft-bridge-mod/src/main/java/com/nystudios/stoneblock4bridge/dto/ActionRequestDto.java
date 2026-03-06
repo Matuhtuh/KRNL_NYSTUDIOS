@@ -8,7 +8,7 @@ import java.util.Map;
 public record ActionRequestDto(
         String requestId,
         String actionType,
-        Map<String, String> parameters,
+        Map<String, Object> parameters,
         int timeoutTicks
 ) {
 }

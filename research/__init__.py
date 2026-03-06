@@ -2,5 +2,6 @@
 
 from .interfaces import ResearchProvider
 from .models import ResearchQuery, ResearchResult
+from .noop import NoopResearchProvider
 
-__all__ = ["ResearchProvider", "ResearchQuery", "ResearchResult"]
+__all__ = ["ResearchProvider", "ResearchQuery", "ResearchResult", "NoopResearchProvider"]

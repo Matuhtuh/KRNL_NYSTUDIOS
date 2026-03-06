@@ -1,72 +1,44 @@
 # StoneBlock 4 Client Bridge Mod (NeoForge, Minecraft 1.21.1)
 
-This module is a **client-side NeoForge mod** that acts as the local game-body bridge for an external AI brain.
+Client-side bridge/body mod for an external AI brain.
 
-## Purpose
+## Implemented bridge endpoints
 
-- Expose deterministic game-state snapshots from the Minecraft client.
-- Accept bounded action requests from a local external process.
-- Keep low-level input and interaction deterministic and auditable.
-- Avoid unsafe, hidden, or fake "fully autonomous" logic inside the mod.
+- `GET /heartbeat` → `HeartbeatResponse`
+- `GET /state` → `GameStateSnapshot`
+- `GET /inventory` → `InventorySnapshot`
+- `GET /screen` → `OpenScreenState`
+- `POST /action` → `ActionResult` or `ErrorResponse`
 
-## Local communication choice
+All endpoints use localhost HTTP JSON (`127.0.0.1:8765`) for first-stage reliability and debuggability.
 
-This project uses a **localhost HTTP server** (`127.0.0.1:8765`) as the first transport.
+## Action types accepted
 
-Why HTTP first:
-1. Simple to debug with curl/Postman/logs.
-2. Language-agnostic for external AI process implementations.
-3. Reliable on localhost without extra broker/runtime dependencies.
-4. Easy migration path to WebSocket later if streaming events are needed.
+- `noop`
+- `move_look`
+- `interact_use`
+- `inventory_click`
+- `mine_block`
+- `place_block`
 
-Current endpoints are skeletons:
-- `GET /health`
-- `GET /state`
-- `POST /action`
+Currently these are placeholder handlers: accepted and typed, but intentionally not wired to full Minecraft controls yet.
 
-They intentionally provide safe placeholder behavior rather than pretending gameplay integration is complete.
+## What is real today
 
-## Package structure
+- typed transport contracts and endpoint handlers
+- malformed action rejection (`400 bad_request` / `bad_json`)
+- deterministic action dispatch surface for external executor integration
 
-- `api/` protocol constants
-- `bridge/` local bridge transport interfaces + localhost HTTP server
-- `state/` state provider interface + placeholder provider
-- `observe/` world observation interfaces/placeholders
-- `screen/` current GUI/screen inspection interfaces/placeholders
-- `control/` low-level player control interfaces/placeholders
-- `action/` bounded action executor interfaces/placeholders
-- `dto/` transport DTOs for state snapshots and action messages
+## What remains
 
-## DTOs
+- real state capture from Minecraft runtime objects
+- real input wiring for movement/look/interact/mine/place
+- strict shared JSON schema tooling across Python and Java
 
-- `PlayerStateDto`
-- `InventorySnapshotDto`, `InventoryItemDto`
-- `NearbyObservationDto`, `BlockObservationDto`, `EntityObservationDto`
-- `OpenScreenStateDto`
-- `ActionRequestDto`, `ActionResultDto`
-- `BridgeStateSnapshotDto`
+## Design notes and inspiration
 
-## What is intentionally not implemented yet
+- Uses Voyager-like loop boundaries (plan/execute/verify/fallback) at the system level.
+- Uses Baritone/AltoClef-like deterministic small-step action surface.
+- Uses Mineflayer-like split between state query and action API.
 
-- Full pathfinding
-- Full combat automation
-- Full block placement/mining automation
-- Full GUI automation/click plans
-- Unsafe or hidden autonomous behaviors
-
-## Integration path with external AI brain
-
-1. External process polls `/state` for latest player/world/screen snapshot.
-2. External deterministic executor/planner selects next bounded action.
-3. External process sends `POST /action` with structured action payload.
-4. Mod validates/dispatches to client control modules and returns `ActionResultDto`.
-5. External process tracks failures/retries/recovery logic.
-
-## Next implementation steps
-
-1. Wire DTO serialization (JSON) and strict request parsing.
-2. Implement state capture from `Minecraft.getInstance().player` and world APIs.
-3. Implement deterministic movement/input wiring in `control/`.
-4. Implement safe block interaction wrappers (raycast + reach + cooldown checks).
-5. Add rate limiting + command guardrails on `/action`.
-6. Add deterministic tick synchronization for action timeouts.
+We intentionally do **not** copy those projects directly because NeoForge client internals, StoneBlock 4 modpack constraints, and this repository’s architecture differ significantly.

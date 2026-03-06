@@ -7,6 +7,8 @@ from abc import ABC, abstractmethod
 from planner.models import Action
 from state.models import GameState
 
+from .contracts import ActionResult
+
 
 class GameBridge(ABC):
     """Deterministic interface for reading game state and issuing low-level commands."""
@@ -16,5 +18,5 @@ class GameBridge(ABC):
         """Return current game state snapshot suitable for planner/executor logic."""
 
     @abstractmethod
-    def perform_action(self, action: Action) -> bool:
-        """Execute a low-level deterministic action and report success."""
+    def perform_action(self, action: Action) -> ActionResult:
+        """Execute a low-level deterministic action and return typed action result."""

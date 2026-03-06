@@ -7,6 +7,8 @@ public record ActionResultDto(
         String requestId,
         boolean accepted,
         boolean completed,
+        boolean success,
+        String errorCode,
         String message
 ) {
 }

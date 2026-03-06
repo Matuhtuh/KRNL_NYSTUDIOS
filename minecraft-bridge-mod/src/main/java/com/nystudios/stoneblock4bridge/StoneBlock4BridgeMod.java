@@ -4,8 +4,6 @@ import com.nystudios.stoneblock4bridge.action.ActionExecutor;
 import com.nystudios.stoneblock4bridge.action.ClientActionExecutor;
 import com.nystudios.stoneblock4bridge.bridge.BridgeServer;
 import com.nystudios.stoneblock4bridge.bridge.LocalHttpBridgeServer;
-import com.nystudios.stoneblock4bridge.screen.ClientScreenInspector;
-import com.nystudios.stoneblock4bridge.screen.ScreenInspector;
 import com.nystudios.stoneblock4bridge.state.ClientStateProvider;
 import com.nystudios.stoneblock4bridge.state.StateProvider;
 import net.neoforged.api.distmarker.Dist;
@@ -16,10 +14,6 @@ import net.neoforged.fml.loading.FMLEnvironment;
 
 /**
  * NeoForge entrypoint for a client-only bridge mod.
- *
- * <p>This class wires interfaces to baseline implementations, then starts local bridge transport.
- * Implementations intentionally return explicit "not implemented" data where behavior is pending,
- * to avoid pretending automation already works.</p>
  */
 @Mod(value = StoneBlock4BridgeMod.MOD_ID, dist = Dist.CLIENT)
 public final class StoneBlock4BridgeMod {
@@ -33,9 +27,8 @@ public final class StoneBlock4BridgeMod {
         }
 
         StateProvider stateProvider = new ClientStateProvider();
-        ScreenInspector screenInspector = new ClientScreenInspector();
         ActionExecutor actionExecutor = new ClientActionExecutor();
-        this.bridgeServer = new LocalHttpBridgeServer(stateProvider, screenInspector, actionExecutor);
+        this.bridgeServer = new LocalHttpBridgeServer(stateProvider, actionExecutor);
         this.bridgeServer.start();
 
         eventBus.addListener(this::onClientStopping);

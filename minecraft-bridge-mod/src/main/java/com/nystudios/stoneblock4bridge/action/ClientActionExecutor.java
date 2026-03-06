@@ -6,33 +6,34 @@ import java.util.Set;
 
 /**
  * Minimal action executor shell.
- *
- * <p>Only validates a narrow command set and returns explicit unsupported responses.
- * Real control wiring (movement/input/block interaction) should be added incrementally.</p>
  */
 public final class ClientActionExecutor implements ActionExecutor {
     private static final Set<String> SUPPORTED_ACTION_TYPES = Set.of(
-            "move_input",
-            "look_delta",
-            "jump",
-            "sneak",
-            "interact_block",
-            "attack",
-            "use_item",
-            "stop_all_inputs"
+            "noop",
+            "move_look",
+            "interact_use",
+            "inventory_click",
+            "mine_block",
+            "place_block"
     );
 
     @Override
     public ActionResultDto performAction(ActionRequestDto request) {
+        if (request.actionType() == null || request.requestId() == null) {
+            return new ActionResultDto("unknown", false, false, false, "bad_request", "Missing request_id or action_type");
+        }
+
         if (!SUPPORTED_ACTION_TYPES.contains(request.actionType())) {
-            return new ActionResultDto(request.requestId(), false, false, "Unsupported action type");
+            return new ActionResultDto(request.requestId(), false, false, false, "unsupported_action", "Unsupported action type");
         }
 
         return new ActionResultDto(
                 request.requestId(),
+                true,
                 false,
                 false,
-                "Action accepted by schema but not yet wired to Minecraft input controls"
+                "not_implemented",
+                "Action type recognized but Minecraft wiring is not implemented yet"
         );
     }
 }

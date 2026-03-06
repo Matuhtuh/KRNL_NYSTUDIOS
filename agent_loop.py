@@ -27,6 +27,7 @@ class BridgeAgentLoop:
         self.memory = AgentMemory()
         self.current_goal: Goal | None = None
         self.current_plan: Plan | None = None
+        self.paused: bool = False
         self._subtask_index = 0
         self._action_index = 0
 
@@ -35,7 +36,60 @@ class BridgeAgentLoop:
         self.memory.active_goal_id = goal.goal_id
         self.current_plan = None
 
+    def pause(self) -> None:
+        """Pause deterministic stepping until resumed by operator."""
+
+        self.paused = True
+
+    def resume(self) -> None:
+        """Resume deterministic stepping."""
+
+        self.paused = False
+
+    def cancel_plan(self) -> None:
+        """Cancel current plan while preserving failure history and logs."""
+
+        self.current_plan = None
+        self.memory.current_plan_id = None
+        self._subtask_index = 0
+        self._action_index = 0
+
+    def status_summary(self) -> dict[str, object]:
+        """Return lightweight operator-facing status summary."""
+
+        bridge_status = "unknown"
+        detail = ""
+        if hasattr(self.bridge, "heartbeat"):
+            try:
+                heartbeat = self.bridge.heartbeat()
+                bridge_status = heartbeat.bridge_status
+                detail = heartbeat.detail
+            except Exception as exc:  # noqa: BLE001
+                bridge_status = "unavailable"
+                detail = str(exc)
+
+        return {
+            "paused": self.paused,
+            "goal": self.current_goal.goal_id if self.current_goal else None,
+            "plan": self.memory.current_plan_id,
+            "active_action": self.active_action_signature(),
+            "bridge_status": bridge_status,
+            "bridge_detail": detail,
+            "recent_failures": [failure.detail for failure in self.memory.failure_history[-5:]],
+            "recent_logs": self.memory.action_log[-5:],
+            "stuck_counter": self.memory.stuck_counter,
+        }
+
+    def active_action_signature(self) -> str | None:
+        action = self._next_action()
+        if action is None:
+            return None
+        return f"{action.action_type}:{action.parameters}"
+
     def step(self) -> None:
+        if self.paused:
+            return
+
         snapshot = self.bridge.read_state_snapshot()
         self.memory.push_snapshot(snapshot)
         state = self.bridge.read_state()

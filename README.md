@@ -67,9 +67,23 @@ Real state capture:
 - deeper StoneBlock 4 modded GUI/action understanding
 - web-backed research (hook exists, web search not implemented)
 
+## 6) Supervised operator console (local)
+
+Use `operator_console.py` to supervise the Python brain during local debugging.
+
+Supported commands:
+- `goal <description>` / `set_goal <description>`
+- `pause`
+- `resume`
+- `cancel`
+- `status`
+- `step` (console-only helper for one loop tick)
+
+Status output includes current goal, current plan id, active action signature, bridge status, recent failures, and recent action logs.
+
 ## Testing
 
 Run:
 - `pytest -q`
 
-The test suite covers schema validation, bridge serialization/error handling, bridge status heartbeat parsing, skill/task registry behavior, plan progression, repeated-failure escalation, no-progress detection, and end-to-end mock action flow.
+The test suite covers schema validation, bridge serialization/error handling, bridge status heartbeat parsing, skill/task registry behavior, plan progression, repeated-failure escalation, no-progress detection, operator console command handling, and end-to-end mock action flow.

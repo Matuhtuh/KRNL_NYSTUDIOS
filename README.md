@@ -2,75 +2,74 @@
 
 This repository contains a Python autonomous-agent brain and a NeoForge 1.21.1 client bridge mod for FTB StoneBlock 4.
 
-## Audit of existing foundation (before this change)
+## 1) Repository audit (current state)
 
-Already present before this update:
-- layered Python architecture (`planner`, `executor`, `recovery`, `research`, `memory`, `state`, `bridge`, `builder`)
-- typed Python↔Java contracts and local HTTP bridge integration
-- deterministic action loop scaffolding with retries/failure history/research hook
-- NeoForge client-side bridge with typed endpoints and placeholder action handling
-- local mock bridge test mode
+### Already implemented
+- Deterministic Python brain architecture (planner/executor/recovery/research/memory/state/bridge/builder modules).
+- Typed Python↔Java localhost HTTP transport contracts and bridge client.
+- Real NeoForge client state capture for player, inventory/hotbar, open screen, nearby entities, and nearby block sampling.
+- Deterministic action loop with safety checks, no-progress detection, failure tracking, and research fallback hook.
+- Local mock bridge mode for repeatable integration tests.
 
-This change extends that scaffold with real client state capture and stricter runtime safety/progress checks.
+### Still partial / placeholder
+- Mine/place and inventory-click execution remain typed placeholders (honest, explicit partials).
+- No full pathfinding graph or full combat automation yet.
+- Modded GUI semantics are captured at screen class/title/slot-count level only.
 
-## Transport choice
+### Biggest blockers to first in-game playability
+1. Reliable tick-synchronized movement/action scheduling under varying client FPS/tick timing.
+2. Robust block interaction/mine/place with raycast, reach, and server-confirmed state change.
+3. Deeper modded-screen semantics for StoneBlock 4 machines and questing GUIs.
+4. Deterministic navigation abstraction beyond short movement pulses.
 
-The project continues to use localhost HTTP JSON (`127.0.0.1:8765`) because it is the simplest reliable debug transport for mixed Python/Java development and Codex CLI live troubleshooting.
+## 2) Open-source research and design selection
 
-## What real state is now captured (NeoForge side)
+Required inspirations reviewed: Voyager, Baritone, AltoClef, Mineflayer, Mindcraft, plus additional historical embodied-agent references.
 
-`ClientStateProvider` now pulls live client values (when player/level are available):
-- player position (`x/y/z`)
-- yaw/pitch
-- health
-- hunger
-- dimension id
-- held main/offhand items
-- selected hotbar slot
-- hotbar snapshot (first 9 slots)
-- full inventory snapshot via player inventory container size
-- open screen type/title/slot count
-- nearby entities within radius (+hostile heuristic)
-- nearby blocks in configurable small sample volume
+Design note: `docs/open_source_design_note.md`
 
-All of the above are exposed through `/state`, with `/inventory` and `/screen` still available separately.
+### Adopted
+- Voyager-style plan → execute → verify → retry/escalate.
+- AltoClef/Baritone-style small deterministic task/action decomposition.
+- Mineflayer-style state/action API boundary and explicit contracts.
 
-## What is still partial or placeholder
+### Rejected/deferred
+- Direct code port from Baritone/AltoClef (runtime/loader mismatch).
+- Mineflayer runtime integration (Node bot runtime mismatch with NeoForge client bridge).
+- Mindcraft-style runtime code-writing autonomy (safety/reliability mismatch).
 
-- action execution remains intentionally partial (`noop`, `move_look`, `interact_use`, `inventory_click`, `mine_block`, `place_block` are validated but not fully wired to gameplay input yet)
-- nearby block/entity observation is bounded sampling (not a full world-model or pathfinding graph)
-- modded GUI semantics are captured as screen class/title/slot count but not yet deeply parsed per-mod screen logic
-- no full pathfinding, full combat, or web research automation yet
+## 3) Why architecture remains Python brain + NeoForge body
 
-## Python integration improvements
+- Python brain handles planning/task logic/memory/recovery orchestration and future LLM planner integration.
+- NeoForge body provides truthful client-state snapshots and deterministic low-level controls.
+- LLM remains restricted to high-level planning/research/build design, never per-tick control.
 
-- bridge client now validates and normalizes richer snapshots
-- memory persists recent snapshots for progress/stuck analysis
-- deterministic safety checks now block unsafe actions for:
-  - low health
-  - low hunger
-  - missing main-hand tool for tool-requiring actions
-  - open screen blocking gameplay actions
-- no-progress detector compares consecutive snapshots across:
-  - position delta
-  - inventory delta
-  - open-screen state delta
-- executor now reports precondition/postcondition outcomes and checks likely state change after action dispatch
+## 4) What is now real for local in-game debugging
 
-## Open-source inspiration (adopted vs rejected)
+Real action surface:
+- `select_hotbar_slot`
+- `turn_to_yaw_pitch`
+- `move_forward_short`
+- `interact_use`
 
-Adopted conceptually:
-- **Voyager**: iterative plan → execute → verify → retry flow and skill/research hooks
-- **Baritone / AltoClef**: deterministic small-task decomposition and strict low-level control boundaries
-- **Mineflayer ecosystem**: practical state/action API abstractions and orchestration patterns
+Real state capture:
+- player pose/health/hunger/dimension/held items/hotbar selection
+- full inventory + hotbar snapshot
+- open screen metadata
+- nearby entities and nearby blocks (bounded sample)
+- typed partial-state and warnings when unavailable
 
-Rejected for direct reuse:
-- direct code copy from those projects due runtime mismatch (NeoForge client internals, modpack constraints, and this repository’s strict typed contract structure)
-- LLM per-tick control, which remains disallowed for deterministic StoneBlock 4 execution reliability
+## 5) What remains before full playability
+
+- full pathfinding abstraction and robust goal-directed navigation
+- robust mine/place interaction with confirmation loops
+- full combat routines
+- deeper StoneBlock 4 modded GUI/action understanding
+- web-backed research (hook exists, web search not implemented)
 
 ## Testing
 
 Run:
 - `pytest -q`
 
-The Python tests cover snapshot validation, bridge serialization behavior, malformed payload handling, safety checks, no-progress detection, and end-to-end loop execution in mock mode.
+The test suite covers schema validation, bridge serialization/error handling, skill/task registry behavior, plan progression, repeated-failure escalation, no-progress detection, and end-to-end mock action flow.

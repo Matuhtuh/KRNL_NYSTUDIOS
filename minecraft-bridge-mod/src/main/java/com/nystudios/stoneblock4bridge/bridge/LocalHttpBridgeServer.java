@@ -21,11 +21,14 @@ import java.io.OutputStream;
 import java.net.InetSocketAddress;
 import java.nio.charset.StandardCharsets;
 import java.util.concurrent.atomic.AtomicLong;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Localhost-only HTTP transport for first end-to-end local debugging.
  */
 public final class LocalHttpBridgeServer implements BridgeServer {
+    private static final Logger LOGGER = LoggerFactory.getLogger(LocalHttpBridgeServer.class);
     private final StateProvider stateProvider;
     private final ActionExecutor actionExecutor;
     private final Gson gson = new GsonBuilder()
@@ -49,14 +52,17 @@ public final class LocalHttpBridgeServer implements BridgeServer {
             this.server.createContext("/screen", new ScreenHandler());
             this.server.createContext("/action", new ActionHandler());
             this.server.start();
+            LOGGER.info("StoneBlock4 bridge server started on 127.0.0.1:8765");
         } catch (IOException exception) {
-            throw new IllegalStateException("Failed to start local bridge server", exception);
+            LOGGER.error("Bridge server could not bind to 127.0.0.1:8765; continuing without HTTP bridge", exception);
+            this.server = null;
         }
     }
 
     @Override
     public void stop() {
         if (this.server != null) {
+            LOGGER.info("Stopping StoneBlock4 bridge server");
             this.server.stop(0);
             this.server = null;
         }

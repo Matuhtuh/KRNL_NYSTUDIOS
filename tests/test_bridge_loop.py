@@ -248,3 +248,39 @@ def test_no_progress_detector() -> None:
             )
         )
     assert detector.no_progress(snapshots) is True
+
+
+def test_executor_rejects_unsafe_action_state() -> None:
+    class UnsafeBridge(AlwaysFailBridge):
+        def read_state_snapshot(self) -> GameStateSnapshot:
+            snap = super().read_state_snapshot().model_copy(deep=True)
+            snap.player.health = 2
+            snap.player.hunger = 2
+            return snap
+
+        def perform_action(self, action: Action) -> ActionResult:
+            raise AssertionError("perform_action should not be called for unsafe state")
+
+    bridge = UnsafeBridge()
+    executor = DeterministicExecutor(bridge)
+    result = executor.execute_one(Action(action_type="mine_block", parameters={}, timeout_ticks=10), bridge.read_state())
+    assert result.accepted is False
+    assert result.error_code == "unsafe_state"
+
+
+def test_bridge_rejects_unsupported_action_payload() -> None:
+    server = MockBridgeServer(port=8883)
+    server.start()
+    try:
+        payload = json.dumps({"request_id": "bad1", "action_type": "fly", "parameters": {}, "timeout_ticks": 10}).encode("utf-8")
+        req = urllib.request.Request(
+            "http://127.0.0.1:8883/action",
+            data=payload,
+            method="POST",
+            headers={"Content-Type": "application/json"},
+        )
+        with pytest.raises(urllib.error.HTTPError) as exc:
+            urllib.request.urlopen(req, timeout=2)
+        assert exc.value.code == 400
+    finally:
+        server.stop()

@@ -20,7 +20,9 @@ class Action(BaseModel):
 
     action_type: Literal[
         "noop",
-        "move_look",
+        "select_hotbar_slot",
+        "turn_to_yaw_pitch",
+        "move_forward_short",
         "interact_use",
         "inventory_click",
         "mine_block",

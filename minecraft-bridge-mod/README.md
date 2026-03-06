@@ -10,9 +10,11 @@ Client-side bridge/body mod for an external Python AI brain.
 - `GET /screen` → `OpenScreenState`
 - `POST /action` → `ActionResult` or `ErrorResponse`
 
+Bridge startup is now resilient: if port binding fails, the mod logs the failure and continues client runtime without crashing.
+
 ## Real state capture now implemented
 
-`ClientStateProvider` now reads real client data when available:
+`ClientStateProvider` reads real client data when available:
 - player position, yaw/pitch
 - health + hunger
 - dimension identifier
@@ -21,29 +23,36 @@ Client-side bridge/body mod for an external Python AI brain.
 - hotbar and full inventory snapshot from player inventory container
 - current open screen class/title/slot count
 - nearby entity sample with hostile heuristic
-- nearby block sample in a small radius window
+- nearby block sample in a bounded radius window
 
-If player/level is unavailable, typed partial snapshots are returned with `partial/warnings` metadata.
+When player/level are unavailable, typed partial snapshots are returned with `partial` + `warnings` metadata.
 
-## Action surface (still intentionally partial)
+## First real action surface
 
-Accepted action types:
-- `noop`
-- `move_look`
-- `interact_use`
+Implemented deterministic wrappers:
+- `select_hotbar_slot` (real slot selection)
+- `turn_to_yaw_pitch` (real local orientation set)
+- `move_forward_short` (short key pulse wrapper)
+- `interact_use` (use key pulse wrapper)
+
+Typed partial placeholders (honest, not faked full automation):
 - `inventory_click`
 - `mine_block`
 - `place_block`
 
-Handlers validate and return typed results, but full movement/combat/pathfinding/control wiring is not complete yet.
+## Observability
 
-## Limitations
+- bridge start/stop and action dispatch are logged
+- action results include typed `preconditions` and `postconditions`
+- malformed/unsupported requests return typed error responses
+
+## Limits (intentional)
 
 - no full pathfinding graph
 - no full combat automation
 - no deep per-mod GUI semantic parsing yet
-- nearby observations are bounded samples, not a complete world model
+- nearby observations are bounded samples, not complete world-state indexing
 
 ## Inspiration and compatibility notes
 
-Conceptually inspired by Voyager (verify/retry loops), Baritone/AltoClef (deterministic task decomposition), and Mineflayer (clear state/action API boundaries). Direct code reuse was intentionally avoided due NeoForge + StoneBlock 4 compatibility constraints.
+Conceptually inspired by Voyager (verify/retry loops), Baritone/AltoClef (deterministic task decomposition), Mineflayer/Mindcraft (clean action/state boundaries and orchestration caution). Direct code reuse was intentionally avoided due NeoForge + StoneBlock 4 architecture constraints.

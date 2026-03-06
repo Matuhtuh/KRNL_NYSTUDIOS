@@ -17,6 +17,11 @@ class MockBridgeServer:
         self._thread: Thread | None = None
         self.last_action: dict | None = None
         self.tick = 0
+        self.player_x = 0.0
+        self.player_yaw = 0.0
+        self.player_pitch = 0.0
+        self.selected_slot = 0
+        self.inventory_count = 16
 
     def start(self) -> None:
         outer = self
@@ -42,21 +47,21 @@ class MockBridgeServer:
                             "player": {
                                 "tick": outer.tick,
                                 "dimension": "minecraft:overworld",
-                                "x": 0,
+                                "x": outer.player_x,
                                 "y": 64,
                                 "z": 0,
-                                "yaw": 0,
-                                "pitch": 0,
+                                "yaw": outer.player_yaw,
+                                "pitch": outer.player_pitch,
                                 "health": 20,
                                 "hunger": 20,
                                 "on_ground": True,
                                 "in_fluid": False,
                                 "held_main_hand_item": "minecraft:stone_pickaxe",
                                 "held_off_hand_item": "minecraft:air",
-                                "selected_hotbar_slot": 0,
+                                "selected_hotbar_slot": outer.selected_slot,
                             },
                             "inventory": {
-                                "items": [{"slot": 0, "item_id": "minecraft:cobblestone", "count": 16, "empty": False}],
+                                "items": [{"slot": 0, "item_id": "minecraft:cobblestone", "count": outer.inventory_count, "empty": False}],
                                 "hotbar": [{"slot": 0, "item_id": "minecraft:stone_pickaxe", "count": 1, "empty": False}],
                                 "partial": False,
                                 "note": None,
@@ -79,9 +84,32 @@ class MockBridgeServer:
                 length = int(self.headers.get("Content-Length", "0"))
                 body = json.loads(self.rfile.read(length).decode("utf-8"))
                 outer.last_action = body
-                if "action_type" not in body:
+                action_type = body.get("action_type")
+                params = body.get("parameters", {})
+                if not action_type:
                     self._write(400, {"error_code": "bad_request", "message": "action_type missing"})
                     return
+
+                supported = {"noop", "select_hotbar_slot", "turn_to_yaw_pitch", "move_forward_short", "interact_use", "inventory_click", "mine_block", "place_block"}
+                if action_type not in supported:
+                    self._write(400, {"error_code": "unsupported_action", "message": "unsupported action"})
+                    return
+
+                post = ["no_observable_state_change"]
+                if action_type == "select_hotbar_slot" and isinstance(params.get("slot"), int):
+                    outer.selected_slot = params["slot"]
+                    post = ["state_changed"]
+                elif action_type == "turn_to_yaw_pitch":
+                    outer.player_yaw = float(params.get("yaw", outer.player_yaw))
+                    outer.player_pitch = float(params.get("pitch", outer.player_pitch))
+                    post = ["state_changed"]
+                elif action_type == "move_forward_short":
+                    outer.player_x += 0.25
+                    post = ["state_changed"]
+                elif action_type == "interact_use":
+                    outer.inventory_count += 1
+                    post = ["state_changed"]
+
                 self._write(
                     200,
                     {
@@ -92,7 +120,7 @@ class MockBridgeServer:
                         "error_code": None,
                         "message": "mock action completed",
                         "preconditions": [],
-                        "postconditions": ["state_changed"],
+                        "postconditions": post,
                     },
                 )
 

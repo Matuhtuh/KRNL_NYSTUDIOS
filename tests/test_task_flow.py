@@ -74,3 +74,26 @@ def test_end_to_end_minimal_action_flow_changes_state() -> None:
         assert after.player.yaw != before.player.yaw or after.player.pitch != before.player.pitch
     finally:
         server.stop()
+
+
+def test_paused_loop_does_not_dispatch_actions() -> None:
+    server = MockBridgeServer(port=8885)
+    server.start()
+    try:
+        bridge = HttpGameBridge("http://127.0.0.1:8885")
+        loop = BridgeAgentLoop(
+            bridge=bridge,
+            planner=TinyDeterministicPlanner(),
+            executor=DeterministicExecutor(bridge),
+            recovery_manager=SimpleRecoveryManager(),
+            research=NoopResearchProvider(),
+        )
+        loop.set_goal(Goal(goal_id="g_pause", description="pause test", priority=5))
+        loop.pause()
+        loop.step()
+        assert server.action_history == []
+        loop.resume()
+        loop.step()
+        assert len(server.action_history) == 1
+    finally:
+        server.stop()

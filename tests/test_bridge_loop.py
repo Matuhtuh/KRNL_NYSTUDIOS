@@ -5,6 +5,8 @@ from __future__ import annotations
 import json
 import urllib.error
 import urllib.request
+from http.server import BaseHTTPRequestHandler, HTTPServer
+from threading import Thread
 
 import pytest
 
@@ -283,5 +285,75 @@ def test_bridge_rejects_unsupported_action_payload() -> None:
         with pytest.raises(urllib.error.HTTPError) as exc:
             urllib.request.urlopen(req, timeout=2)
         assert exc.value.code == 400
+    finally:
+        server.stop()
+
+
+def test_http_bridge_rejects_malformed_state_payload() -> None:
+    class BadStateServer:
+        def __init__(self, port: int):
+            self.port = port
+            self.server = None
+            self.thread = None
+
+        def start(self):
+            class H(BaseHTTPRequestHandler):
+                def do_GET(self):  # noqa: N802
+                    if self.path == "/state":
+                        payload = {
+                            "player": {
+                                "tick": 1,
+                                "x": 0,
+                                "y": 64,
+                                "z": 0,
+                                "yaw": 0,
+                                "pitch": 0,
+                                "health": 20,
+                                "hunger": 20,
+                                "on_ground": True,
+                                "in_fluid": False,
+                                "held_main_hand_item": "minecraft:air",
+                                "held_off_hand_item": "minecraft:air",
+                                "selected_hotbar_slot": 0,
+                            },
+                            "inventory": {"items": [], "hotbar": [], "partial": False, "note": None},
+                            "nearby_blocks": [],
+                            "nearby_entities": [],
+                            "open_screen": {"screen_open": False, "screen_class": "none", "title": "No screen", "slot_count": 0},
+                            "observation_radius": 4,
+                            "partial": False,
+                            "warnings": [],
+                        }
+                    elif self.path == "/heartbeat":
+                        payload = {"status": "ok", "protocol_version": "v1alpha1", "bridge_mode": "mock", "bridge_status": "running", "detail": ""}
+                    else:
+                        payload = {"error_code": "not_found", "message": "unknown"}
+                    data = json.dumps(payload).encode("utf-8")
+                    self.send_response(200)
+                    self.send_header("Content-Type", "application/json")
+                    self.send_header("Content-Length", str(len(data)))
+                    self.end_headers()
+                    self.wfile.write(data)
+
+                def log_message(self, format, *args):
+                    return
+
+            self.server = HTTPServer(("127.0.0.1", self.port), H)
+            self.thread = Thread(target=self.server.serve_forever, daemon=True)
+            self.thread.start()
+
+        def stop(self):
+            if self.server:
+                self.server.shutdown()
+                self.server.server_close()
+            if self.thread:
+                self.thread.join(timeout=1)
+
+    server = BadStateServer(8884)
+    server.start()
+    try:
+        bridge = HttpGameBridge("http://127.0.0.1:8884")
+        with pytest.raises(Exception):
+            bridge.read_state_snapshot()
     finally:
         server.stop()

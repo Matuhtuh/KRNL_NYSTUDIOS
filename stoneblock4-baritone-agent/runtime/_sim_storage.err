@@ -1,0 +1,16 @@
+2026-03-05 12:52:59,140 INFO agent.runner: Loaded state: {'completed_flags': [], 'completed_goals': [], 'current_goal_id': None, 'goal_retries': {}, 'goal_defer_until': {}, 'safe_paused': False, 'last_error': None}
+2026-03-05 12:52:59,142 INFO agent.runner: Executing goal: calibrate_bot - Verify the bot can send baritone commands and detect completion text.
+2026-03-05 12:52:59,152 INFO agent.runner: Goal complete: calibrate_bot
+2026-03-05 12:52:59,153 INFO agent.runner: Executing goal: starter_tunnel - Generate starter resources in StoneBlock through controlled tunnel mining.
+2026-03-05 12:53:00,162 INFO agent.runner: Goal complete: starter_tunnel
+2026-03-05 12:53:00,162 INFO agent.runner: Executing goal: harden_baritone_defaults - Apply robust Baritone defaults for mining/build progression.
+2026-03-05 12:53:00,169 INFO agent.runner: Goal complete: harden_baritone_defaults
+2026-03-05 12:53:00,169 INFO agent.runner: Executing goal: cobble_stock - Stockpile stone/cobble drops for early progression.
+2026-03-05 12:53:02,179 INFO agent.runner: Goal complete: cobble_stock
+2026-03-05 12:53:02,225 INFO agent.runner: Executing goal: expansion_quarry - Open base area by mining a larger quarry pattern.
+2026-03-05 12:53:06,236 INFO agent.runner: Goal complete: expansion_quarry
+2026-03-05 12:53:06,236 INFO agent.runner: Executing goal: stoneblock_resource_chain_model - Model StoneBlock chain: hammer cobble/stone -> gravel/sand/dust -> brush/sieve outputs.
+2026-03-05 12:53:06,238 INFO agent.runner: NOTE: Progression reference: mine cobble/stone, hammer into gravel/sand/dust, then process via brush/sieve line for ores/resources.
+2026-03-05 12:53:06,240 INFO agent.runner: NOTE: Use craft_item tasks for hammers/brushes and machine branch once recipes are validated on this server.
+2026-03-05 12:53:06,244 INFO agent.runner: Goal complete: stoneblock_resource_chain_model
+2026-03-05 12:53:06,244 INFO agent.runner: Executing goal: manual_modpack_branch - Transition point for pack-specific machine/farm macros.

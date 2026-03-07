@@ -1,0 +1,175 @@
+{
+  "bootstrap_crafting": {
+    "label": "Bootstrap Crafting",
+    "summary": "Opening StoneBlock progression before the hammer chain dominates the loop.",
+    "focusItems": [
+      "ftbstuff:stone_hammer",
+      "ftbstuff:stone_crook",
+      "ftbstuff:wooden_basin",
+      "minecraft:crafting_table"
+    ],
+    "targetBands": {
+      "ftbstuff:stone_hammer": { "min": 1, "max": 1 },
+      "ftbstuff:stone_crook": { "min": 1, "max": 1 },
+      "ftbstuff:wooden_basin": { "min": 1, "max": 1 }
+    },
+    "nextStageHint": "bootstrap_hammer",
+    "routeIds": [],
+    "evidence": [
+      {
+        "path": "C:/Users/suret/curseforge/minecraft/Instances/FTB StoneBlock 4/config/ftbquests/quests/chapters/getting_started.snbt",
+        "label": "getting_started.snbt"
+      }
+    ]
+  },
+  "bootstrap_hammer": {
+    "label": "Bootstrap Hammer",
+    "summary": "The hammer is present and the local in-place resource chain can start.",
+    "focusItems": [
+      "ftbstuff:stone_hammer",
+      "minecraft:cobblestone",
+      "minecraft:gravel"
+    ],
+    "targetBands": {
+      "minecraft:cobblestone": { "min": 32, "max": 256 },
+      "minecraft:gravel": { "min": 8, "max": 64 }
+    },
+    "nextStageHint": "hammer_to_resources",
+    "routeIds": [
+      "hammer__minecraft_cobblestone__minecraft_gravel",
+      "hammer__minecraft_stone__minecraft_cobblestone"
+    ],
+    "evidence": [
+      {
+        "path": "C:/Users/suret/curseforge/minecraft/Instances/FTB StoneBlock 4/kubejs/server_scripts/recipes/mods/ftb/hammer.js",
+        "label": "hammer.js"
+      }
+    ]
+  },
+  "hammer_to_resources": {
+    "label": "Hammer To Resources",
+    "summary": "Convert local stone resources through cobble, gravel, dirt, sand, and dust without pathing away.",
+    "focusItems": [
+      "minecraft:gravel",
+      "minecraft:dirt",
+      "minecraft:sand",
+      "ftbstuff:dust"
+    ],
+    "targetBands": {
+      "minecraft:gravel": { "min": 16, "max": 96 },
+      "minecraft:dirt": { "min": 16, "max": 96 },
+      "minecraft:sand": { "min": 24, "max": 128 },
+      "ftbstuff:dust": { "min": 24, "max": 128 }
+    },
+    "nextStageHint": "pre_sieving",
+    "routeIds": [
+      "hammer__minecraft_cobblestone__minecraft_gravel",
+      "hammer__minecraft_gravel__minecraft_dirt",
+      "hammer__minecraft_dirt__minecraft_sand",
+      "hammer__minecraft_sand__ftbstuff_dust"
+    ],
+    "evidence": [
+      {
+        "path": "C:/Users/suret/curseforge/minecraft/Instances/FTB StoneBlock 4/kubejs/server_scripts/recipes/mods/ftb/hammer.js",
+        "label": "hammer.js"
+      }
+    ]
+  },
+  "pre_sieving": {
+    "label": "Pre-Sieving",
+    "summary": "Dust and sand exist locally, so brush and sieving-adjacent resources become reachable.",
+    "focusItems": [
+      "ftbstuff:dust",
+      "ftbunearthed:crude_brush",
+      "minecraft:sand",
+      "minecraft:dirt"
+    ],
+    "targetBands": {
+      "ftbstuff:dust": { "min": 24, "max": 128 },
+      "ftbunearthed:crude_brush": { "min": 1, "max": 1 },
+      "minecraft:sand": { "min": 24, "max": 96 }
+    },
+    "nextStageHint": "early_smelting",
+    "routeIds": [
+      "hammer__minecraft_sand__ftbstuff_dust",
+      "crook__minecraft_sand__minecraft_sugar_cane",
+      "crook__minecraft_sand__minecraft_cactus"
+    ],
+    "evidence": [
+      {
+        "path": "C:/Users/suret/curseforge/minecraft/Instances/FTB StoneBlock 4/config/ftbquests/quests/chapters/getting_started.snbt",
+        "label": "getting_started.snbt"
+      },
+      {
+        "path": "C:/Users/suret/curseforge/minecraft/Instances/FTB StoneBlock 4/kubejs/server_scripts/recipes/mods/ftb/crook.js",
+        "label": "crook.js"
+      }
+    ]
+  },
+  "early_smelting": {
+    "label": "Early Smelting",
+    "summary": "Furnace-tier progression and early machine-support materials become relevant.",
+    "focusItems": [
+      "minecraft:furnace",
+      "minecraft:charcoal",
+      "minecraft:iron_ingot"
+    ],
+    "targetBands": {
+      "minecraft:furnace": { "min": 1, "max": 2 }
+    },
+    "nextStageHint": "machine_bootstrap",
+    "routeIds": [],
+    "evidence": [
+      {
+        "path": "C:/Users/suret/curseforge/minecraft/Instances/FTB StoneBlock 4/config/ftbquests/quests/chapters/getting_started.snbt",
+        "label": "getting_started.snbt"
+      }
+    ]
+  },
+  "machine_bootstrap": {
+    "label": "Machine Bootstrap",
+    "summary": "World Engine machine upgrades and the first machine-backed recipes are available or approaching.",
+    "focusItems": [
+      "ftb:world_engine_machine_block",
+      "mekanism:metallurgic_infuser",
+      "custommachinery:custom_machine_item[custommachinery:machine=\"ftb:circuit_fabricator\"]"
+    ],
+    "targetBands": {
+      "ftb:world_engine_machine_block": { "min": 1, "max": 16 }
+    },
+    "nextStageHint": "automation_midgame",
+    "routeIds": [
+      "world_engine__ftb_world_engine_machine_frame",
+      "world_engine__ftb_world_engine_ftb_circuit_fabricator"
+    ],
+    "evidence": [
+      {
+        "path": "C:/Users/suret/curseforge/minecraft/Instances/FTB StoneBlock 4/kubejs/server_scripts/recipes/mods/ftb/custom_machinery/world_engine.js",
+        "label": "world_engine.js"
+      }
+    ]
+  },
+  "automation_midgame": {
+    "label": "Automation Midgame",
+    "summary": "Machine-block and advanced World Engine upgrades open midgame automation chains.",
+    "focusItems": [
+      "ftb:world_engine_advanced_machine_block",
+      "mekanismgenerators:gas_burning_generator",
+      "create:item_vault"
+    ],
+    "targetBands": {
+      "ftb:world_engine_advanced_machine_block": { "min": 1, "max": 8 }
+    },
+    "nextStageHint": null,
+    "routeIds": [
+      "world_engine__ftb_world_engine_machine_frame",
+      "world_engine__ftb_world_engine_mekanism_gas_burning_generator"
+    ],
+    "evidence": [
+      {
+        "path": "C:/Users/suret/curseforge/minecraft/Instances/FTB StoneBlock 4/kubejs/server_scripts/recipes/mods/ftb/custom_machinery/world_engine.js",
+        "label": "world_engine.js"
+      }
+    ]
+  }
+}

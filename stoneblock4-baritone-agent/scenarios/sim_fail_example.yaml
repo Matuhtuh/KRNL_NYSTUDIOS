@@ -1,0 +1,2 @@
+fail_on_commands:
+  - "mine minecraft:stone 4096"

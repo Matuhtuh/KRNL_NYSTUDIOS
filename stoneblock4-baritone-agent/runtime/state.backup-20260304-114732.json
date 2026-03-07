@@ -1,0 +1,18 @@
+{
+  "completed_flags": [
+    "baritone_defaults_hardened",
+    "calibration_ok",
+    "starter_tunnel_complete"
+  ],
+  "completed_goals": [
+    "calibrate_bot",
+    "harden_baritone_defaults",
+    "starter_tunnel"
+  ],
+  "current_goal_id": null,
+  "goal_retries": {
+    "quest_1f9d3474c8a655a9": 4
+  },
+  "safe_paused": true,
+  "last_error": "goal=quest_1f9d3474c8a655a9 retry=4 error=Baritone did not reach idle successfully"
+}

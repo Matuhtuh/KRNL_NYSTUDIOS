@@ -1,0 +1,180 @@
+modpack_intelligence:
+  pack: "FTB StoneBlock 4"
+  canonical_early_acquisition_routes:
+    minecraft:gravel:
+      primary: "ftbstuff.hammer #c:cobblestones -> minecraft:gravel (1:1)"
+      fallback: "ftbstuff.hammer minecraft:stone -> minecraft:cobblestone -> minecraft:gravel"
+      source: "kubejs/server_scripts/recipes/mods/ftb/hammer.js"
+    minecraft:dirt:
+      primary: "ftbstuff.hammer #c:gravels -> minecraft:dirt (1:1)"
+      source: "kubejs/server_scripts/recipes/mods/ftb/hammer.js"
+    minecraft:sand:
+      primary: "ftbstuff.hammer #minecraft:dirt -> minecraft:sand (1:1)"
+      fallback: "ftbstuff.hammer #c:sandstone/uncolored_blocks -> minecraft:sand (4:1)"
+      source: "kubejs/server_scripts/recipes/mods/ftb/hammer.js"
+    ftbstuff:dust:
+      primary: "ftbstuff.hammer minecraft:sand -> ftbstuff:dust (1:1)"
+      fallback: "ftbstuff.hammer minecraft:red_sand -> ftbstuff:dust (1:1)"
+      source: "kubejs/server_scripts/recipes/mods/ftb/hammer.js"
+  inventory_target_bands:
+    minecraft:gravel:
+      min: 16
+      max: 96
+    minecraft:dirt:
+      min: 16
+      max: 96
+    minecraft:sand:
+      min: 24
+      max: 128
+    ftbstuff:dust:
+      min: 24
+      max: 128
+  dangerous_action_denylist_stub:
+    mode: "warn_only"
+    enabled: false
+    intent: "Stub for future safety gating in enclosed StoneBlock 4 bases."
+    alignment_with_runtime_safety:
+      min_health: 14
+      min_food_level: 12
+      pause_on_fire: true
+      pause_in_lava: true
+      avoid_players_while_mining: true
+    deny_baritone_command_prefixes:
+      - "cleararea "
+      - "sel "
+      - "explore "
+    deny_world_placement_item_ids:
+      - "minecraft:lava_bucket"
+      - "minecraft:tnt"
+    protect_from_drop_item_ids:
+      - "ftbstuff:stone_hammer"
+      - "ftbstuff:stone_crook"
+      - "minecraft:crafting_table"
+
+goals:
+  - id: calibrate_bot
+    priority: 100
+    description: "Verify the bot can send baritone commands and detect completion text."
+    prerequisites: []
+    completion_flags:
+      - "calibration_ok"
+    tasks:
+      - type: baritone_command
+        command: "help"
+      - type: wait_chat_phrase
+        contains_any:
+          - "Baritone"
+          - "help"
+      - type: set_flag
+        flag: "calibration_ok"
+
+  - id: starter_tunnel
+    priority: 90
+    description: "Generate starter resources in StoneBlock through controlled tunnel mining."
+    prerequisites:
+      - "calibration_ok"
+    completion_flags:
+      - "starter_tunnel_complete"
+    tasks:
+      - type: build_tunnel
+        width: 3
+        height: 2
+        length: 24
+        segment_length: 24
+        verify_item_ids:
+          - "minecraft:cobblestone"
+          - "minecraft:cobbled_deepslate"
+      - type: set_flag
+        flag: "starter_tunnel_complete"
+
+  - id: harden_baritone_defaults
+    priority: 85
+    description: "Apply robust Baritone defaults for mining/build progression."
+    prerequisites:
+      - "starter_tunnel_complete"
+    completion_flags:
+      - "baritone_defaults_hardened"
+    tasks:
+      - type: ensure_baritone_settings
+        commands:
+          - "set allowBreak true"
+          - "set allowPlace true"
+          - "set avoidBreakingMultiplier 1.0"
+          - "set freeLook true"
+      - type: set_flag
+        flag: "baritone_defaults_hardened"
+
+  - id: cobble_stock
+    priority: 80
+    description: "Stockpile stone/cobble drops for early progression."
+    prerequisites:
+      - "baritone_defaults_hardened"
+    completion_flags:
+      - "cobble_stock_complete"
+    tasks:
+      - type: build_tunnel
+        width: 2
+        height: 2
+        length: 48
+        segment_length: 24
+        verify_item_ids:
+          - "minecraft:cobblestone"
+          - "minecraft:cobbled_deepslate"
+          - "minecraft:stone"
+      - type: set_flag
+        flag: "cobble_stock_complete"
+
+  - id: expansion_quarry
+    priority: 70
+    description: "Open base area by mining a larger quarry pattern."
+    prerequisites:
+      - "cobble_stock_complete"
+    completion_flags:
+      - "expansion_quarry_complete"
+    tasks:
+      - type: build_tunnel
+        width: 3
+        height: 3
+        length: 96
+        segment_length: 24
+        verify_item_ids:
+          - "minecraft:cobblestone"
+          - "minecraft:cobbled_deepslate"
+          - "minecraft:stone"
+      - type: set_flag
+        flag: "expansion_quarry_complete"
+
+  - id: stoneblock_resource_chain_model
+    priority: 60
+    description: "Model StoneBlock chain: hammer stone/cobble -> gravel -> dirt -> sand -> dust -> brush/sieve outputs."
+    prerequisites:
+      - "cobble_stock_complete"
+    completion_flags:
+      - "stoneblock_chain_modeled"
+    tasks:
+      - type: note
+        text: "Progression reference: mine stone/cobble, then hammer through gravel -> dirt -> sand -> dust before brush/sieve processing."
+      - type: note
+        text: "Use craft_item tasks for hammers/brushes and machine branch once recipes are validated on this server."
+      - type: set_flag
+        flag: "stoneblock_chain_modeled"
+
+  - id: manual_modpack_branch
+    priority: 10
+    description: "Transition point for pack-specific machine/farm macros."
+    prerequisites:
+      - "expansion_quarry_complete"
+      - "stoneblock_chain_modeled"
+    completion_flags:
+      - "manual_branch_reached"
+    tasks:
+      - type: run_module
+        name: "stoneblock_hammer_brush_loop"
+        params:
+          cycles: 2
+      - type: run_module
+        name: "basic_machine_bootstrap"
+      - type: run_module
+        name: "basic_farm_bootstrap"
+      - type: set_flag
+        flag: "manual_branch_reached"

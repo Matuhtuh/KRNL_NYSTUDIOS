@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>StoneBlock 4 Companion</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <section class="pane preview-pane">
+        <div class="pane-header">
+          <h1>Live Game</h1>
+          <span id="preview-badge" class="badge">Waiting</span>
+        </div>
+        <div class="preview-frame">
+          <img id="preview-image" alt="Minecraft preview" />
+          <div id="preview-overlay" class="overlay">Preview unavailable</div>
+        </div>
+        <p id="preview-detail" class="subtle preview-detail">Waiting for preview frames.</p>
+        <p class="subtle">Read-only preview. No click-through control in this pass.</p>
+      </section>
+
+      <section class="pane status-pane">
+        <div class="pane-header">
+          <h2>Runtime State</h2>
+          <span id="status-badge" class="badge">Unknown</span>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Stage</h3>
+            <div id="stage-label" class="value">-</div>
+            <p id="stage-summary" class="subtle">-</p>
+          </article>
+          <article class="card">
+            <h3>Current Action</h3>
+            <div id="action-text" class="value">-</div>
+            <p id="action-detail" class="subtle">-</p>
+          </article>
+          <article class="card">
+            <h3>Bridge</h3>
+            <div id="bridge-summary" class="value">-</div>
+            <p id="bridge-detail" class="subtle">-</p>
+          </article>
+          <article class="card">
+            <h3>Inventory</h3>
+            <div id="inventory-summary" class="value">-</div>
+            <ul id="inventory-list" class="compact-list"></ul>
+          </article>
+          <article class="card full">
+            <h3>Operator Loop</h3>
+            <div id="operator-current" class="value">-</div>
+            <p id="operator-next" class="subtle">-</p>
+            <p id="operator-deferred" class="subtle">-</p>
+          </article>
+          <article class="card full">
+            <h3>Last Error</h3>
+            <div id="last-error" class="error-text">-</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="pane chat-pane">
+        <div class="pane-header">
+          <h2>AI Chat</h2>
+          <span id="chat-badge" class="badge">Disconnected</span>
+        </div>
+        <div id="chat-log" class="chat-log"></div>
+        <div id="confirm-panel" class="confirm-panel hidden">
+          <div id="confirm-text"></div>
+          <button id="confirm-button" type="button">Confirm</button>
+        </div>
+        <form id="chat-form" class="chat-form">
+          <textarea id="chat-input" rows="4" placeholder="Ask about current stage, routes, or what the controller is doing."></textarea>
+          <button id="send-button" type="submit">Send</button>
+        </form>
+      </section>
+    </div>
+
+    <template id="message-template">
+      <div class="message">
+        <div class="message-role"></div>
+        <div class="message-text"></div>
+      </div>
+    </template>
+
+    <script src="/static/app.js" defer></script>
+  </body>
+</html>

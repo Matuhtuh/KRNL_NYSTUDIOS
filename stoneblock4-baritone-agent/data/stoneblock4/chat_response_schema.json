@@ -1,0 +1,107 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "message_id",
+    "session_id",
+    "created_at",
+    "status",
+    "intent",
+    "text",
+    "citations",
+    "tool_calls",
+    "proposed_action",
+    "requires_confirmation",
+    "confirmation_token",
+    "snapshot",
+    "safety_notes",
+    "error"
+  ],
+  "properties": {
+    "message_id": { "type": "string" },
+    "session_id": { "type": "string" },
+    "created_at": { "type": "string" },
+    "status": { "type": "string", "enum": ["ok", "needs_confirmation", "error"] },
+    "intent": { "type": "string", "enum": ["answer", "propose_action", "action_result", "error"] },
+    "text": { "type": "string" },
+    "citations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["kind", "source", "label", "evidence"],
+        "properties": {
+          "kind": { "type": "string" },
+          "source": { "type": "string" },
+          "label": { "type": "string" },
+          "evidence": { "type": "string" }
+        }
+      }
+    },
+    "tool_calls": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "args", "status", "summary"],
+        "properties": {
+          "name": { "type": "string" },
+          "args": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {}
+          },
+          "status": { "type": "string" },
+          "summary": { "type": "string" }
+        }
+      }
+    },
+    "proposed_action": {
+      "anyOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["tool", "args", "display"],
+          "properties": {
+            "tool": { "type": "string" },
+            "args": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {}
+            },
+            "display": { "type": "string" }
+          }
+        }
+      ]
+    },
+    "requires_confirmation": { "type": "boolean" },
+    "confirmation_token": {
+      "anyOf": [
+        { "type": "null" },
+        { "type": "string" }
+      ]
+    },
+    "snapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["phase", "stage_hint", "current_task", "inventory_free_slots"],
+      "properties": {
+        "phase": { "type": "string" },
+        "stage_hint": { "type": "string" },
+        "current_task": { "type": "string" },
+        "inventory_free_slots": { "type": "integer" }
+      }
+    },
+    "safety_notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "error": {
+      "anyOf": [
+        { "type": "null" },
+        { "type": "string" }
+      ]
+    }
+  }
+}

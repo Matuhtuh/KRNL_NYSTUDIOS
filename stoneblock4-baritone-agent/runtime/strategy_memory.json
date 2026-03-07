@@ -1,0 +1,2996 @@
+{
+  "items": {
+    "minecraft:gravel": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 263,
+          "successes": 44,
+          "total_duration_seconds": 206.82231759987212,
+          "last_error": "",
+          "last_success_at": "2026-03-07T18:30:44.872682+00:00",
+          "last_failure_at": "2026-03-07T00:22:16.447072+00:00"
+        },
+        "direct_craft": {
+          "attempts": 217,
+          "successes": 0,
+          "total_duration_seconds": 107.24843479989158,
+          "last_error": "craft failed for minecraft:gravel x4: bridge.craft_item minecraft:gravel 4: bridge rejected command: missing required ingredients; bridge.craft_item minecraft:gravel: bridge rejected command: missing required ingredients; craft minecraft:gravel: bridge rejected command: ; craft gravel: bridge rejected command: ",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-07T00:22:16.916260+00:00"
+        },
+        "gather": {
+          "attempts": 272,
+          "successes": 30,
+          "total_duration_seconds": 2079.730771799886,
+          "last_error": "known local StoneBlock hammer route unavailable for minecraft:gravel; refusing generic gather fallback",
+          "last_success_at": "2026-03-07T08:09:05.908408+00:00",
+          "last_failure_at": "2026-03-07T18:30:43.864612+00:00"
+        }
+      }
+    },
+    "minecraft:sand": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 169,
+          "successes": 74,
+          "total_duration_seconds": 161.28694040009998,
+          "last_error": "",
+          "last_success_at": "2026-03-07T18:30:45.890180+00:00",
+          "last_failure_at": "2026-03-07T09:09:07.203590+00:00"
+        },
+        "direct_craft": {
+          "attempts": 94,
+          "successes": 0,
+          "total_duration_seconds": 61.17266819999804,
+          "last_error": "craft failed for minecraft:sand x11: bridge.craft_item minecraft:sand 11: bridge rejected command: missing required ingredients; bridge.craft_item minecraft:sand: bridge rejected command: missing required ingredients; craft minecraft:sand: bridge rejected command: ; craft sand: bridge rejected command: ",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-07T09:09:07.675209+00:00"
+        },
+        "gather": {
+          "attempts": 91,
+          "successes": 1,
+          "total_duration_seconds": 1758.4318142000216,
+          "last_error": "known local StoneBlock hammer route unavailable for minecraft:sand; refusing generic gather fallback",
+          "last_success_at": "2026-03-05T07:43:23.144700+00:00",
+          "last_failure_at": "2026-03-07T09:09:07.213803+00:00"
+        }
+      }
+    },
+    "minecraft:dirt": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 195,
+          "successes": 109,
+          "total_duration_seconds": 173.50049139992404,
+          "last_error": "",
+          "last_success_at": "2026-03-07T18:30:51.964977+00:00",
+          "last_failure_at": "2026-03-07T09:09:03.304862+00:00"
+        },
+        "direct_craft": {
+          "attempts": 82,
+          "successes": 0,
+          "total_duration_seconds": 38.11827549994723,
+          "last_error": "craft failed for minecraft:dirt x12: bridge.craft_item minecraft:dirt 12: bridge rejected command: missing required ingredients; bridge.craft_item minecraft:dirt: bridge rejected command: missing required ingredients; craft minecraft:dirt: bridge rejected command: ; craft dirt: bridge rejected command: ",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-07T09:09:06.732191+00:00"
+        },
+        "gather": {
+          "attempts": 82,
+          "successes": 1,
+          "total_duration_seconds": 1696.827828399947,
+          "last_error": "known local StoneBlock hammer route unavailable for minecraft:dirt; refusing generic gather fallback",
+          "last_success_at": "2026-03-05T07:43:34.529816+00:00",
+          "last_failure_at": "2026-03-07T09:09:06.261964+00:00"
+        }
+      }
+    },
+    "minecraft:crafting_table": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 35,
+          "successes": 35,
+          "total_duration_seconds": 35.01958959997933,
+          "last_error": "",
+          "last_success_at": "2026-03-07T18:30:47.919627+00:00",
+          "last_failure_at": ""
+        },
+        "direct_craft": {
+          "attempts": 1,
+          "successes": 1,
+          "total_duration_seconds": 1.0004518000000644,
+          "last_error": "",
+          "last_success_at": "2026-03-07T00:16:03.060823+00:00",
+          "last_failure_at": ""
+        },
+        "gather": {
+          "attempts": 1,
+          "successes": 1,
+          "total_duration_seconds": 1.0005688999990525,
+          "last_error": "",
+          "last_success_at": "2026-03-07T06:10:34.987281+00:00",
+          "last_failure_at": ""
+        }
+      }
+    },
+    "minecraft:furnace": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 40,
+          "successes": 37,
+          "total_duration_seconds": 37.80185740001173,
+          "last_error": "",
+          "last_success_at": "2026-03-07T18:30:48.931446+00:00",
+          "last_failure_at": "2026-03-05T08:45:08.309078+00:00"
+        },
+        "direct_craft": {
+          "attempts": 2,
+          "successes": 0,
+          "total_duration_seconds": 0.437067200007732,
+          "last_error": "craft failed for minecraft:furnace x1: bridge.craft_item minecraft:furnace 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item minecraft:furnace: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:37:51.480077+00:00"
+        },
+        "gather": {
+          "attempts": 3,
+          "successes": 1,
+          "total_duration_seconds": 0.5535442999971565,
+          "last_error": "",
+          "last_success_at": "2026-03-05T08:45:08.431094+00:00",
+          "last_failure_at": "2026-03-05T08:37:51.255223+00:00"
+        }
+      }
+    },
+    "mekanism:metallurgic_infuser": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 46,
+          "successes": 37,
+          "total_duration_seconds": 38.98605690004001,
+          "last_error": "",
+          "last_success_at": "2026-03-07T18:30:49.940706+00:00",
+          "last_failure_at": "2026-03-05T08:28:18.206700+00:00"
+        },
+        "direct_craft": {
+          "attempts": 9,
+          "successes": 0,
+          "total_duration_seconds": 1.9732590000348864,
+          "last_error": "craft failed for mekanism:metallurgic_infuser x1: bridge.craft_item mekanism:metallurgic_infuser 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item mekanism:metallurgic_infuser: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:28:18.435852+00:00"
+        },
+        "gather": {
+          "attempts": 9,
+          "successes": 0,
+          "total_duration_seconds": 1.9741520000243327,
+          "last_error": "craft failed for mekanism:metallurgic_infuser x1: bridge.craft_item mekanism:metallurgic_infuser 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item mekanism:metallurgic_infuser: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:28:18.663591+00:00"
+        }
+      }
+    },
+    "oritech:machine_frame": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 38,
+          "successes": 37,
+          "total_duration_seconds": 37.234247799936725,
+          "last_error": "",
+          "last_success_at": "2026-03-07T18:30:50.952962+00:00",
+          "last_failure_at": "2026-03-05T08:28:18.891214+00:00"
+        },
+        "direct_craft": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.2185161999950651,
+          "last_error": "craft failed for oritech:machine_frame x1: bridge.craft_item oritech:machine_frame 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item oritech:machine_frame: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:28:19.118605+00:00"
+        },
+        "gather": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21763800000189804,
+          "last_error": "craft failed for oritech:machine_frame x1: bridge.craft_item oritech:machine_frame 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item oritech:machine_frame: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:28:19.339059+00:00"
+        }
+      }
+    },
+    "minecraft:wheat_seeds": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 36,
+          "successes": 35,
+          "total_duration_seconds": 35.23443989995803,
+          "last_error": "",
+          "last_success_at": "2026-03-07T18:30:52.972200+00:00",
+          "last_failure_at": "2026-03-05T08:31:07.834613+00:00"
+        },
+        "direct_craft": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21848989999853075,
+          "last_error": "craft failed for minecraft:wheat_seeds x8: bridge.craft_item minecraft:wheat_seeds 8: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item minecraft:wheat_seeds: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:31:08.062022+00:00"
+        },
+        "gather": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.2187234000011813,
+          "last_error": "craft failed for minecraft:wheat_seeds x8: bridge.craft_item minecraft:wheat_seeds 8: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item minecraft:wheat_seeds: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:31:08.289217+00:00"
+        }
+      }
+    },
+    "minecraft:cobblestone": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 0,
+          "successes": 0,
+          "total_duration_seconds": 0.0,
+          "last_error": "",
+          "last_success_at": "",
+          "last_failure_at": ""
+        },
+        "direct_craft": {
+          "attempts": 0,
+          "successes": 0,
+          "total_duration_seconds": 0.0,
+          "last_error": "",
+          "last_success_at": "",
+          "last_failure_at": ""
+        },
+        "gather": {
+          "attempts": 0,
+          "successes": 0,
+          "total_duration_seconds": 0.0,
+          "last_error": "",
+          "last_success_at": "",
+          "last_failure_at": ""
+        }
+      }
+    },
+    "ars_elemental:mark_of_mastery": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 31,
+          "successes": 0,
+          "total_duration_seconds": 12.399554099974921,
+          "last_error": "craft failed for ars_elemental:mark_of_mastery x1: bridge.craft_item ars_elemental:mark_of_mastery 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ars_elemental:mark_of_mastery: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:00:47.015096+00:00"
+        },
+        "direct_craft": {
+          "attempts": 32,
+          "successes": 0,
+          "total_duration_seconds": 6.944590799961588,
+          "last_error": "craft failed for ars_elemental:mark_of_mastery x1: bridge.craft_item ars_elemental:mark_of_mastery 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ars_elemental:mark_of_mastery: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:00:46.787105+00:00"
+        },
+        "gather": {
+          "attempts": 31,
+          "successes": 0,
+          "total_duration_seconds": 6.771648399982951,
+          "last_error": "craft failed for ars_elemental:mark_of_mastery x1: bridge.craft_item ars_elemental:mark_of_mastery 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ars_elemental:mark_of_mastery: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:00:46.568051+00:00"
+        }
+      }
+    },
+    "ars_nouveau:wilden_tribute": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 12,
+          "successes": 0,
+          "total_duration_seconds": 2.6296988999965834,
+          "last_error": "craft failed for ars_nouveau:wilden_tribute x1: bridge.craft_item ars_nouveau:wilden_tribute 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ars_nouveau:wilden_tribute: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:01:23.475720+00:00"
+        },
+        "direct_craft": {
+          "attempts": 12,
+          "successes": 0,
+          "total_duration_seconds": 2.627966300016851,
+          "last_error": "craft failed for ars_nouveau:wilden_tribute x1: bridge.craft_item ars_nouveau:wilden_tribute 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ars_nouveau:wilden_tribute: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:01:23.254017+00:00"
+        },
+        "gather": {
+          "attempts": 12,
+          "successes": 0,
+          "total_duration_seconds": 2.6220287999749416,
+          "last_error": "craft failed for ars_nouveau:wilden_tribute x1: bridge.craft_item ars_nouveau:wilden_tribute 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ars_nouveau:wilden_tribute: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:01:23.032677+00:00"
+        }
+      }
+    },
+    "cataclysm:ignitium_block": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 2,
+          "successes": 0,
+          "total_duration_seconds": 0.43754089999129064,
+          "last_error": "craft failed for cataclysm:ignitium_block x1: bridge.craft_item cataclysm:ignitium_block 1: bridge rejected command: missing required ingredients; bridge.craft_item cataclysm:ignitium_block: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:01:26.276480+00:00"
+        },
+        "direct_craft": {
+          "attempts": 2,
+          "successes": 0,
+          "total_duration_seconds": 0.4376123000110965,
+          "last_error": "craft failed for cataclysm:ignitium_block x1: bridge.craft_item cataclysm:ignitium_block 1: bridge rejected command: missing required ingredients; bridge.craft_item cataclysm:ignitium_block: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:01:26.497569+00:00"
+        },
+        "gather": {
+          "attempts": 2,
+          "successes": 0,
+          "total_duration_seconds": 0.4388969999999972,
+          "last_error": "craft failed for cataclysm:ignitium_block x1: bridge.craft_item cataclysm:ignitium_block 1: bridge rejected command: missing required ingredients; bridge.craft_item cataclysm:ignitium_block: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:01:26.725541+00:00"
+        }
+      }
+    },
+    "minecraft:egg": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 13,
+          "successes": 0,
+          "total_duration_seconds": 3.072649299996556,
+          "last_error": "craft failed for minecraft:egg x1: bridge.craft_item minecraft:egg 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item minecraft:egg: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:07:26.212044+00:00"
+        },
+        "direct_craft": {
+          "attempts": 13,
+          "successes": 0,
+          "total_duration_seconds": 2.8158769000001485,
+          "last_error": "craft failed for minecraft:egg x1: bridge.craft_item minecraft:egg 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item minecraft:egg: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:07:25.768856+00:00"
+        },
+        "gather": {
+          "attempts": 13,
+          "successes": 0,
+          "total_duration_seconds": 2.8207259000337217,
+          "last_error": "craft failed for minecraft:egg x1: bridge.craft_item minecraft:egg 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item minecraft:egg: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:07:25.988343+00:00"
+        }
+      }
+    },
+    "ftb:stone_pebble": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8645579000149155,
+          "last_error": "craft failed for ftb:stone_pebble x1: bridge.craft_item ftb:stone_pebble 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftb:stone_pebble: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:07:37.676985+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8676349999877857,
+          "last_error": "craft failed for ftb:stone_pebble x1: bridge.craft_item ftb:stone_pebble 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftb:stone_pebble: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:07:37.901517+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8806741000153124,
+          "last_error": "craft failed for ftb:stone_pebble x1: bridge.craft_item ftb:stone_pebble 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftb:stone_pebble: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:07:38.131254+00:00"
+        }
+      }
+    },
+    "minecraft:rotten_flesh": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 12,
+          "successes": 0,
+          "total_duration_seconds": 2.609895100031281,
+          "last_error": "craft failed for minecraft:rotten_flesh x1: bridge.craft_item minecraft:rotten_flesh 1: bridge rejected command: missing required ingredients; bridge.craft_item minecraft:rotten_flesh: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:08:14.130265+00:00"
+        },
+        "direct_craft": {
+          "attempts": 12,
+          "successes": 0,
+          "total_duration_seconds": 2.597417000011774,
+          "last_error": "craft failed for minecraft:rotten_flesh x1: bridge.craft_item minecraft:rotten_flesh 1: bridge rejected command: missing required ingredients; bridge.craft_item minecraft:rotten_flesh: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:08:13.911836+00:00"
+        },
+        "gather": {
+          "attempts": 12,
+          "successes": 0,
+          "total_duration_seconds": 2.6168482000066433,
+          "last_error": "craft failed for minecraft:rotten_flesh x1: bridge.craft_item minecraft:rotten_flesh 1: bridge rejected command: missing required ingredients; bridge.craft_item minecraft:rotten_flesh: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:08:14.355153+00:00"
+        }
+      }
+    },
+    "ftbunearthed:worker_token": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8645756000041729,
+          "last_error": "craft failed for ftbunearthed:worker_token x1: bridge.craft_item ftbunearthed:worker_token 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftbunearthed:worker_token: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:08:26.364579+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8661687999992864,
+          "last_error": "craft failed for ftbunearthed:worker_token x1: bridge.craft_item ftbunearthed:worker_token 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftbunearthed:worker_token: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:08:26.588882+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8669159000128275,
+          "last_error": "craft failed for ftbunearthed:worker_token x1: bridge.craft_item ftbunearthed:worker_token 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftbunearthed:worker_token: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:08:26.807585+00:00"
+        }
+      }
+    },
+    "ae2:flawless_budding_quartz": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8631776000111131,
+          "last_error": "craft failed for ae2:flawless_budding_quartz x1: bridge.craft_item ae2:flawless_budding_quartz 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ae2:flawless_budding_quartz: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:08:38.545168+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8665356000128668,
+          "last_error": "craft failed for ae2:flawless_budding_quartz x1: bridge.craft_item ae2:flawless_budding_quartz 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ae2:flawless_budding_quartz: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:08:38.763982+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8679622000054223,
+          "last_error": "craft failed for ae2:flawless_budding_quartz x1: bridge.craft_item ae2:flawless_budding_quartz 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ae2:flawless_budding_quartz: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:08:38.988232+00:00"
+        }
+      }
+    },
+    "sophisticatedbackpacks:backpack": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8667723999824375,
+          "last_error": "craft failed for sophisticatedbackpacks:backpack x1: bridge.craft_item sophisticatedbackpacks:backpack 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item sophisticatedbackpacks:backpack: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:08:51.115502+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8703869000164559,
+          "last_error": "craft failed for sophisticatedbackpacks:backpack x1: bridge.craft_item sophisticatedbackpacks:backpack 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item sophisticatedbackpacks:backpack: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:08:51.567920+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8695071999827633,
+          "last_error": "craft failed for sophisticatedbackpacks:backpack x1: bridge.craft_item sophisticatedbackpacks:backpack 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item sophisticatedbackpacks:backpack: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:08:51.341649+00:00"
+        }
+      }
+    },
+    "sophisticatedstorage:basic_to_copper_tier_upgrade": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8702064999961294,
+          "last_error": "craft failed for sophisticatedstorage:basic_to_copper_tier_upgrade x1: bridge.craft_item sophisticatedstorage:basic_to_copper_tier_upgrade 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item sophisticatedstorage:basic_to_copper_tier_upgrade: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:09:03.708421+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8689685999852372,
+          "last_error": "craft failed for sophisticatedstorage:basic_to_copper_tier_upgrade x1: bridge.craft_item sophisticatedstorage:basic_to_copper_tier_upgrade 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item sophisticatedstorage:basic_to_copper_tier_upgrade: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:09:03.489785+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8859248999797273,
+          "last_error": "craft failed for sophisticatedstorage:basic_to_copper_tier_upgrade x1: bridge.craft_item sophisticatedstorage:basic_to_copper_tier_upgrade 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item sophisticatedstorage:basic_to_copper_tier_upgrade: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:09:03.927635+00:00"
+        }
+      }
+    },
+    "ftbfiltersystem:smart_filter": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 52,
+          "successes": 0,
+          "total_duration_seconds": 11.360530199919594,
+          "last_error": "craft failed for ftbfiltersystem:smart_filter x1: bridge.craft_item ftbfiltersystem:smart_filter 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftbfiltersystem:smart_filter: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:24:42.395500+00:00"
+        },
+        "direct_craft": {
+          "attempts": 52,
+          "successes": 0,
+          "total_duration_seconds": 11.395988099946408,
+          "last_error": "craft failed for ftbfiltersystem:smart_filter x1: bridge.craft_item ftbfiltersystem:smart_filter 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftbfiltersystem:smart_filter: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:24:42.624310+00:00"
+        },
+        "gather": {
+          "attempts": 52,
+          "successes": 0,
+          "total_duration_seconds": 11.428023300002678,
+          "last_error": "craft failed for ftbfiltersystem:smart_filter x1: bridge.craft_item ftbfiltersystem:smart_filter 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftbfiltersystem:smart_filter: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:24:42.846946+00:00"
+        }
+      }
+    },
+    "oritech:reactor_controller": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8744567999965511,
+          "last_error": "craft failed for oritech:reactor_controller x1: bridge.craft_item oritech:reactor_controller 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item oritech:reactor_controller: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:10:05.340861+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8734135000122478,
+          "last_error": "craft failed for oritech:reactor_controller x1: bridge.craft_item oritech:reactor_controller 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item oritech:reactor_controller: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:10:05.113838+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8792628000082914,
+          "last_error": "craft failed for oritech:reactor_controller x1: bridge.craft_item oritech:reactor_controller 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item oritech:reactor_controller: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:10:05.562323+00:00"
+        }
+      }
+    },
+    "industrialforegoing:mycelial_slimey": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8742651000065962,
+          "last_error": "craft failed for industrialforegoing:mycelial_slimey x1: bridge.craft_item industrialforegoing:mycelial_slimey 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_slimey: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:10:29.823050+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8764251000102377,
+          "last_error": "craft failed for industrialforegoing:mycelial_slimey x1: bridge.craft_item industrialforegoing:mycelial_slimey 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_slimey: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:10:30.276490+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.874125999995158,
+          "last_error": "craft failed for industrialforegoing:mycelial_slimey x1: bridge.craft_item industrialforegoing:mycelial_slimey 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_slimey: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:10:30.049697+00:00"
+        }
+      }
+    },
+    "industrialforegoing:mycelial_potion": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8735928000096465,
+          "last_error": "craft failed for industrialforegoing:mycelial_potion x1: bridge.craft_item industrialforegoing:mycelial_potion 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_potion: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:10:42.519447+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8744933000125457,
+          "last_error": "craft failed for industrialforegoing:mycelial_potion x1: bridge.craft_item industrialforegoing:mycelial_potion 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_potion: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:10:42.740362+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8763081999932183,
+          "last_error": "craft failed for industrialforegoing:mycelial_potion x1: bridge.craft_item industrialforegoing:mycelial_potion 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_potion: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:10:42.961818+00:00"
+        }
+      }
+    },
+    "industrialforegoing:mycelial_disenchantment": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8759774999925867,
+          "last_error": "craft failed for industrialforegoing:mycelial_disenchantment x1: bridge.craft_item industrialforegoing:mycelial_disenchantment 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_disenchantment: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:10:55.308953+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8735259000095539,
+          "last_error": "craft failed for industrialforegoing:mycelial_disenchantment x1: bridge.craft_item industrialforegoing:mycelial_disenchantment 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_disenchantment: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:10:55.087467+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8759403999865754,
+          "last_error": "craft failed for industrialforegoing:mycelial_disenchantment x1: bridge.craft_item industrialforegoing:mycelial_disenchantment 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_disenchantment: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:10:54.867721+00:00"
+        }
+      }
+    },
+    "industrialforegoing:mycelial_rocket": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 6,
+          "successes": 0,
+          "total_duration_seconds": 1.312059700008831,
+          "last_error": "craft failed for industrialforegoing:mycelial_rocket x1: bridge.craft_item industrialforegoing:mycelial_rocket 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_rocket: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:11:13.270588+00:00"
+        },
+        "direct_craft": {
+          "attempts": 5,
+          "successes": 0,
+          "total_duration_seconds": 1.0965443999739364,
+          "last_error": "craft failed for industrialforegoing:mycelial_rocket x1: bridge.craft_item industrialforegoing:mycelial_rocket 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_rocket: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:11:13.043062+00:00"
+        },
+        "gather": {
+          "attempts": 6,
+          "successes": 0,
+          "total_duration_seconds": 1.3127716000308283,
+          "last_error": "craft failed for industrialforegoing:mycelial_rocket x1: bridge.craft_item industrialforegoing:mycelial_rocket 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_rocket: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:11:13.492324+00:00"
+        }
+      }
+    },
+    "industrialforegoing:mycelial_ender": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8768687999981921,
+          "last_error": "craft failed for industrialforegoing:mycelial_ender x1: bridge.craft_item industrialforegoing:mycelial_ender 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_ender: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:11:25.834037+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.874277399998391,
+          "last_error": "craft failed for industrialforegoing:mycelial_ender x1: bridge.craft_item industrialforegoing:mycelial_ender 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_ender: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:11:25.612555+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8793161999928998,
+          "last_error": "craft failed for industrialforegoing:mycelial_ender x1: bridge.craft_item industrialforegoing:mycelial_ender 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_ender: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:11:26.062631+00:00"
+        }
+      }
+    },
+    "industrialforegoing:mycelial_frosty": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8729231999896001,
+          "last_error": "craft failed for industrialforegoing:mycelial_frosty x1: bridge.craft_item industrialforegoing:mycelial_frosty 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_frosty: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:11:37.969484+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8760422999912407,
+          "last_error": "craft failed for industrialforegoing:mycelial_frosty x1: bridge.craft_item industrialforegoing:mycelial_frosty 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_frosty: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:11:38.418719+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.876288100000238,
+          "last_error": "craft failed for industrialforegoing:mycelial_frosty x1: bridge.craft_item industrialforegoing:mycelial_frosty 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_frosty: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:11:38.197313+00:00"
+        }
+      }
+    },
+    "industrialforegoing:mycelial_halitosis": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8768479999998817,
+          "last_error": "craft failed for industrialforegoing:mycelial_halitosis x1: bridge.craft_item industrialforegoing:mycelial_halitosis 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_halitosis: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:11:50.536673+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8725867000030121,
+          "last_error": "craft failed for industrialforegoing:mycelial_halitosis x1: bridge.craft_item industrialforegoing:mycelial_halitosis 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_halitosis: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:11:50.309470+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.877215000014985,
+          "last_error": "craft failed for industrialforegoing:mycelial_halitosis x1: bridge.craft_item industrialforegoing:mycelial_halitosis 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_halitosis: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:11:50.758436+00:00"
+        }
+      }
+    },
+    "industrialforegoing:mycelial_magma": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 5,
+          "successes": 0,
+          "total_duration_seconds": 1.1131683999992674,
+          "last_error": "craft failed for industrialforegoing:mycelial_magma x1: bridge.craft_item industrialforegoing:mycelial_magma 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_magma: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:12:05.070454+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8725008000183152,
+          "last_error": "craft failed for industrialforegoing:mycelial_magma x1: bridge.craft_item industrialforegoing:mycelial_magma 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_magma: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:12:04.623139+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8793711999896914,
+          "last_error": "craft failed for industrialforegoing:mycelial_magma x1: bridge.craft_item industrialforegoing:mycelial_magma 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_magma: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:12:04.843878+00:00"
+        }
+      }
+    },
+    "industrialforegoing:mycelial_pink": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8732395000115503,
+          "last_error": "craft failed for industrialforegoing:mycelial_pink x1: bridge.craft_item industrialforegoing:mycelial_pink 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_pink: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:12:17.022732+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8757018000032986,
+          "last_error": "craft failed for industrialforegoing:mycelial_pink x1: bridge.craft_item industrialforegoing:mycelial_pink 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_pink: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:12:17.243286+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8882059000170557,
+          "last_error": "craft failed for industrialforegoing:mycelial_pink x1: bridge.craft_item industrialforegoing:mycelial_pink 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_pink: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:12:17.469548+00:00"
+        }
+      }
+    },
+    "industrialforegoing:mycelial_netherstar": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8757923000230221,
+          "last_error": "craft failed for industrialforegoing:mycelial_netherstar x1: bridge.craft_item industrialforegoing:mycelial_netherstar 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_netherstar: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:12:29.693307+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8735920999897644,
+          "last_error": "craft failed for industrialforegoing:mycelial_netherstar x1: bridge.craft_item industrialforegoing:mycelial_netherstar 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_netherstar: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:12:29.237866+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.875705399987055,
+          "last_error": "craft failed for industrialforegoing:mycelial_netherstar x1: bridge.craft_item industrialforegoing:mycelial_netherstar 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_netherstar: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:12:29.465792+00:00"
+        }
+      }
+    },
+    "industrialforegoing:mycelial_death": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8754374999844003,
+          "last_error": "craft failed for industrialforegoing:mycelial_death x1: bridge.craft_item industrialforegoing:mycelial_death 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_death: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:12:41.942581+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8740270000125747,
+          "last_error": "craft failed for industrialforegoing:mycelial_death x1: bridge.craft_item industrialforegoing:mycelial_death 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_death: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:12:41.715264+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8778050000109943,
+          "last_error": "craft failed for industrialforegoing:mycelial_death x1: bridge.craft_item industrialforegoing:mycelial_death 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_death: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:12:42.170112+00:00"
+        }
+      }
+    },
+    "mekanismgenerators:heat_generator": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8046803000179352,
+          "last_error": "craft failed for mekanismgenerators:heat_generator x1: bridge.craft_item mekanismgenerators:heat_generator 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item mekanismgenerators:heat_generator: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:12:53.955862+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8776871999871219,
+          "last_error": "craft failed for mekanismgenerators:heat_generator x1: bridge.craft_item mekanismgenerators:heat_generator 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item mekanismgenerators:heat_generator: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:12:54.406241+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8771533999970416,
+          "last_error": "craft failed for mekanismgenerators:heat_generator x1: bridge.craft_item mekanismgenerators:heat_generator 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item mekanismgenerators:heat_generator: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:12:54.177956+00:00"
+        }
+      }
+    },
+    "industrialforegoing:mycelial_meatallurgic": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.9274142999929609,
+          "last_error": "craft failed for industrialforegoing:mycelial_meatallurgic x1: bridge.craft_item industrialforegoing:mycelial_meatallurgic 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_meatallurgic: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:13:06.558908+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8736417999898549,
+          "last_error": "craft failed for industrialforegoing:mycelial_meatallurgic x1: bridge.craft_item industrialforegoing:mycelial_meatallurgic 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_meatallurgic: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:13:06.287223+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8946772000053898,
+          "last_error": "craft failed for industrialforegoing:mycelial_meatallurgic x1: bridge.craft_item industrialforegoing:mycelial_meatallurgic 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_meatallurgic: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:13:06.780615+00:00"
+        }
+      }
+    },
+    "industrialforegoing:mycelial_crimed": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8743915000086417,
+          "last_error": "craft failed for industrialforegoing:mycelial_crimed x1: bridge.craft_item industrialforegoing:mycelial_crimed 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_crimed: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:13:18.945853+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8755409000004875,
+          "last_error": "craft failed for industrialforegoing:mycelial_crimed x1: bridge.craft_item industrialforegoing:mycelial_crimed 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_crimed: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:13:19.172096+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.872499399993103,
+          "last_error": "craft failed for industrialforegoing:mycelial_crimed x1: bridge.craft_item industrialforegoing:mycelial_crimed 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_crimed: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:13:18.724807+00:00"
+        }
+      }
+    },
+    "rftoolspower:coalgenerator": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 5,
+          "successes": 0,
+          "total_duration_seconds": 1.0947962000209372,
+          "last_error": "craft failed for rftoolspower:coalgenerator x1: bridge.craft_item rftoolspower:coalgenerator 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item rftoolspower:coalgenerator: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:14:11.368204+00:00"
+        },
+        "direct_craft": {
+          "attempts": 5,
+          "successes": 0,
+          "total_duration_seconds": 1.0945573000062723,
+          "last_error": "craft failed for rftoolspower:coalgenerator x1: bridge.craft_item rftoolspower:coalgenerator 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item rftoolspower:coalgenerator: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:14:11.147171+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8773285000061151,
+          "last_error": "craft failed for rftoolspower:coalgenerator x1: bridge.craft_item rftoolspower:coalgenerator 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item rftoolspower:coalgenerator: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:14:10.919465+00:00"
+        }
+      }
+    },
+    "mekanismgenerators:gas_burning_generator": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8760753999958979,
+          "last_error": "craft failed for mekanismgenerators:gas_burning_generator x1: bridge.craft_item mekanismgenerators:gas_burning_generator 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item mekanismgenerators:gas_burning_generator: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:14:23.710201+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8765940000012051,
+          "last_error": "craft failed for mekanismgenerators:gas_burning_generator x1: bridge.craft_item mekanismgenerators:gas_burning_generator 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item mekanismgenerators:gas_burning_generator: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:14:23.931491+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8740949999919394,
+          "last_error": "craft failed for mekanismgenerators:gas_burning_generator x1: bridge.craft_item mekanismgenerators:gas_burning_generator 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item mekanismgenerators:gas_burning_generator: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:14:23.482640+00:00"
+        }
+      }
+    },
+    "fluxnetworks:flux_dust": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8851194999879226,
+          "last_error": "craft failed for fluxnetworks:flux_dust x1: bridge.craft_item fluxnetworks:flux_dust 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item fluxnetworks:flux_dust: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:14:36.196814+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.9037843000114663,
+          "last_error": "craft failed for fluxnetworks:flux_dust x1: bridge.craft_item fluxnetworks:flux_dust 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item fluxnetworks:flux_dust: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:14:36.417554+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8760451999987708,
+          "last_error": "craft failed for fluxnetworks:flux_dust x1: bridge.craft_item fluxnetworks:flux_dust 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item fluxnetworks:flux_dust: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:14:35.970433+00:00"
+        }
+      }
+    },
+    "minecraft:wheat": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 12,
+          "successes": 0,
+          "total_duration_seconds": 2.6261686999932863,
+          "last_error": "craft failed for minecraft:wheat x1: bridge.craft_item minecraft:wheat 1: bridge rejected command: missing required ingredients; bridge.craft_item minecraft:wheat: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:15:12.369567+00:00"
+        },
+        "direct_craft": {
+          "attempts": 12,
+          "successes": 0,
+          "total_duration_seconds": 2.623844800007646,
+          "last_error": "craft failed for minecraft:wheat x1: bridge.craft_item minecraft:wheat 1: bridge rejected command: missing required ingredients; bridge.craft_item minecraft:wheat: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:15:12.144788+00:00"
+        },
+        "gather": {
+          "attempts": 12,
+          "successes": 0,
+          "total_duration_seconds": 2.5676205000054324,
+          "last_error": "craft failed for minecraft:wheat x1: bridge.craft_item minecraft:wheat 1: bridge rejected command: missing required ingredients; bridge.craft_item minecraft:wheat: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:15:11.926224+00:00"
+        }
+      }
+    },
+    "justdirethings:generatort1": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 12,
+          "successes": 0,
+          "total_duration_seconds": 2.6091277000232367,
+          "last_error": "craft failed for justdirethings:generatort1 x1: bridge.craft_item justdirethings:generatort1 1: bridge rejected command: missing required ingredients; bridge.craft_item justdirethings:generatort1: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:15:48.639834+00:00"
+        },
+        "direct_craft": {
+          "attempts": 12,
+          "successes": 0,
+          "total_duration_seconds": 2.610956199976499,
+          "last_error": "craft failed for justdirethings:generatort1 x1: bridge.craft_item justdirethings:generatort1 1: bridge rejected command: missing required ingredients; bridge.craft_item justdirethings:generatort1: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:15:48.867655+00:00"
+        },
+        "gather": {
+          "attempts": 12,
+          "successes": 0,
+          "total_duration_seconds": 2.6015311000082875,
+          "last_error": "craft failed for justdirethings:generatort1 x1: bridge.craft_item justdirethings:generatort1 1: bridge rejected command: missing required ingredients; bridge.craft_item justdirethings:generatort1: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:15:48.417517+00:00"
+        }
+      }
+    },
+    "mekanism:configurator": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8746187000069767,
+          "last_error": "craft failed for mekanism:configurator x1: bridge.craft_item mekanism:configurator 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item mekanism:configurator: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:16:01.061796+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8766580000083195,
+          "last_error": "craft failed for mekanism:configurator x1: bridge.craft_item mekanism:configurator 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item mekanism:configurator: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:16:01.289482+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8747272999898996,
+          "last_error": "craft failed for mekanism:configurator x1: bridge.craft_item mekanism:configurator 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item mekanism:configurator: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:16:00.840966+00:00"
+        }
+      }
+    },
+    "oritech:wrench": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8769133999740006,
+          "last_error": "craft failed for oritech:wrench x1: bridge.craft_item oritech:wrench 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item oritech:wrench: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:16:13.611476+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8762769000168191,
+          "last_error": "craft failed for oritech:wrench x1: bridge.craft_item oritech:wrench 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item oritech:wrench: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:16:13.832164+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8292730000248412,
+          "last_error": "craft failed for oritech:wrench x1: bridge.craft_item oritech:wrench 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item oritech:wrench: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:16:13.384007+00:00"
+        }
+      }
+    },
+    "rftoolspower:endergenic": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8778051000117557,
+          "last_error": "craft failed for rftoolspower:endergenic x1: bridge.craft_item rftoolspower:endergenic 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item rftoolspower:endergenic: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:16:51.301862+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8732809000212001,
+          "last_error": "craft failed for rftoolspower:endergenic x1: bridge.craft_item rftoolspower:endergenic 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item rftoolspower:endergenic: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:16:50.858281+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8758419000077993,
+          "last_error": "craft failed for rftoolspower:endergenic x1: bridge.craft_item rftoolspower:endergenic 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item rftoolspower:endergenic: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:16:51.079855+00:00"
+        }
+      }
+    },
+    "create:belt_connector": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 5,
+          "successes": 0,
+          "total_duration_seconds": 7.1391723999986425,
+          "last_error": "craft failed for create:belt_connector x1: bridge.craft_item create:belt_connector 1: bridge rejected command: missing required ingredients; bridge.craft_item create:belt_connector: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T17:57:12.309323+00:00"
+        },
+        "direct_craft": {
+          "attempts": 5,
+          "successes": 0,
+          "total_duration_seconds": 1.095049099982134,
+          "last_error": "craft failed for create:belt_connector x1: bridge.craft_item create:belt_connector 1: bridge rejected command: missing required ingredients; bridge.craft_item create:belt_connector: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T17:57:12.534723+00:00"
+        },
+        "gather": {
+          "attempts": 5,
+          "successes": 0,
+          "total_duration_seconds": 1.0918538999831071,
+          "last_error": "craft failed for create:belt_connector x1: bridge.craft_item create:belt_connector 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item create:belt_connector: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T17:57:06.039193+00:00"
+        }
+      }
+    },
+    "enderio:yeta_wrench": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8760489999986021,
+          "last_error": "craft failed for enderio:yeta_wrench x1: bridge.craft_item enderio:yeta_wrench 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item enderio:yeta_wrench: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:17:16.439849+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8763309000059962,
+          "last_error": "craft failed for enderio:yeta_wrench x1: bridge.craft_item enderio:yeta_wrench 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item enderio:yeta_wrench: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:17:16.218562+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.873533200006932,
+          "last_error": "craft failed for enderio:yeta_wrench x1: bridge.craft_item enderio:yeta_wrench 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item enderio:yeta_wrench: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:17:15.990193+00:00"
+        }
+      }
+    },
+    "pipez:wrench": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8760894999868469,
+          "last_error": "craft failed for pipez:wrench x1: bridge.craft_item pipez:wrench 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item pipez:wrench: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:17:28.651924+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.875861399967107,
+          "last_error": "craft failed for pipez:wrench x1: bridge.craft_item pipez:wrench 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item pipez:wrench: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:17:28.430945+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8741501000040444,
+          "last_error": "craft failed for pipez:wrench x1: bridge.craft_item pipez:wrench 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item pipez:wrench: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:17:28.202204+00:00"
+        }
+      }
+    },
+    "xycraft_machines:extractor": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 5,
+          "successes": 0,
+          "total_duration_seconds": 1.0896499999798834,
+          "last_error": "craft failed for xycraft_machines:extractor x1: bridge.craft_item xycraft_machines:extractor 1: bridge rejected command: missing required ingredients; bridge.craft_item xycraft_machines:extractor: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T17:57:12.800970+00:00"
+        },
+        "direct_craft": {
+          "attempts": 5,
+          "successes": 0,
+          "total_duration_seconds": 1.0931786000001011,
+          "last_error": "craft failed for xycraft_machines:extractor x1: bridge.craft_item xycraft_machines:extractor 1: bridge rejected command: missing required ingredients; bridge.craft_item xycraft_machines:extractor: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T17:57:13.026311+00:00"
+        },
+        "gather": {
+          "attempts": 5,
+          "successes": 0,
+          "total_duration_seconds": 1.2945521999936318,
+          "last_error": "craft failed for xycraft_machines:extractor x1: bridge.craft_item xycraft_machines:extractor 1: bridge rejected command: missing required ingredients; bridge.craft_item xycraft_machines:extractor: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T17:57:13.244481+00:00"
+        }
+      }
+    },
+    "chicken_roost:c_iron": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 5,
+          "successes": 0,
+          "total_duration_seconds": 1.082806200007326,
+          "last_error": "craft failed for chicken_roost:c_iron x1: bridge.craft_item chicken_roost:c_iron 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item chicken_roost:c_iron: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:18:07.764750+00:00"
+        },
+        "direct_craft": {
+          "attempts": 5,
+          "successes": 0,
+          "total_duration_seconds": 1.087581700005103,
+          "last_error": "craft failed for chicken_roost:c_iron x1: bridge.craft_item chicken_roost:c_iron 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item chicken_roost:c_iron: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:18:07.993904+00:00"
+        },
+        "gather": {
+          "attempts": 5,
+          "successes": 0,
+          "total_duration_seconds": 1.0956565999804297,
+          "last_error": "craft failed for chicken_roost:c_iron x1: bridge.craft_item chicken_roost:c_iron 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item chicken_roost:c_iron: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:18:08.222007+00:00"
+        }
+      }
+    },
+    "ftbstuff:fusing_machine": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8766709999908926,
+          "last_error": "craft failed for ftbstuff:fusing_machine x1: bridge.craft_item ftbstuff:fusing_machine 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftbstuff:fusing_machine: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:18:32.971610+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8760012999846367,
+          "last_error": "craft failed for ftbstuff:fusing_machine x1: bridge.craft_item ftbstuff:fusing_machine 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftbstuff:fusing_machine: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:18:32.743294+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.877595099984319,
+          "last_error": "craft failed for ftbstuff:fusing_machine x1: bridge.craft_item ftbstuff:fusing_machine 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftbstuff:fusing_machine: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:18:33.194202+00:00"
+        }
+      }
+    },
+    "laserio:laser_wrench": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8743303999945056,
+          "last_error": "craft failed for laserio:laser_wrench x1: bridge.craft_item laserio:laser_wrench 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item laserio:laser_wrench: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:18:44.832254+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8752305999951204,
+          "last_error": "craft failed for laserio:laser_wrench x1: bridge.craft_item laserio:laser_wrench 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item laserio:laser_wrench: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:18:45.059712+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8755240999889793,
+          "last_error": "craft failed for laserio:laser_wrench x1: bridge.craft_item laserio:laser_wrench 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item laserio:laser_wrench: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:18:45.287053+00:00"
+        }
+      }
+    },
+    "chicken_roost:chicken_stick": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8726670000032755,
+          "last_error": "craft failed for chicken_roost:chicken_stick x1: bridge.craft_item chicken_roost:chicken_stick 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item chicken_roost:chicken_stick: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:18:56.950327+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8741040000022622,
+          "last_error": "craft failed for chicken_roost:chicken_stick x1: bridge.craft_item chicken_roost:chicken_stick 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item chicken_roost:chicken_stick: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:18:57.179296+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8746151999948779,
+          "last_error": "craft failed for chicken_roost:chicken_stick x1: bridge.craft_item chicken_roost:chicken_stick 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item chicken_roost:chicken_stick: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:18:57.400543+00:00"
+        }
+      }
+    },
+    "immersiveengineering:hammer": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.874449699986144,
+          "last_error": "craft failed for immersiveengineering:hammer x1: bridge.craft_item immersiveengineering:hammer 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item immersiveengineering:hammer: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:19:09.287831+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8764248000079533,
+          "last_error": "craft failed for immersiveengineering:hammer x1: bridge.craft_item immersiveengineering:hammer 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item immersiveengineering:hammer: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:19:09.738047+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.876021000003675,
+          "last_error": "craft failed for immersiveengineering:hammer x1: bridge.craft_item immersiveengineering:hammer 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item immersiveengineering:hammer: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:19:09.516147+00:00"
+        }
+      }
+    },
+    "replication:disintegrator": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8752342999941902,
+          "last_error": "craft failed for replication:disintegrator x1: bridge.craft_item replication:disintegrator 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item replication:disintegrator: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:19:21.554475+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8780925999890314,
+          "last_error": "craft failed for replication:disintegrator x1: bridge.craft_item replication:disintegrator 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item replication:disintegrator: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:19:21.784569+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8765043999883346,
+          "last_error": "craft failed for replication:disintegrator x1: bridge.craft_item replication:disintegrator 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item replication:disintegrator: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:19:22.005464+00:00"
+        }
+      }
+    },
+    "productivemetalworks:fire_clay": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8752701000048546,
+          "last_error": "craft failed for productivemetalworks:fire_clay x1: bridge.craft_item productivemetalworks:fire_clay 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item productivemetalworks:fire_clay: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:19:34.279007+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8750364999868907,
+          "last_error": "craft failed for productivemetalworks:fire_clay x1: bridge.craft_item productivemetalworks:fire_clay 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item productivemetalworks:fire_clay: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:19:34.505976+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8743592000100762,
+          "last_error": "craft failed for productivemetalworks:fire_clay x1: bridge.craft_item productivemetalworks:fire_clay 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item productivemetalworks:fire_clay: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:19:34.057279+00:00"
+        }
+      }
+    },
+    "actuallyadditions:black_quartz": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 8,
+          "successes": 0,
+          "total_duration_seconds": 1.7453132000082405,
+          "last_error": "craft failed for actuallyadditions:black_quartz x1: bridge.craft_item actuallyadditions:black_quartz 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item actuallyadditions:black_quartz: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:27:37.741679+00:00"
+        },
+        "direct_craft": {
+          "attempts": 8,
+          "successes": 0,
+          "total_duration_seconds": 1.7498289999784902,
+          "last_error": "craft failed for actuallyadditions:black_quartz x1: bridge.craft_item actuallyadditions:black_quartz 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item actuallyadditions:black_quartz: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:27:37.970384+00:00"
+        },
+        "gather": {
+          "attempts": 8,
+          "successes": 0,
+          "total_duration_seconds": 1.7529376999882516,
+          "last_error": "craft failed for actuallyadditions:black_quartz x1: bridge.craft_item actuallyadditions:black_quartz 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item actuallyadditions:black_quartz: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:27:38.191992+00:00"
+        }
+      }
+    },
+    "create:andesite_alloy": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 12,
+          "successes": 0,
+          "total_duration_seconds": 2.6287720000109402,
+          "last_error": "craft failed for create:andesite_alloy x1: bridge.craft_item create:andesite_alloy 1: bridge rejected command: missing required ingredients; bridge.craft_item create:andesite_alloy: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:20:23.025143+00:00"
+        },
+        "direct_craft": {
+          "attempts": 12,
+          "successes": 0,
+          "total_duration_seconds": 2.6397853999806102,
+          "last_error": "craft failed for create:andesite_alloy x1: bridge.craft_item create:andesite_alloy 1: bridge rejected command: missing required ingredients; bridge.craft_item create:andesite_alloy: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:20:23.474258+00:00"
+        },
+        "gather": {
+          "attempts": 12,
+          "successes": 0,
+          "total_duration_seconds": 2.628424500042456,
+          "last_error": "craft failed for create:andesite_alloy x1: bridge.craft_item create:andesite_alloy 1: bridge rejected command: missing required ingredients; bridge.craft_item create:andesite_alloy: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:20:23.246244+00:00"
+        }
+      }
+    },
+    "industrialforegoing:machine_frame_pity": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8753484999906505,
+          "last_error": "craft failed for industrialforegoing:machine_frame_pity x1: bridge.craft_item industrialforegoing:machine_frame_pity 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:machine_frame_pity: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:20:35.812679+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8726771000219742,
+          "last_error": "craft failed for industrialforegoing:machine_frame_pity x1: bridge.craft_item industrialforegoing:machine_frame_pity 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:machine_frame_pity: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:20:35.363704+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8736493000033079,
+          "last_error": "craft failed for industrialforegoing:machine_frame_pity x1: bridge.craft_item industrialforegoing:machine_frame_pity 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:machine_frame_pity: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:20:35.585106+00:00"
+        }
+      }
+    },
+    "justdirethings:gooblock_tier1": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.876731899988954,
+          "last_error": "craft failed for justdirethings:gooblock_tier1 x1: bridge.craft_item justdirethings:gooblock_tier1 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item justdirethings:gooblock_tier1: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:20:47.896383+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8759282000100939,
+          "last_error": "craft failed for justdirethings:gooblock_tier1 x1: bridge.craft_item justdirethings:gooblock_tier1 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item justdirethings:gooblock_tier1: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:20:48.123511+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.874532799993176,
+          "last_error": "craft failed for justdirethings:gooblock_tier1 x1: bridge.craft_item justdirethings:gooblock_tier1 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item justdirethings:gooblock_tier1: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:20:47.674597+00:00"
+        }
+      }
+    },
+    "mffs:coercion_deriver": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.876053200016031,
+          "last_error": "craft failed for mffs:coercion_deriver x1: bridge.craft_item mffs:coercion_deriver 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item mffs:coercion_deriver: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:21:00.299448+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8764014000043971,
+          "last_error": "craft failed for mffs:coercion_deriver x1: bridge.craft_item mffs:coercion_deriver 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item mffs:coercion_deriver: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:21:00.521665+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8751737999991747,
+          "last_error": "craft failed for mffs:coercion_deriver x1: bridge.craft_item mffs:coercion_deriver 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item mffs:coercion_deriver: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:21:00.071480+00:00"
+        }
+      }
+    },
+    "justdirethings:time_crystal": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 12,
+          "successes": 0,
+          "total_duration_seconds": 2.6265285999834305,
+          "last_error": "craft failed for justdirethings:time_crystal x1: bridge.craft_item justdirethings:time_crystal 1: bridge rejected command: missing required ingredients; bridge.craft_item justdirethings:time_crystal: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:21:37.204476+00:00"
+        },
+        "direct_craft": {
+          "attempts": 12,
+          "successes": 0,
+          "total_duration_seconds": 2.628426200011745,
+          "last_error": "craft failed for justdirethings:time_crystal x1: bridge.craft_item justdirethings:time_crystal 1: bridge rejected command: missing required ingredients; bridge.craft_item justdirethings:time_crystal: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:21:37.425037+00:00"
+        },
+        "gather": {
+          "attempts": 12,
+          "successes": 0,
+          "total_duration_seconds": 2.627397200005362,
+          "last_error": "craft failed for justdirethings:time_crystal x1: bridge.craft_item justdirethings:time_crystal 1: bridge rejected command: missing required ingredients; bridge.craft_item justdirethings:time_crystal: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:21:36.977802+00:00"
+        }
+      }
+    },
+    "immersiveengineering:creosote_bucket": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8687000000063563,
+          "last_error": "craft failed for immersiveengineering:creosote_bucket x1: bridge.craft_item immersiveengineering:creosote_bucket 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item immersiveengineering:creosote_bucket: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:21:49.553274+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8724961999978404,
+          "last_error": "craft failed for immersiveengineering:creosote_bucket x1: bridge.craft_item immersiveengineering:creosote_bucket 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item immersiveengineering:creosote_bucket: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:21:49.780035+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8748412999993889,
+          "last_error": "craft failed for immersiveengineering:creosote_bucket x1: bridge.craft_item immersiveengineering:creosote_bucket 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item immersiveengineering:creosote_bucket: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:21:50.001161+00:00"
+        }
+      }
+    },
+    "cognition:cognitive_flux": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 12,
+          "successes": 0,
+          "total_duration_seconds": 2.6082339999848045,
+          "last_error": "craft failed for cognition:cognitive_flux x1: bridge.craft_item cognition:cognitive_flux 1: bridge rejected command: missing required ingredients; bridge.craft_item cognition:cognitive_flux: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:22:25.686669+00:00"
+        },
+        "direct_craft": {
+          "attempts": 12,
+          "successes": 0,
+          "total_duration_seconds": 2.6122673000209033,
+          "last_error": "craft failed for cognition:cognitive_flux x1: bridge.craft_item cognition:cognitive_flux 1: bridge rejected command: missing required ingredients; bridge.craft_item cognition:cognitive_flux: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:22:25.911519+00:00"
+        },
+        "gather": {
+          "attempts": 12,
+          "successes": 0,
+          "total_duration_seconds": 2.6131295999948634,
+          "last_error": "craft failed for cognition:cognitive_flux x1: bridge.craft_item cognition:cognitive_flux 1: bridge rejected command: missing required ingredients; bridge.craft_item cognition:cognitive_flux: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:22:26.135853+00:00"
+        }
+      }
+    },
+    "minecraft:lava_bucket": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 12,
+          "successes": 0,
+          "total_duration_seconds": 2.6193000000494067,
+          "last_error": "craft failed for minecraft:lava_bucket x1: bridge.craft_item minecraft:lava_bucket 1: bridge rejected command: missing required ingredients; bridge.craft_item minecraft:lava_bucket: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:23:02.000811+00:00"
+        },
+        "direct_craft": {
+          "attempts": 12,
+          "successes": 0,
+          "total_duration_seconds": 2.6215807999979006,
+          "last_error": "craft failed for minecraft:lava_bucket x1: bridge.craft_item minecraft:lava_bucket 1: bridge rejected command: missing required ingredients; bridge.craft_item minecraft:lava_bucket: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:23:02.225797+00:00"
+        },
+        "gather": {
+          "attempts": 12,
+          "successes": 0,
+          "total_duration_seconds": 2.6131557000189787,
+          "last_error": "craft failed for minecraft:lava_bucket x1: bridge.craft_item minecraft:lava_bucket 1: bridge rejected command: missing required ingredients; bridge.craft_item minecraft:lava_bucket: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:23:01.780888+00:00"
+        }
+      }
+    },
+    "enderio:grains_of_infinity": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8727292999974452,
+          "last_error": "craft failed for enderio:grains_of_infinity x1: bridge.craft_item enderio:grains_of_infinity 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item enderio:grains_of_infinity: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:23:14.478700+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8745753999828594,
+          "last_error": "craft failed for enderio:grains_of_infinity x1: bridge.craft_item enderio:grains_of_infinity 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item enderio:grains_of_infinity: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:23:14.248217+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8743152000097325,
+          "last_error": "craft failed for enderio:grains_of_infinity x1: bridge.craft_item enderio:grains_of_infinity 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item enderio:grains_of_infinity: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:23:14.021525+00:00"
+        }
+      }
+    },
+    "ftbmaterials:brass_ingot": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8795065999875078,
+          "last_error": "craft failed for create:zinc_ingot x1: bridge.craft_item create:zinc_ingot 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item create:zinc_ingot: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:23:26.848682+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8739717999851564,
+          "last_error": "craft failed for ftbmaterials:brass_ingot x1: bridge.craft_item ftbmaterials:brass_ingot 1: bridge rejected command: missing required ingredients; bridge.craft_item ftbmaterials:brass_ingot: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:23:26.625916+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.879722400000901,
+          "last_error": "craft failed for ftbmaterials:brass_ingot x1: bridge.craft_item ftbmaterials:brass_ingot 1: bridge rejected command: missing required ingredients; bridge.craft_item ftbmaterials:brass_ingot: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:23:27.077750+00:00"
+        }
+      }
+    },
+    "minecraft:echo_shard": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 12,
+          "successes": 0,
+          "total_duration_seconds": 2.630971299993689,
+          "last_error": "craft failed for minecraft:echo_shard x1: bridge.craft_item minecraft:echo_shard 1: bridge rejected command: missing required ingredients; bridge.craft_item minecraft:echo_shard: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:24:03.165552+00:00"
+        },
+        "direct_craft": {
+          "attempts": 12,
+          "successes": 0,
+          "total_duration_seconds": 2.74392529996112,
+          "last_error": "craft failed for minecraft:echo_shard x1: bridge.craft_item minecraft:echo_shard 1: bridge rejected command: missing required ingredients; bridge.craft_item minecraft:echo_shard: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:24:03.606680+00:00"
+        },
+        "gather": {
+          "attempts": 12,
+          "successes": 0,
+          "total_duration_seconds": 2.634064300029422,
+          "last_error": "craft failed for minecraft:echo_shard x1: bridge.craft_item minecraft:echo_shard 1: bridge rejected command: missing required ingredients; bridge.craft_item minecraft:echo_shard: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:24:03.386176+00:00"
+        }
+      }
+    },
+    "explorerscompass:explorerscompass": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8752783999807434,
+          "last_error": "craft failed for explorerscompass:explorerscompass x1: bridge.craft_item explorerscompass:explorerscompass 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item explorerscompass:explorerscompass: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:24:28.256143+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8749607999925502,
+          "last_error": "craft failed for explorerscompass:explorerscompass x1: bridge.craft_item explorerscompass:explorerscompass 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item explorerscompass:explorerscompass: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:24:28.034462+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8785063999821432,
+          "last_error": "craft failed for explorerscompass:explorerscompass x1: bridge.craft_item explorerscompass:explorerscompass 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item explorerscompass:explorerscompass: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:24:28.483163+00:00"
+        }
+      }
+    },
+    "create:shadow_steel_casing": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8740761999943061,
+          "last_error": "craft failed for create:shadow_steel_casing x1: bridge.craft_item create:shadow_steel_casing 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item create:shadow_steel_casing: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:24:55.607336+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8784891999966931,
+          "last_error": "craft failed for create:shadow_steel_casing x1: bridge.craft_item create:shadow_steel_casing 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item create:shadow_steel_casing: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:24:56.057041+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.876456900004996,
+          "last_error": "craft failed for create:shadow_steel_casing x1: bridge.craft_item create:shadow_steel_casing 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item create:shadow_steel_casing: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:24:55.828902+00:00"
+        }
+      }
+    },
+    "mekanism:superheating_element": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 5,
+          "successes": 0,
+          "total_duration_seconds": 1.094104999981937,
+          "last_error": "craft failed for mekanism:superheating_element x1: bridge.craft_item mekanism:superheating_element 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item mekanism:superheating_element: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:25:10.823765+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8774414999934379,
+          "last_error": "craft failed for mekanism:superheating_element x1: bridge.craft_item mekanism:superheating_element 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item mekanism:superheating_element: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:25:10.374544+00:00"
+        },
+        "gather": {
+          "attempts": 5,
+          "successes": 0,
+          "total_duration_seconds": 1.0924554000230273,
+          "last_error": "craft failed for mekanism:superheating_element x1: bridge.craft_item mekanism:superheating_element 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item mekanism:superheating_element: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:25:10.596094+00:00"
+        }
+      }
+    },
+    "minecraft:music_disc_pigstep": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.880107200006023,
+          "last_error": "craft failed for minecraft:music_disc_pigstep x1: bridge.craft_item minecraft:music_disc_pigstep 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item minecraft:music_disc_pigstep: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:25:23.195801+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8715980999841122,
+          "last_error": "craft failed for minecraft:music_disc_pigstep x1: bridge.craft_item minecraft:music_disc_pigstep 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item minecraft:music_disc_pigstep: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:25:22.751260+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8775682999985293,
+          "last_error": "craft failed for minecraft:music_disc_pigstep x1: bridge.craft_item minecraft:music_disc_pigstep 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item minecraft:music_disc_pigstep: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:25:22.973880+00:00"
+        }
+      }
+    },
+    "ftb:chroniton_glass": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8733181000134209,
+          "last_error": "craft failed for ftb:chroniton_glass x1: bridge.craft_item ftb:chroniton_glass 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftb:chroniton_glass: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:25:35.477632+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.878082799987169,
+          "last_error": "craft failed for ftb:chroniton_glass x1: bridge.craft_item ftb:chroniton_glass 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftb:chroniton_glass: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:25:35.928839+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8766976999904728,
+          "last_error": "craft failed for ftb:chroniton_glass x1: bridge.craft_item ftb:chroniton_glass 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftb:chroniton_glass: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:25:35.706214+00:00"
+        }
+      }
+    },
+    "oritech:assembler_block": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8723628999723587,
+          "last_error": "craft failed for oritech:assembler_block x1: bridge.craft_item oritech:assembler_block 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item oritech:assembler_block: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:25:47.725002+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8742894000024535,
+          "last_error": "craft failed for oritech:assembler_block x1: bridge.craft_item oritech:assembler_block 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item oritech:assembler_block: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:25:47.946759+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8771622000203934,
+          "last_error": "craft failed for oritech:assembler_block x1: bridge.craft_item oritech:assembler_block 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item oritech:assembler_block: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:25:48.175536+00:00"
+        }
+      }
+    },
+    "malum:runewood_log": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.877379600002314,
+          "last_error": "craft failed for malum:runewood_log x1: bridge.craft_item malum:runewood_log 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item malum:runewood_log: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:26:00.958670+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8749536000104854,
+          "last_error": "craft failed for malum:runewood_log x1: bridge.craft_item malum:runewood_log 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item malum:runewood_log: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:26:00.736498+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8747375999810174,
+          "last_error": "craft failed for malum:runewood_log x1: bridge.craft_item malum:runewood_log 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item malum:runewood_log: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:26:00.509709+00:00"
+        }
+      }
+    },
+    "ftb:fortron_infused_block": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8733369999972638,
+          "last_error": "craft failed for ftb:fortron_infused_block x1: bridge.craft_item ftb:fortron_infused_block 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftb:fortron_infused_block: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:26:12.968431+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8749391000019386,
+          "last_error": "craft failed for ftb:fortron_infused_block x1: bridge.craft_item ftb:fortron_infused_block 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftb:fortron_infused_block: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:26:13.190544+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8751129000011133,
+          "last_error": "craft failed for ftb:fortron_infused_block x1: bridge.craft_item ftb:fortron_infused_block 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftb:fortron_infused_block: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:26:13.418076+00:00"
+        }
+      }
+    },
+    "powah:ender_cell_nitro": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 12,
+          "successes": 0,
+          "total_duration_seconds": 2.623195400010445,
+          "last_error": "craft failed for powah:ender_cell_nitro x1: bridge.craft_item powah:ender_cell_nitro 1: bridge rejected command: missing required ingredients; bridge.craft_item powah:ender_cell_nitro: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:26:48.998353+00:00"
+        },
+        "direct_craft": {
+          "attempts": 12,
+          "successes": 0,
+          "total_duration_seconds": 2.6311728000437142,
+          "last_error": "craft failed for powah:ender_cell_nitro x1: bridge.craft_item powah:ender_cell_nitro 1: bridge rejected command: missing required ingredients; bridge.craft_item powah:ender_cell_nitro: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:26:49.456522+00:00"
+        },
+        "gather": {
+          "attempts": 12,
+          "successes": 0,
+          "total_duration_seconds": 2.6303381999896374,
+          "last_error": "craft failed for powah:ender_cell_nitro x1: bridge.craft_item powah:ender_cell_nitro 1: bridge rejected command: missing required ingredients; bridge.craft_item powah:ender_cell_nitro: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:26:49.228156+00:00"
+        }
+      }
+    },
+    "industrialforegoing:plastic": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 12,
+          "successes": 0,
+          "total_duration_seconds": 2.629667600020184,
+          "last_error": "craft failed for oritech:polymer_resin x1: bridge.craft_item oritech:polymer_resin 1: bridge rejected command: missing required ingredients; bridge.craft_item oritech:polymer_resin: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:27:25.779011+00:00"
+        },
+        "direct_craft": {
+          "attempts": 12,
+          "successes": 0,
+          "total_duration_seconds": 2.6323799000529107,
+          "last_error": "craft failed for industrialforegoing:plastic x1: bridge.craft_item industrialforegoing:plastic 1: bridge rejected command: missing required ingredients; bridge.craft_item industrialforegoing:plastic: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:27:26.000409+00:00"
+        },
+        "gather": {
+          "attempts": 12,
+          "successes": 0,
+          "total_duration_seconds": 2.627429000029224,
+          "last_error": "craft failed for industrialforegoing:plastic x1: bridge.craft_item industrialforegoing:plastic 1: bridge rejected command: missing required ingredients; bridge.craft_item industrialforegoing:plastic: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:27:25.550680+00:00"
+        }
+      }
+    },
+    "mekanism:ultimate_thermodynamic_conductor": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.875740899995435,
+          "last_error": "craft failed for mekanism:ultimate_thermodynamic_conductor x1: bridge.craft_item mekanism:ultimate_thermodynamic_conductor 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item mekanism:ultimate_thermodynamic_conductor: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:27:50.479705+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8754172000044491,
+          "last_error": "craft failed for mekanism:ultimate_thermodynamic_conductor x1: bridge.craft_item mekanism:ultimate_thermodynamic_conductor 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item mekanism:ultimate_thermodynamic_conductor: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:27:50.251586+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8746787999989465,
+          "last_error": "craft failed for mekanism:ultimate_thermodynamic_conductor x1: bridge.craft_item mekanism:ultimate_thermodynamic_conductor 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item mekanism:ultimate_thermodynamic_conductor: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:27:50.023553+00:00"
+        }
+      }
+    },
+    "__idle__": {
+      "strategies": {
+        "idle_recovery_housekeeping": {
+          "attempts": 1650,
+          "successes": 1644,
+          "total_duration_seconds": 5826.554788900137,
+          "last_error": "",
+          "last_success_at": "2026-03-07T09:09:22.098191+00:00",
+          "last_failure_at": "2026-03-06T01:07:18.679750+00:00"
+        },
+        "stoneblock_hammer_brush_loop": {
+          "attempts": 38,
+          "successes": 0,
+          "total_duration_seconds": 5189.166693300023,
+          "last_error": "bridge status stale (20755.56s)",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T17:08:15.249840+00:00"
+        },
+        "basic_machine_bootstrap": {
+          "attempts": 39,
+          "successes": 1,
+          "total_duration_seconds": 5326.967555599986,
+          "last_error": "bridge status stale (21468.09s)",
+          "last_success_at": "2026-03-05T08:28:19.343517+00:00",
+          "last_failure_at": "2026-03-05T17:20:07.770614+00:00"
+        },
+        "basic_farm_bootstrap": {
+          "attempts": 39,
+          "successes": 1,
+          "total_duration_seconds": 5325.001474500008,
+          "last_error": "bridge status stale (21321.74s)",
+          "last_success_at": "2026-03-05T08:31:08.298147+00:00",
+          "last_failure_at": "2026-03-05T17:17:41.424316+00:00"
+        },
+        "idle_resource_grind": {
+          "attempts": 38,
+          "successes": 0,
+          "total_duration_seconds": 5191.195749399965,
+          "last_error": "bridge status stale (21181.73s)",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T17:15:21.413007+00:00"
+        },
+        "base_storage_housekeeping": {
+          "attempts": 2,
+          "successes": 1,
+          "total_duration_seconds": 112.33857460000445,
+          "last_error": "",
+          "last_success_at": "2026-03-06T00:52:23.432612+00:00",
+          "last_failure_at": "2026-03-05T17:58:21.064588+00:00"
+        }
+      }
+    },
+    "ftbstuff:stone_hammer": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 6.745083799993154,
+          "last_error": "craft failed for ftbstuff:stone_hammer x1: bridge.craft_item ftbstuff:stone_hammer 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftbstuff:stone_hammer: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T17:43:26.557488+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8667734000191558,
+          "last_error": "craft failed for ftbstuff:stone_hammer x1: bridge.craft_item ftbstuff:stone_hammer 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftbstuff:stone_hammer: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T17:43:25.986149+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 1.0664760999934515,
+          "last_error": "craft failed for ftbstuff:stone_hammer x1: bridge.craft_item ftbstuff:stone_hammer 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftbstuff:stone_hammer: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T17:43:26.211138+00:00"
+        }
+      }
+    },
+    "ftbstuff:dust": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 9,
+          "successes": 0,
+          "total_duration_seconds": 1.9510121999774128,
+          "last_error": "craft failed for ftbstuff:dust x1: bridge.craft_item ftbstuff:dust 1: bridge rejected command: missing required ingredients; bridge.craft_item ftbstuff:dust: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:37:50.353938+00:00"
+        },
+        "direct_craft": {
+          "attempts": 9,
+          "successes": 0,
+          "total_duration_seconds": 1.9504844000184676,
+          "last_error": "craft failed for ftbstuff:dust x1: bridge.craft_item ftbstuff:dust 1: bridge rejected command: missing required ingredients; bridge.craft_item ftbstuff:dust: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:37:50.578909+00:00"
+        },
+        "gather": {
+          "attempts": 9,
+          "successes": 0,
+          "total_duration_seconds": 1.9527589999925112,
+          "last_error": "craft failed for ftbstuff:dust x1: bridge.craft_item ftbstuff:dust 1: bridge rejected command: missing required ingredients; bridge.craft_item ftbstuff:dust: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:37:50.798257+00:00"
+        }
+      }
+    },
+    "ftbstuff:iron_hammer": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8671181999816326,
+          "last_error": "craft failed for ftbstuff:iron_hammer x1: bridge.craft_item ftbstuff:iron_hammer 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftbstuff:iron_hammer: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T17:43:27.024245+00:00"
+        },
+        "direct_craft": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8662879000039538,
+          "last_error": "craft failed for ftbstuff:iron_hammer x1: bridge.craft_item ftbstuff:iron_hammer 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftbstuff:iron_hammer: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T17:43:26.798454+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 0.8680175000044983,
+          "last_error": "craft failed for ftbstuff:iron_hammer x1: bridge.craft_item ftbstuff:iron_hammer 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftbstuff:iron_hammer: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T17:43:27.243043+00:00"
+        }
+      }
+    },
+    "minecraft:redstone": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 6,
+          "successes": 0,
+          "total_duration_seconds": 1.4214882000233047,
+          "last_error": "craft failed for minecraft:redstone x1: bridge.craft_item minecraft:redstone 1: bridge rejected command: missing required ingredients; bridge.craft_item minecraft:redstone: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:48:46.545906+00:00"
+        },
+        "direct_craft": {
+          "attempts": 6,
+          "successes": 0,
+          "total_duration_seconds": 1.3017999000148848,
+          "last_error": "craft failed for minecraft:redstone x1: bridge.craft_item minecraft:redstone 1: bridge rejected command: missing required ingredients; bridge.craft_item minecraft:redstone: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:48:46.327113+00:00"
+        },
+        "gather": {
+          "attempts": 5,
+          "successes": 0,
+          "total_duration_seconds": 87.44871449998755,
+          "last_error": "failed to gather base requirement by mining: minecraft:redstone x1",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:48:44.252800+00:00"
+        }
+      }
+    },
+    "mekanism:enriched_iron": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.3586495999916224,
+          "last_error": "craft failed for mekanism:enriched_iron x1: bridge.craft_item mekanism:enriched_iron 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item mekanism:enriched_iron: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:39:22.929727+00:00"
+        },
+        "direct_craft": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21712029998889193,
+          "last_error": "craft failed for mekanism:enriched_iron x1: bridge.craft_item mekanism:enriched_iron 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item mekanism:enriched_iron: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:39:23.155616+00:00"
+        },
+        "gather": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.2169984999927692,
+          "last_error": "craft failed for mekanism:enriched_iron x1: bridge.craft_item mekanism:enriched_iron 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item mekanism:enriched_iron: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:39:23.380323+00:00"
+        }
+      }
+    },
+    "ftbmaterials:steel_ingot": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 9,
+          "successes": 0,
+          "total_duration_seconds": 1.951796600027592,
+          "last_error": "craft failed for ftbmaterials:steel_ingot x1: bridge.craft_item ftbmaterials:steel_ingot 1: bridge rejected command: missing required ingredients; bridge.craft_item ftbmaterials:steel_ingot: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:39:47.540286+00:00"
+        },
+        "direct_craft": {
+          "attempts": 9,
+          "successes": 0,
+          "total_duration_seconds": 1.9580014999955893,
+          "last_error": "craft failed for ftbmaterials:steel_ingot x1: bridge.craft_item ftbmaterials:steel_ingot 1: bridge rejected command: missing required ingredients; bridge.craft_item ftbmaterials:steel_ingot: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:39:47.985104+00:00"
+        },
+        "gather": {
+          "attempts": 9,
+          "successes": 0,
+          "total_duration_seconds": 1.9528536000143504,
+          "last_error": "craft failed for ftbmaterials:steel_ingot x1: bridge.craft_item ftbmaterials:steel_ingot 1: bridge rejected command: missing required ingredients; bridge.craft_item ftbmaterials:steel_ingot: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:39:47.759308+00:00"
+        }
+      }
+    },
+    "ftbmaterials:lithium_dust": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21577870000328403,
+          "last_error": "craft failed for ftbmaterials:lithium_dust x1: bridge.craft_item ftbmaterials:lithium_dust 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftbmaterials:lithium_dust: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:39:48.225058+00:00"
+        },
+        "direct_craft": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21621410000079777,
+          "last_error": "craft failed for ftbmaterials:lithium_dust x1: bridge.craft_item ftbmaterials:lithium_dust 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftbmaterials:lithium_dust: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:39:48.443331+00:00"
+        },
+        "gather": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21851209999294952,
+          "last_error": "craft failed for ftbmaterials:lithium_dust x1: bridge.craft_item ftbmaterials:lithium_dust 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftbmaterials:lithium_dust: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:39:48.669935+00:00"
+        }
+      }
+    },
+    "mekanism:alloy_infused": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21648660000937525,
+          "last_error": "craft failed for mekanism:alloy_infused x1: bridge.craft_item mekanism:alloy_infused 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item mekanism:alloy_infused: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:39:48.904193+00:00"
+        },
+        "direct_craft": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.2161846999952104,
+          "last_error": "craft failed for mekanism:alloy_infused x1: bridge.craft_item mekanism:alloy_infused 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item mekanism:alloy_infused: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:39:49.122498+00:00"
+        },
+        "gather": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21743809999316,
+          "last_error": "craft failed for mekanism:alloy_infused x1: bridge.craft_item mekanism:alloy_infused 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item mekanism:alloy_infused: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:39:49.341789+00:00"
+        }
+      }
+    },
+    "ae2:wireless_access_point": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21705600000859704,
+          "last_error": "craft failed for ae2:wireless_access_point x1: bridge.craft_item ae2:wireless_access_point 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ae2:wireless_access_point: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:39:49.583546+00:00"
+        },
+        "direct_craft": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21706609999819193,
+          "last_error": "craft failed for ae2:wireless_access_point x1: bridge.craft_item ae2:wireless_access_point 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ae2:wireless_access_point: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:39:49.808237+00:00"
+        },
+        "gather": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21782009999151342,
+          "last_error": "craft failed for ae2:wireless_access_point x1: bridge.craft_item ae2:wireless_access_point 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ae2:wireless_access_point: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:39:50.027921+00:00"
+        }
+      }
+    },
+    "oritech:prometheum_ingot": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21600600000238046,
+          "last_error": "craft failed for oritech:prometheum_ingot x1: bridge.craft_item oritech:prometheum_ingot 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item oritech:prometheum_ingot: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:39:50.260133+00:00"
+        },
+        "direct_craft": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21667409999645315,
+          "last_error": "craft failed for oritech:prometheum_ingot x1: bridge.craft_item oritech:prometheum_ingot 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item oritech:prometheum_ingot: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:39:50.485710+00:00"
+        },
+        "gather": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21690980000130367,
+          "last_error": "craft failed for oritech:prometheum_ingot x1: bridge.craft_item oritech:prometheum_ingot 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item oritech:prometheum_ingot: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:39:50.704501+00:00"
+        }
+      }
+    },
+    "industrialforegoing:mycelial_reactor": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21626679999462795,
+          "last_error": "craft failed for minecraft:nether_star x1: bridge.craft_item minecraft:nether_star 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item minecraft:nether_star: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:39:50.947598+00:00"
+        },
+        "direct_craft": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21693270000105258,
+          "last_error": "craft failed for industrialforegoing:mycelial_reactor x1: bridge.craft_item industrialforegoing:mycelial_reactor 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_reactor: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:39:51.166417+00:00"
+        },
+        "gather": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21751629999198485,
+          "last_error": "craft failed for industrialforegoing:mycelial_reactor x1: bridge.craft_item industrialforegoing:mycelial_reactor 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mycelial_reactor: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:39:51.391725+00:00"
+        }
+      }
+    },
+    "industrialforegoing:fluid_extractor": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21644090001063887,
+          "last_error": "craft failed for industrialforegoing:fluid_extractor x1: bridge.craft_item industrialforegoing:fluid_extractor 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:fluid_extractor: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:39:51.636658+00:00"
+        },
+        "direct_craft": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21578640000370797,
+          "last_error": "craft failed for industrialforegoing:fluid_extractor x1: bridge.craft_item industrialforegoing:fluid_extractor 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:fluid_extractor: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:39:51.854313+00:00"
+        },
+        "gather": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21702160000859294,
+          "last_error": "craft failed for industrialforegoing:fluid_extractor x1: bridge.craft_item industrialforegoing:fluid_extractor 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:fluid_extractor: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:39:52.079271+00:00"
+        }
+      }
+    },
+    "enderio:alloy_smelter": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 9,
+          "successes": 0,
+          "total_duration_seconds": 1.9509289999987232,
+          "last_error": "craft failed for enderio:alloy_smelter x1: bridge.craft_item enderio:alloy_smelter 1: bridge rejected command: missing required ingredients; bridge.craft_item enderio:alloy_smelter: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:16.340508+00:00"
+        },
+        "direct_craft": {
+          "attempts": 9,
+          "successes": 0,
+          "total_duration_seconds": 1.9521682999911718,
+          "last_error": "craft failed for enderio:alloy_smelter x1: bridge.craft_item enderio:alloy_smelter 1: bridge rejected command: missing required ingredients; bridge.craft_item enderio:alloy_smelter: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:16.566113+00:00"
+        },
+        "gather": {
+          "attempts": 9,
+          "successes": 0,
+          "total_duration_seconds": 1.953357500009588,
+          "last_error": "craft failed for enderio:alloy_smelter x1: bridge.craft_item enderio:alloy_smelter 1: bridge rejected command: missing required ingredients; bridge.craft_item enderio:alloy_smelter: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:16.786191+00:00"
+        }
+      }
+    },
+    "industrialforegoing:mob_slaughter_factory": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21773509999911766,
+          "last_error": "craft failed for industrialforegoing:mob_slaughter_factory x1: bridge.craft_item industrialforegoing:mob_slaughter_factory 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mob_slaughter_factory: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:17.030324+00:00"
+        },
+        "direct_craft": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21809440001379699,
+          "last_error": "craft failed for industrialforegoing:mob_slaughter_factory x1: bridge.craft_item industrialforegoing:mob_slaughter_factory 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mob_slaughter_factory: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:17.250775+00:00"
+        },
+        "gather": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21543140000721905,
+          "last_error": "craft failed for industrialforegoing:mob_slaughter_factory x1: bridge.craft_item industrialforegoing:mob_slaughter_factory 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:mob_slaughter_factory: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:17.474167+00:00"
+        }
+      }
+    },
+    "productivemetalworks:black_fire_bricks": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 2,
+          "successes": 0,
+          "total_duration_seconds": 0.432248700002674,
+          "last_error": "craft failed for productivemetalworks:black_fire_bricks x1: bridge.craft_item productivemetalworks:black_fire_bricks 1: bridge rejected command: missing required ingredients; bridge.craft_item productivemetalworks:black_fire_bricks: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:19.987652+00:00"
+        },
+        "direct_craft": {
+          "attempts": 2,
+          "successes": 0,
+          "total_duration_seconds": 0.4366896999999881,
+          "last_error": "craft failed for productivemetalworks:black_fire_bricks x1: bridge.craft_item productivemetalworks:black_fire_bricks 1: bridge rejected command: missing required ingredients; bridge.craft_item productivemetalworks:black_fire_bricks: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:20.434387+00:00"
+        },
+        "gather": {
+          "attempts": 2,
+          "successes": 0,
+          "total_duration_seconds": 0.43331370000669267,
+          "last_error": "craft failed for productivemetalworks:black_fire_bricks x1: bridge.craft_item productivemetalworks:black_fire_bricks 1: bridge rejected command: missing required ingredients; bridge.craft_item productivemetalworks:black_fire_bricks: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:20.206254+00:00"
+        }
+      }
+    },
+    "custommachinery:custom_machine_item": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.33928600000217557,
+          "last_error": "craft failed for custommachinery:custom_machine_item x1: bridge.craft_item custommachinery:custom_machine_item 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item custommachinery:custom_machine_item: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:22.565436+00:00"
+        },
+        "direct_craft": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21668919999501668,
+          "last_error": "craft failed for custommachinery:custom_machine_item x1: bridge.craft_item custommachinery:custom_machine_item 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item custommachinery:custom_machine_item: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:22.784478+00:00"
+        },
+        "gather": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.2168007000000216,
+          "last_error": "craft failed for custommachinery:custom_machine_item x1: bridge.craft_item custommachinery:custom_machine_item 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item custommachinery:custom_machine_item: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:23.008960+00:00"
+        }
+      }
+    },
+    "industrialforegoing:dissolution_chamber": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21637120000377763,
+          "last_error": "craft failed for industrialforegoing:dissolution_chamber x1: bridge.craft_item industrialforegoing:dissolution_chamber 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:dissolution_chamber: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:23.242926+00:00"
+        },
+        "direct_craft": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.2165612999961013,
+          "last_error": "craft failed for industrialforegoing:dissolution_chamber x1: bridge.craft_item industrialforegoing:dissolution_chamber 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:dissolution_chamber: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:23.461604+00:00"
+        },
+        "gather": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.2176884000073187,
+          "last_error": "craft failed for industrialforegoing:dissolution_chamber x1: bridge.craft_item industrialforegoing:dissolution_chamber 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:dissolution_chamber: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:23.687501+00:00"
+        }
+      }
+    },
+    "industrialforegoing:machine_frame_advanced": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21624019999580923,
+          "last_error": "craft failed for minecraft:netherite_scrap x1: bridge.craft_item minecraft:netherite_scrap 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item minecraft:netherite_scrap: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:23.921420+00:00"
+        },
+        "direct_craft": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.216432100001839,
+          "last_error": "craft failed for industrialforegoing:machine_frame_advanced x1: bridge.craft_item industrialforegoing:machine_frame_advanced 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:machine_frame_advanced: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:24.146271+00:00"
+        },
+        "gather": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.2158562999975402,
+          "last_error": "craft failed for industrialforegoing:machine_frame_advanced x1: bridge.craft_item industrialforegoing:machine_frame_advanced 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:machine_frame_advanced: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:24.364781+00:00"
+        }
+      }
+    },
+    "industrialforegoing:stasis_chamber": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21664850000524893,
+          "last_error": "craft failed for industrialforegoing:stasis_chamber x1: bridge.craft_item industrialforegoing:stasis_chamber 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:stasis_chamber: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:24.605557+00:00"
+        },
+        "direct_craft": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21671880000212695,
+          "last_error": "craft failed for industrialforegoing:stasis_chamber x1: bridge.craft_item industrialforegoing:stasis_chamber 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:stasis_chamber: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:24.830253+00:00"
+        },
+        "gather": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21586419999948703,
+          "last_error": "craft failed for industrialforegoing:stasis_chamber x1: bridge.craft_item industrialforegoing:stasis_chamber 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:stasis_chamber: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:25.048333+00:00"
+        }
+      }
+    },
+    "productivemetalworks:black_foundry_controller": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.2156847000005655,
+          "last_error": "craft failed for productivemetalworks:black_foundry_controller x1: bridge.craft_item productivemetalworks:black_foundry_controller 1: bridge rejected command: missing required ingredients; bridge.craft_item productivemetalworks:black_foundry_controller: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:25.287600+00:00"
+        },
+        "direct_craft": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21811249999154825,
+          "last_error": "craft failed for productivemetalworks:black_foundry_controller x1: bridge.craft_item productivemetalworks:black_foundry_controller 1: bridge rejected command: missing required ingredients; bridge.craft_item productivemetalworks:black_foundry_controller: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:25.513812+00:00"
+        },
+        "gather": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21622830000706017,
+          "last_error": "craft failed for productivemetalworks:black_foundry_controller x1: bridge.craft_item productivemetalworks:black_foundry_controller 1: bridge rejected command: missing required ingredients; bridge.craft_item productivemetalworks:black_foundry_controller: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:25.732169+00:00"
+        }
+      }
+    },
+    "industrialforegoing:fluid_laser_base": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.2158908999990672,
+          "last_error": "craft failed for mekanism_lasers:energy_transformer x1: bridge.craft_item mekanism_lasers:energy_transformer 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item mekanism_lasers:energy_transformer: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:25.974007+00:00"
+        },
+        "direct_craft": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21591020000050776,
+          "last_error": "craft failed for industrialforegoing:fluid_laser_base x1: bridge.craft_item industrialforegoing:fluid_laser_base 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:fluid_laser_base: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:26.192044+00:00"
+        },
+        "gather": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21706290000292938,
+          "last_error": "craft failed for industrialforegoing:fluid_laser_base x1: bridge.craft_item industrialforegoing:fluid_laser_base 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:fluid_laser_base: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:26.411078+00:00"
+        }
+      }
+    },
+    "productivemetalworks:black_foundry_drain": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.2158006999961799,
+          "last_error": "craft failed for productivemetalworks:black_foundry_drain x1: bridge.craft_item productivemetalworks:black_foundry_drain 1: bridge rejected command: missing required ingredients; bridge.craft_item productivemetalworks:black_foundry_drain: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:26.651477+00:00"
+        },
+        "direct_craft": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21708319999743253,
+          "last_error": "craft failed for productivemetalworks:black_foundry_drain x1: bridge.craft_item productivemetalworks:black_foundry_drain 1: bridge rejected command: missing required ingredients; bridge.craft_item productivemetalworks:black_foundry_drain: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:26.870704+00:00"
+        },
+        "gather": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21648129999812227,
+          "last_error": "craft failed for productivemetalworks:black_foundry_drain x1: bridge.craft_item productivemetalworks:black_foundry_drain 1: bridge rejected command: missing required ingredients; bridge.craft_item productivemetalworks:black_foundry_drain: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:27.095009+00:00"
+        }
+      }
+    },
+    "ftbmaterials:steel_plate": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21523739999975078,
+          "last_error": "craft failed for ftbmaterials:steel_plate x1: bridge.craft_item ftbmaterials:steel_plate 1: bridge rejected command: missing required ingredients; bridge.craft_item ftbmaterials:steel_plate: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:27.332805+00:00"
+        },
+        "direct_craft": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.216698299991549,
+          "last_error": "craft failed for ftbmaterials:steel_plate x1: bridge.craft_item ftbmaterials:steel_plate 1: bridge rejected command: missing required ingredients; bridge.craft_item ftbmaterials:steel_plate: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:27.551605+00:00"
+        },
+        "gather": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21772580000106245,
+          "last_error": "craft failed for ftbmaterials:steel_plate x1: bridge.craft_item ftbmaterials:steel_plate 1: bridge rejected command: missing required ingredients; bridge.craft_item ftbmaterials:steel_plate: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:27.777776+00:00"
+        }
+      }
+    },
+    "industrialforegoing:machine_frame_supreme": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.216290399999707,
+          "last_error": "craft failed for industrialforegoing:machine_frame_supreme x1: bridge.craft_item industrialforegoing:machine_frame_supreme 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:machine_frame_supreme: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:28.017423+00:00"
+        },
+        "direct_craft": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21616480000375304,
+          "last_error": "craft failed for industrialforegoing:machine_frame_supreme x1: bridge.craft_item industrialforegoing:machine_frame_supreme 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:machine_frame_supreme: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:28.235825+00:00"
+        },
+        "gather": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21748550000484101,
+          "last_error": "craft failed for industrialforegoing:machine_frame_supreme x1: bridge.craft_item industrialforegoing:machine_frame_supreme 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item industrialforegoing:machine_frame_supreme: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:28.459240+00:00"
+        }
+      }
+    },
+    "ftb:world_engine_machine_block": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21654880000278354,
+          "last_error": "craft failed for ftb:world_engine_machine_block x1: bridge.craft_item ftb:world_engine_machine_block 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftb:world_engine_machine_block: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:28.693183+00:00"
+        },
+        "direct_craft": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21679710000171326,
+          "last_error": "craft failed for ftb:world_engine_machine_block x1: bridge.craft_item ftb:world_engine_machine_block 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftb:world_engine_machine_block: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:28.918260+00:00"
+        },
+        "gather": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21693510000477545,
+          "last_error": "craft failed for ftb:world_engine_machine_block x1: bridge.craft_item ftb:world_engine_machine_block 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftb:world_engine_machine_block: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:29.143128+00:00"
+        }
+      }
+    },
+    "ftb:world_engine_advanced_machine_block": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21576099999947473,
+          "last_error": "craft failed for ftb:world_engine_advanced_machine_block x1: bridge.craft_item ftb:world_engine_advanced_machine_block 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftb:world_engine_advanced_machine_block: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:29.379224+00:00"
+        },
+        "direct_craft": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21730269999534357,
+          "last_error": "craft failed for ftb:world_engine_advanced_machine_block x1: bridge.craft_item ftb:world_engine_advanced_machine_block 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftb:world_engine_advanced_machine_block: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:29.598484+00:00"
+        },
+        "gather": {
+          "attempts": 1,
+          "successes": 0,
+          "total_duration_seconds": 0.21657299999787938,
+          "last_error": "craft failed for ftb:world_engine_advanced_machine_block x1: bridge.craft_item ftb:world_engine_advanced_machine_block 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftb:world_engine_advanced_machine_block: bridge rejected command: no fitting crafting recipe in current grid",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:40:29.823194+00:00"
+        }
+      }
+    },
+    "minecraft:charcoal": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 5,
+          "successes": 0,
+          "total_duration_seconds": 1.0851926000032108,
+          "last_error": "craft failed for minecraft:charcoal x1: bridge.craft_item minecraft:charcoal 1: bridge rejected command: missing required ingredients; bridge.craft_item minecraft:charcoal: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:46:02.451448+00:00"
+        },
+        "direct_craft": {
+          "attempts": 5,
+          "successes": 0,
+          "total_duration_seconds": 1.1068207999778679,
+          "last_error": "craft failed for minecraft:charcoal x1: bridge.craft_item minecraft:charcoal 1: bridge rejected command: missing required ingredients; bridge.craft_item minecraft:charcoal: bridge rejected command: missing required ingredients",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:46:02.670732+00:00"
+        },
+        "gather": {
+          "attempts": 4,
+          "successes": 0,
+          "total_duration_seconds": 43.640875800003414,
+          "last_error": "mining for minecraft:charcoal blocked in protected base zone (radius=18.0); auto-relocation failed",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-05T08:46:00.377260+00:00"
+        }
+      }
+    },
+    "minecraft:chest": {
+      "strategies": {
+        "craft_tree": {
+          "attempts": 2,
+          "successes": 0,
+          "total_duration_seconds": 20.474116999992475,
+          "last_error": "craft failed for minecraft:chest x1: bridge.craft_item minecraft:chest 1: timed out waiting for bridge command acknowledgment; bridge.craft_item minecraft:chest: timed out waiting for bridge command acknowledgment; craft minecraft:chest: timed out waiting for bridge command acknowledgment; craft chest: timed out waiting for bridge command acknowledgment",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-06T00:51:18.044131+00:00"
+        },
+        "direct_craft": {
+          "attempts": 2,
+          "successes": 0,
+          "total_duration_seconds": 20.31935900000599,
+          "last_error": "craft failed for minecraft:chest x1: bridge.craft_item minecraft:chest 1: timed out waiting for bridge command acknowledgment; bridge.craft_item minecraft:chest: timed out waiting for bridge command acknowledgment; craft minecraft:chest: timed out waiting for bridge command acknowledgment; craft chest: timed out waiting for bridge command acknowledgment",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-06T00:50:57.777992+00:00"
+        },
+        "gather": {
+          "attempts": 2,
+          "successes": 0,
+          "total_duration_seconds": 20.322699599992575,
+          "last_error": "craft failed for minecraft:chest x1: bridge.craft_item minecraft:chest 1: timed out waiting for bridge command acknowledgment; bridge.craft_item minecraft:chest: timed out waiting for bridge command acknowledgment; craft minecraft:chest: timed out waiting for bridge command acknowledgment; craft chest: timed out waiting for bridge command acknowledgment",
+          "last_success_at": "",
+          "last_failure_at": "2026-03-06T00:51:38.157775+00:00"
+        }
+      }
+    }
+  }
+}

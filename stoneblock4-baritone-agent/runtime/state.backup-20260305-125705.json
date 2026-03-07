@@ -1,0 +1,49 @@
+{
+  "completed_flags": [
+    "baritone_defaults_hardened",
+    "calibration_ok",
+    "cobble_stock_complete",
+    "expansion_quarry_complete",
+    "manual_branch_reached",
+    "quest_item_blocked::ae2:wireless_access_point",
+    "quest_item_blocked::custommachinery:custom_machine_item",
+    "quest_item_blocked::ftb:world_engine_advanced_machine_block",
+    "quest_item_blocked::ftb:world_engine_machine_block",
+    "quest_item_blocked::ftbmaterials:lithium_dust",
+    "quest_item_blocked::ftbmaterials:steel_plate",
+    "quest_item_blocked::industrialforegoing:dissolution_chamber",
+    "quest_item_blocked::industrialforegoing:fluid_extractor",
+    "quest_item_blocked::industrialforegoing:fluid_laser_base",
+    "quest_item_blocked::industrialforegoing:machine_frame_advanced",
+    "quest_item_blocked::industrialforegoing:machine_frame_supreme",
+    "quest_item_blocked::industrialforegoing:mob_slaughter_factory",
+    "quest_item_blocked::industrialforegoing:mycelial_reactor",
+    "quest_item_blocked::industrialforegoing:stasis_chamber",
+    "quest_item_blocked::mekanism:alloy_infused",
+    "quest_item_blocked::oritech:prometheum_ingot",
+    "quest_item_blocked::productivemetalworks:black_foundry_controller",
+    "quest_item_blocked::productivemetalworks:black_foundry_drain",
+    "starter_tunnel_complete",
+    "stoneblock_chain_modeled"
+  ],
+  "completed_goals": [
+    "calibrate_bot",
+    "cobble_stock",
+    "expansion_quarry",
+    "harden_baritone_defaults",
+    "manual_modpack_branch",
+    "starter_tunnel",
+    "stoneblock_resource_chain_model"
+  ],
+  "current_goal_id": null,
+  "goal_retries": {
+    "quest_0aaa6858daf43067": 0,
+    "quest_71205f3fe5ad49b3": 0
+  },
+  "goal_defer_until": {
+    "quest_0aaa6858daf43067": 1772732906.5682547,
+    "quest_71205f3fe5ad49b3": 1772732907.2537892
+  },
+  "safe_paused": false,
+  "last_error": "task=quest_item_acquire attempt=2 error=inventory full (2 free <= 2) with no cleanup progress after 4 checks"
+}

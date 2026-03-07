@@ -1,0 +1,949 @@
+{
+  "entries": {
+    "minecraft:gravel": {
+      "item_id": "minecraft:gravel",
+      "query": "gravel FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-07T18:26:08.315993+00:00"
+    },
+    "minecraft:sand": {
+      "item_id": "minecraft:sand",
+      "query": "sand FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-07T18:26:09.946851+00:00"
+    },
+    "minecraft:dirt": {
+      "item_id": "minecraft:dirt",
+      "query": "dirt FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-07T18:26:10.955014+00:00"
+    },
+    "minecraft:cobblestone": {
+      "item_id": "minecraft:cobblestone",
+      "query": "cobblestone FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-07T00:24:24.505619+00:00"
+    },
+    "ars_elemental:mark_of_mastery": {
+      "item_id": "ars_elemental:mark_of_mastery",
+      "query": "mark of mastery FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T07:58:58.262383+00:00"
+    },
+    "ars_nouveau:wilden_tribute": {
+      "item_id": "ars_nouveau:wilden_tribute",
+      "query": "wilden tribute FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:00:47.037223+00:00"
+    },
+    "cataclysm:ignitium_block": {
+      "item_id": "cataclysm:ignitium_block",
+      "query": "ignitium block FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:01:23.500862+00:00"
+    },
+    "minecraft:egg": {
+      "item_id": "minecraft:egg",
+      "query": "egg FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:06:41.282993+00:00"
+    },
+    "ftb:stone_pebble": {
+      "item_id": "ftb:stone_pebble",
+      "query": "stone pebble FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:07:26.223728+00:00"
+    },
+    "minecraft:rotten_flesh": {
+      "item_id": "minecraft:rotten_flesh",
+      "query": "rotten flesh FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:07:38.141522+00:00"
+    },
+    "ftbunearthed:worker_token": {
+      "item_id": "ftbunearthed:worker_token",
+      "query": "worker token FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:08:14.373695+00:00"
+    },
+    "ae2:flawless_budding_quartz": {
+      "item_id": "ae2:flawless_budding_quartz",
+      "query": "flawless budding quartz FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:08:26.825662+00:00"
+    },
+    "sophisticatedbackpacks:backpack": {
+      "item_id": "sophisticatedbackpacks:backpack",
+      "query": "backpack FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:08:39.006182+00:00"
+    },
+    "sophisticatedstorage:basic_to_copper_tier_upgrade": {
+      "item_id": "sophisticatedstorage:basic_to_copper_tier_upgrade",
+      "query": "basic to copper tier upgrade FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:08:51.638241+00:00"
+    },
+    "ftbfiltersystem:smart_filter": {
+      "item_id": "ftbfiltersystem:smart_filter",
+      "query": "smart filter FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:09:03.952216+00:00"
+    },
+    "mekanism:metallurgic_infuser": {
+      "item_id": "mekanism:metallurgic_infuser",
+      "query": "metallurgic infuser FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-07T18:26:18.037882+00:00"
+    },
+    "oritech:reactor_controller": {
+      "item_id": "oritech:reactor_controller",
+      "query": "reactor controller FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:09:53.196713+00:00"
+    },
+    "industrialforegoing:mycelial_slimey": {
+      "item_id": "industrialforegoing:mycelial_slimey",
+      "query": "mycelial slimey FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:10:17.841678+00:00"
+    },
+    "industrialforegoing:mycelial_potion": {
+      "item_id": "industrialforegoing:mycelial_potion",
+      "query": "mycelial potion FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:10:30.293467+00:00"
+    },
+    "industrialforegoing:mycelial_disenchantment": {
+      "item_id": "industrialforegoing:mycelial_disenchantment",
+      "query": "mycelial disenchantment FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:10:42.977874+00:00"
+    },
+    "industrialforegoing:mycelial_rocket": {
+      "item_id": "industrialforegoing:mycelial_rocket",
+      "query": "mycelial rocket FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:10:55.331496+00:00"
+    },
+    "industrialforegoing:mycelial_ender": {
+      "item_id": "industrialforegoing:mycelial_ender",
+      "query": "mycelial ender FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:11:13.516314+00:00"
+    },
+    "industrialforegoing:mycelial_frosty": {
+      "item_id": "industrialforegoing:mycelial_frosty",
+      "query": "mycelial frosty FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:11:26.079688+00:00"
+    },
+    "industrialforegoing:mycelial_halitosis": {
+      "item_id": "industrialforegoing:mycelial_halitosis",
+      "query": "mycelial halitosis FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:11:38.441808+00:00"
+    },
+    "industrialforegoing:mycelial_magma": {
+      "item_id": "industrialforegoing:mycelial_magma",
+      "query": "mycelial magma FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:11:50.782710+00:00"
+    },
+    "industrialforegoing:mycelial_pink": {
+      "item_id": "industrialforegoing:mycelial_pink",
+      "query": "mycelial pink FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:12:05.093139+00:00"
+    },
+    "industrialforegoing:mycelial_netherstar": {
+      "item_id": "industrialforegoing:mycelial_netherstar",
+      "query": "mycelial netherstar FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:12:17.490505+00:00"
+    },
+    "industrialforegoing:mycelial_death": {
+      "item_id": "industrialforegoing:mycelial_death",
+      "query": "mycelial death FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:12:29.725760+00:00"
+    },
+    "mekanismgenerators:heat_generator": {
+      "item_id": "mekanismgenerators:heat_generator",
+      "query": "heat generator FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:12:42.188208+00:00"
+    },
+    "industrialforegoing:mycelial_meatallurgic": {
+      "item_id": "industrialforegoing:mycelial_meatallurgic",
+      "query": "mycelial meatallurgic FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:12:54.429877+00:00"
+    },
+    "industrialforegoing:mycelial_crimed": {
+      "item_id": "industrialforegoing:mycelial_crimed",
+      "query": "mycelial crimed FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:13:06.806490+00:00"
+    },
+    "rftoolspower:coalgenerator": {
+      "item_id": "rftoolspower:coalgenerator",
+      "query": "coalgenerator FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:13:56.977055+00:00"
+    },
+    "mekanismgenerators:gas_burning_generator": {
+      "item_id": "mekanismgenerators:gas_burning_generator",
+      "query": "gas burning generator FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:14:11.392583+00:00"
+    },
+    "fluxnetworks:flux_dust": {
+      "item_id": "fluxnetworks:flux_dust",
+      "query": "flux dust FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:14:23.949702+00:00"
+    },
+    "minecraft:wheat": {
+      "item_id": "minecraft:wheat",
+      "query": "wheat FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:14:36.434986+00:00"
+    },
+    "justdirethings:generatort1": {
+      "item_id": "justdirethings:generatort1",
+      "query": "generatort1 FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:15:12.387617+00:00"
+    },
+    "mekanism:configurator": {
+      "item_id": "mekanism:configurator",
+      "query": "configurator FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:15:48.885477+00:00"
+    },
+    "oritech:wrench": {
+      "item_id": "oritech:wrench",
+      "query": "wrench FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:16:01.313441+00:00"
+    },
+    "rftoolspower:endergenic": {
+      "item_id": "rftoolspower:endergenic",
+      "query": "endergenic FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:16:38.637284+00:00"
+    },
+    "create:belt_connector": {
+      "item_id": "create:belt_connector",
+      "query": "belt connector FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T17:57:05.820406+00:00"
+    },
+    "enderio:yeta_wrench": {
+      "item_id": "enderio:yeta_wrench",
+      "query": "yeta wrench FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:17:03.926631+00:00"
+    },
+    "pipez:wrench": {
+      "item_id": "pipez:wrench",
+      "query": "wrench FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:17:16.456033+00:00"
+    },
+    "xycraft_machines:extractor": {
+      "item_id": "xycraft_machines:extractor",
+      "query": "extractor FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T17:57:12.583570+00:00"
+    },
+    "chicken_roost:c_iron": {
+      "item_id": "chicken_roost:c_iron",
+      "query": "c iron FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:17:53.427105+00:00"
+    },
+    "ftbstuff:fusing_machine": {
+      "item_id": "ftbstuff:fusing_machine",
+      "query": "fusing machine FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:18:20.686068+00:00"
+    },
+    "laserio:laser_wrench": {
+      "item_id": "laserio:laser_wrench",
+      "query": "laser wrench FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:18:33.219347+00:00"
+    },
+    "chicken_roost:chicken_stick": {
+      "item_id": "chicken_roost:chicken_stick",
+      "query": "chicken stick FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:18:45.304317+00:00"
+    },
+    "immersiveengineering:hammer": {
+      "item_id": "immersiveengineering:hammer",
+      "query": "hammer FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:18:57.417719+00:00"
+    },
+    "replication:disintegrator": {
+      "item_id": "replication:disintegrator",
+      "query": "disintegrator FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:19:09.756698+00:00"
+    },
+    "productivemetalworks:fire_clay": {
+      "item_id": "productivemetalworks:fire_clay",
+      "query": "fire clay FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:19:22.028144+00:00"
+    },
+    "actuallyadditions:black_quartz": {
+      "item_id": "actuallyadditions:black_quartz",
+      "query": "black quartz FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:19:34.529166+00:00"
+    },
+    "create:andesite_alloy": {
+      "item_id": "create:andesite_alloy",
+      "query": "andesite alloy FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:19:47.201231+00:00"
+    },
+    "industrialforegoing:machine_frame_pity": {
+      "item_id": "industrialforegoing:machine_frame_pity",
+      "query": "machine frame pity FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:20:23.491682+00:00"
+    },
+    "justdirethings:gooblock_tier1": {
+      "item_id": "justdirethings:gooblock_tier1",
+      "query": "gooblock tier1 FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:20:35.830047+00:00"
+    },
+    "mffs:coercion_deriver": {
+      "item_id": "mffs:coercion_deriver",
+      "query": "coercion deriver FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:20:48.140300+00:00"
+    },
+    "justdirethings:time_crystal": {
+      "item_id": "justdirethings:time_crystal",
+      "query": "time crystal FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:21:00.546217+00:00"
+    },
+    "immersiveengineering:creosote_bucket": {
+      "item_id": "immersiveengineering:creosote_bucket",
+      "query": "creosote bucket FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:21:37.448067+00:00"
+    },
+    "cognition:cognitive_flux": {
+      "item_id": "cognition:cognitive_flux",
+      "query": "cognitive flux FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:21:50.025601+00:00"
+    },
+    "minecraft:lava_bucket": {
+      "item_id": "minecraft:lava_bucket",
+      "query": "lava bucket FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:22:26.153591+00:00"
+    },
+    "enderio:grains_of_infinity": {
+      "item_id": "enderio:grains_of_infinity",
+      "query": "grains of infinity FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:23:02.249160+00:00"
+    },
+    "ftbmaterials:brass_ingot": {
+      "item_id": "ftbmaterials:brass_ingot",
+      "query": "brass ingot FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:23:14.498928+00:00"
+    },
+    "minecraft:echo_shard": {
+      "item_id": "minecraft:echo_shard",
+      "query": "echo shard FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:23:27.096798+00:00"
+    },
+    "explorerscompass:explorerscompass": {
+      "item_id": "explorerscompass:explorerscompass",
+      "query": "explorerscompass FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:24:15.817912+00:00"
+    },
+    "create:shadow_steel_casing": {
+      "item_id": "create:shadow_steel_casing",
+      "query": "shadow steel casing FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:24:43.548257+00:00"
+    },
+    "mekanism:superheating_element": {
+      "item_id": "mekanism:superheating_element",
+      "query": "superheating element FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:24:56.080207+00:00"
+    },
+    "minecraft:music_disc_pigstep": {
+      "item_id": "minecraft:music_disc_pigstep",
+      "query": "music disc pigstep FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:25:10.847665+00:00"
+    },
+    "ftb:chroniton_glass": {
+      "item_id": "ftb:chroniton_glass",
+      "query": "chroniton glass FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:25:23.219050+00:00"
+    },
+    "oritech:assembler_block": {
+      "item_id": "oritech:assembler_block",
+      "query": "assembler block FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:25:35.952876+00:00"
+    },
+    "malum:runewood_log": {
+      "item_id": "malum:runewood_log",
+      "query": "runewood log FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:25:48.199478+00:00"
+    },
+    "ftb:fortron_infused_block": {
+      "item_id": "ftb:fortron_infused_block",
+      "query": "fortron infused block FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:26:00.982384+00:00"
+    },
+    "powah:ender_cell_nitro": {
+      "item_id": "powah:ender_cell_nitro",
+      "query": "ender cell nitro FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:26:13.440988+00:00"
+    },
+    "industrialforegoing:plastic": {
+      "item_id": "industrialforegoing:plastic",
+      "query": "plastic FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:26:49.475194+00:00"
+    },
+    "mekanism:ultimate_thermodynamic_conductor": {
+      "item_id": "mekanism:ultimate_thermodynamic_conductor",
+      "query": "ultimate thermodynamic conductor FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:27:38.215906+00:00"
+    },
+    "minecraft:crafting_table": {
+      "item_id": "minecraft:crafting_table",
+      "query": "crafting table FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-07T18:26:16.016527+00:00"
+    },
+    "minecraft:furnace": {
+      "item_id": "minecraft:furnace",
+      "query": "furnace FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-07T18:26:17.027804+00:00"
+    },
+    "oritech:machine_frame": {
+      "item_id": "oritech:machine_frame",
+      "query": "machine frame FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-07T18:26:19.048406+00:00"
+    },
+    "minecraft:wheat_seeds": {
+      "item_id": "minecraft:wheat_seeds",
+      "query": "wheat seeds FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-07T18:26:21.080940+00:00"
+    },
+    "ftbstuff:stone_hammer": {
+      "item_id": "ftbstuff:stone_hammer",
+      "query": "stone hammer FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T17:40:49.623474+00:00"
+    },
+    "ftbstuff:dust": {
+      "item_id": "ftbstuff:dust",
+      "query": "dust FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:37:25.526533+00:00"
+    },
+    "ftbstuff:iron_hammer": {
+      "item_id": "ftbstuff:iron_hammer",
+      "query": "iron hammer FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T17:40:50.638940+00:00"
+    },
+    "minecraft:redstone": {
+      "item_id": "minecraft:redstone",
+      "query": "redstone FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:37:52.194118+00:00"
+    },
+    "mekanism:enriched_iron": {
+      "item_id": "mekanism:enriched_iron",
+      "query": "enriched iron FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:39:22.568257+00:00"
+    },
+    "ftbmaterials:steel_ingot": {
+      "item_id": "ftbmaterials:steel_ingot",
+      "query": "steel ingot FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:39:23.387637+00:00"
+    },
+    "ftbmaterials:lithium_dust": {
+      "item_id": "ftbmaterials:lithium_dust",
+      "query": "lithium dust FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:39:48.007735+00:00"
+    },
+    "mekanism:alloy_infused": {
+      "item_id": "mekanism:alloy_infused",
+      "query": "alloy infused FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:39:48.686196+00:00"
+    },
+    "ae2:wireless_access_point": {
+      "item_id": "ae2:wireless_access_point",
+      "query": "wireless access point FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:39:49.365155+00:00"
+    },
+    "oritech:prometheum_ingot": {
+      "item_id": "oritech:prometheum_ingot",
+      "query": "prometheum ingot FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:39:50.042963+00:00"
+    },
+    "industrialforegoing:mycelial_reactor": {
+      "item_id": "industrialforegoing:mycelial_reactor",
+      "query": "mycelial reactor FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:39:50.729894+00:00"
+    },
+    "industrialforegoing:fluid_extractor": {
+      "item_id": "industrialforegoing:fluid_extractor",
+      "query": "fluid extractor FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:39:51.418698+00:00"
+    },
+    "enderio:alloy_smelter": {
+      "item_id": "enderio:alloy_smelter",
+      "query": "alloy smelter FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:39:52.095705+00:00"
+    },
+    "industrialforegoing:mob_slaughter_factory": {
+      "item_id": "industrialforegoing:mob_slaughter_factory",
+      "query": "mob slaughter factory FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:40:16.811325+00:00"
+    },
+    "productivemetalworks:black_fire_bricks": {
+      "item_id": "productivemetalworks:black_fire_bricks",
+      "query": "black fire bricks FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:40:17.512836+00:00"
+    },
+    "custommachinery:custom_machine_item": {
+      "item_id": "custommachinery:custom_machine_item",
+      "query": "custom machine item FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:40:22.224052+00:00"
+    },
+    "industrialforegoing:dissolution_chamber": {
+      "item_id": "industrialforegoing:dissolution_chamber",
+      "query": "dissolution chamber FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:40:23.025306+00:00"
+    },
+    "industrialforegoing:machine_frame_advanced": {
+      "item_id": "industrialforegoing:machine_frame_advanced",
+      "query": "machine frame advanced FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:40:23.703967+00:00"
+    },
+    "industrialforegoing:stasis_chamber": {
+      "item_id": "industrialforegoing:stasis_chamber",
+      "query": "stasis chamber FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:40:24.387469+00:00"
+    },
+    "productivemetalworks:black_foundry_controller": {
+      "item_id": "productivemetalworks:black_foundry_controller",
+      "query": "black foundry controller FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:40:25.070413+00:00"
+    },
+    "industrialforegoing:fluid_laser_base": {
+      "item_id": "industrialforegoing:fluid_laser_base",
+      "query": "fluid laser base FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:40:25.756901+00:00"
+    },
+    "productivemetalworks:black_foundry_drain": {
+      "item_id": "productivemetalworks:black_foundry_drain",
+      "query": "black foundry drain FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:40:26.433941+00:00"
+    },
+    "ftbmaterials:steel_plate": {
+      "item_id": "ftbmaterials:steel_plate",
+      "query": "steel plate FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:40:27.116344+00:00"
+    },
+    "industrialforegoing:machine_frame_supreme": {
+      "item_id": "industrialforegoing:machine_frame_supreme",
+      "query": "machine frame supreme FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:40:27.799910+00:00"
+    },
+    "ftb:world_engine_machine_block": {
+      "item_id": "ftb:world_engine_machine_block",
+      "query": "world engine machine block FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:40:28.475263+00:00"
+    },
+    "ftb:world_engine_advanced_machine_block": {
+      "item_id": "ftb:world_engine_advanced_machine_block",
+      "query": "world engine advanced machine block FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:40:29.162238+00:00"
+    },
+    "minecraft:charcoal": {
+      "item_id": "minecraft:charcoal",
+      "query": "charcoal FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-05T08:45:08.440736+00:00"
+    },
+    "minecraft:chest": {
+      "item_id": "minecraft:chest",
+      "query": "chest FTB StoneBlock 4 best method",
+      "keywords": [],
+      "snippets": [],
+      "sources": [],
+      "error": "requests unavailable",
+      "fetched_at": "2026-03-06T00:50:37.674365+00:00"
+    }
+  }
+}

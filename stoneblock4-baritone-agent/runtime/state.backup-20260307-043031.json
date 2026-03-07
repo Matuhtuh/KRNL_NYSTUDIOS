@@ -1,0 +1,52 @@
+{
+  "completed_flags": [
+    "baritone_defaults_hardened",
+    "calibration_ok",
+    "cobble_stock_complete",
+    "expansion_quarry_complete",
+    "manual_branch_reached",
+    "quest_item_blocked::ae2:wireless_access_point",
+    "quest_item_blocked::create:belt_connector",
+    "quest_item_blocked::custommachinery:custom_machine_item",
+    "quest_item_blocked::ftb:world_engine_advanced_machine_block",
+    "quest_item_blocked::ftb:world_engine_machine_block",
+    "quest_item_blocked::ftbmaterials:lithium_dust",
+    "quest_item_blocked::ftbmaterials:steel_plate",
+    "quest_item_blocked::industrialforegoing:dissolution_chamber",
+    "quest_item_blocked::industrialforegoing:fluid_extractor",
+    "quest_item_blocked::industrialforegoing:fluid_laser_base",
+    "quest_item_blocked::industrialforegoing:machine_frame_advanced",
+    "quest_item_blocked::industrialforegoing:machine_frame_supreme",
+    "quest_item_blocked::industrialforegoing:mob_slaughter_factory",
+    "quest_item_blocked::industrialforegoing:mycelial_reactor",
+    "quest_item_blocked::industrialforegoing:stasis_chamber",
+    "quest_item_blocked::mekanism:alloy_infused",
+    "quest_item_blocked::oritech:prometheum_ingot",
+    "quest_item_blocked::productivemetalworks:black_foundry_controller",
+    "quest_item_blocked::productivemetalworks:black_foundry_drain",
+    "quest_item_blocked::xycraft_machines:extractor",
+    "starter_tunnel_complete",
+    "stoneblock_chain_modeled"
+  ],
+  "completed_goals": [
+    "calibrate_bot",
+    "cobble_stock",
+    "expansion_quarry",
+    "harden_baritone_defaults",
+    "manual_modpack_branch",
+    "starter_tunnel",
+    "stoneblock_resource_chain_model"
+  ],
+  "current_goal_id": null,
+  "goal_retries": {},
+  "goal_defer_until": {},
+  "optional_item_cooldowns": {},
+  "optional_item_failures": {
+    "minecraft:sand": 3,
+    "minecraft:dirt": 3,
+    "minecraft:chest": 1
+  },
+  "optional_item_last_failure_at": {},
+  "safe_paused": true,
+  "last_error": "idle inventory pressure unresolved after 3 attempts: craft failed for minecraft:chest x1: bridge.craft_item minecraft:chest 1: bridge rejected command: missing required ingredients; bridge.craft_item minecraft:chest: bridge rejected command: missing required ingredients; craft minecraft:chest: bridge rejected command: rejected; craft chest: bridge rejected command: "
+}

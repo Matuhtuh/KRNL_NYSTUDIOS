@@ -1,0 +1,28 @@
+{
+  "completed_flags": [
+    "baritone_defaults_hardened",
+    "calibration_ok",
+    "cobble_stock_complete",
+    "expansion_quarry_complete",
+    "manual_branch_reached",
+    "starter_tunnel_complete",
+    "stoneblock_chain_modeled"
+  ],
+  "completed_goals": [
+    "calibrate_bot",
+    "cobble_stock",
+    "expansion_quarry",
+    "harden_baritone_defaults",
+    "manual_modpack_branch",
+    "starter_tunnel",
+    "stoneblock_resource_chain_model"
+  ],
+  "current_goal_id": null,
+  "goal_retries": {},
+  "goal_defer_until": {},
+  "optional_item_cooldowns": {},
+  "optional_item_failures": {},
+  "optional_item_last_failure_at": {},
+  "safe_paused": false,
+  "last_error": null
+}

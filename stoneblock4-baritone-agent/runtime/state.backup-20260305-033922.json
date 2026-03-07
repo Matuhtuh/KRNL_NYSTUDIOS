@@ -1,0 +1,35 @@
+{
+  "completed_flags": [
+    "baritone_defaults_hardened",
+    "calibration_ok",
+    "cobble_stock_complete",
+    "expansion_quarry_complete",
+    "manual_branch_reached",
+    "quest_done_0aaa6858daf43067",
+    "quest_done_193690c049f4b4bb",
+    "quest_done_28683bfe22fbccfc",
+    "quest_done_71205f3fe5ad49b3",
+    "quest_item_blocked::ftbstuff:iron_hammer",
+    "quest_item_blocked::ftbstuff:stone_hammer",
+    "quest_item_blocked::minecraft:furnace",
+    "starter_tunnel_complete",
+    "stoneblock_chain_modeled"
+  ],
+  "completed_goals": [
+    "calibrate_bot",
+    "cobble_stock",
+    "expansion_quarry",
+    "harden_baritone_defaults",
+    "manual_modpack_branch",
+    "quest_0aaa6858daf43067",
+    "quest_193690c049f4b4bb",
+    "quest_28683bfe22fbccfc",
+    "quest_71205f3fe5ad49b3",
+    "starter_tunnel",
+    "stoneblock_resource_chain_model"
+  ],
+  "current_goal_id": "quest_4445906bd04fc37d",
+  "goal_retries": {},
+  "safe_paused": false,
+  "last_error": "goal=quest_71205f3fe5ad49b3 skipped unrecoverable_quest_item=ftbstuff:iron_hammer flag=quest_item_blocked::ftbstuff:iron_hammer error=unrecoverable quest acquisition error for ftbstuff:iron_hammer: quest acquisition failed for ftbstuff:iron_hammer x1: craft_tree: craft failed for ftbstuff:iron_hammer x1: bridge.craft_item ftbstuff:iron_hammer 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftbstuff:iron_hammer: bridge rejected command: no fitting crafting recipe in current grid; direct_craft: craft failed for ftbstuff:iron_hammer x1: bridge.craft_item ftbstuff:iron_hammer 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftbstuff:iron_hammer: bridge rejected command: no fitting crafting recipe in current grid; gather: craft failed for ftbstuff:iron_hammer x1: bridge.craft_item ftbstuff:iron_hammer 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ftbstuff:iron_hammer: bridge rejected command: no fitting crafting recipe in current grid"
+}

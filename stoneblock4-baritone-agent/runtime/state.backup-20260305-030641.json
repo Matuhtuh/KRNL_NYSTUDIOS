@@ -1,0 +1,26 @@
+{
+  "completed_flags": [
+    "baritone_defaults_hardened",
+    "calibration_ok",
+    "cobble_stock_complete",
+    "expansion_quarry_complete",
+    "manual_branch_reached",
+    "starter_tunnel_complete",
+    "stoneblock_chain_modeled"
+  ],
+  "completed_goals": [
+    "calibrate_bot",
+    "cobble_stock",
+    "expansion_quarry",
+    "harden_baritone_defaults",
+    "manual_modpack_branch",
+    "quest_2a456efb14eca6c2",
+    "quest_2d178651fb267e91",
+    "starter_tunnel",
+    "stoneblock_resource_chain_model"
+  ],
+  "current_goal_id": "quest_5d2936b7f8d0f8fa",
+  "goal_retries": {},
+  "safe_paused": false,
+  "last_error": "goal=quest_2a456efb14eca6c2 skipped after retry budget (3) last_error=quest acquisition failed for ars_nouveau:wilden_tribute x1: gather: craft failed for ars_nouveau:wilden_tribute x1: bridge.craft_item ars_nouveau:wilden_tribute 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ars_nouveau:wilden_tribute: bridge rejected command: no fitting crafting recipe in current grid; direct_craft: craft failed for ars_nouveau:wilden_tribute x1: bridge.craft_item ars_nouveau:wilden_tribute 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ars_nouveau:wilden_tribute: bridge rejected command: no fitting crafting recipe in current grid; craft_tree: craft failed for ars_nouveau:wilden_tribute x1: bridge.craft_item ars_nouveau:wilden_tribute 1: bridge rejected command: no fitting crafting recipe in current grid; bridge.craft_item ars_nouveau:wilden_tribute: bridge rejected command: no fitting crafting recipe in current grid"
+}

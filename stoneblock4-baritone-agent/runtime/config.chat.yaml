@@ -1,0 +1,173 @@
+﻿window:
+  title_contains: "Minecraft"
+
+control:
+  chat_key: "t"
+  emergency_stop_key: "F8"
+  toggle_pause_key: "HOME"
+  command_prefix: "#"
+  input_backend: "pydirectinput" # pydirectinput | ahk | noop
+  ahk_exe: "AutoHotkey64.exe"
+  type_delay_seconds: 0.01
+  pre_action_delay_seconds: 0.1
+  key_hold_seconds: 0.05
+  inter_key_delay_seconds: 0.03
+  torch_click_hold_seconds: 0.05
+  focus_settle_seconds: 0.2
+  focus_timeout_seconds: 1.5
+  stop_poll_seconds: 0.05
+  toggle_poll_seconds: 0.08
+
+capture:
+  monitor_index: 1
+  full_screen: true
+  region:
+    left: 0
+    top: 0
+    width: 1920
+    height: 1080
+  chat_region:
+    left: 10
+    top: 700
+    width: 900
+    height: 330
+  hud_region:
+    left: 740
+    top: 980
+    width: 500
+    height: 90
+
+ocr:
+  tesseract_cmd: ""
+  lang: "eng"
+  psm: 6
+  min_confidence: 0.45
+  use_adaptive_threshold: true
+
+planner:
+  knowledge_file: "knowledge/stoneblock4_progression.yaml"
+  tick_seconds: 2.0
+  state_file: "runtime/state.json"
+  task_max_retries: 3
+  max_goal_retries: 3
+  retry_backoff_seconds: 1.5
+  retry_backoff_multiplier: 1.8
+  retry_jitter_seconds: 0.4
+  max_idle_cycles: 0
+  idle_autonomous_enabled: false
+  idle_autonomous_interval_cycles: 3
+  idle_autonomous_module: "idle_resource_grind"
+  auto_debug_loop_enabled: false
+  auto_debug_loop_delay_seconds: 4.0
+  auto_debug_loop_max_rearms: 0
+  debug_learning_log_file: "runtime/debug_learning_log.jsonl"
+  web_research_enabled: false
+  web_research_ttl_minutes: 180
+  web_research_timeout_seconds: 4.0
+  web_research_max_snippets: 6
+  web_research_cache_file: "runtime/web_research_cache.json"
+  strategy_memory_file: "runtime/strategy_memory.json"
+  strategy_exploration_rate: 0.0
+
+baritone:
+  transport: "chat" # chat | bridge_file
+  bridge_dir: "C:/Users/suret/curseforge/minecraft/Instances/FTB StoneBlock 4/config/sb4_baritone_bridge"
+  bridge_ack_timeout_seconds: 5.0
+  bridge_status_stale_after_seconds: 4.0
+  bridge_ready_wait_seconds: 120.0
+  bridge_unresponsive_after_seconds: 20.0
+  allow_legacy_proc_commands: false
+  require_pathing_transition_for_long_commands: true
+  long_command_startup_seconds: 10.0
+  long_running_prefixes:
+    - "mine "
+    - "tunnel "
+    - "goto "
+    - "build "
+    - "follow "
+    - "explore "
+  pre_mining_commands:
+    - "set allowBreak true"
+    - "set allowPlace true"
+  auto_torch_enabled: true
+  torch_hotbar_slot: 9
+  torch_interval_seconds: 16.0
+  torch_for_prefixes:
+    - "mine "
+    - "tunnel "
+    - "build "
+  inventory_cleanup_enabled: true
+  inventory_cleanup_cooldown_seconds: 12.0
+  inventory_full_free_slots_threshold: 2
+  inventory_cleanup_target_free_slots: 8
+  inventory_max_stacks_per_cleanup: 6
+  inventory_drop_junk_item_ids:
+    - "minecraft:cobblestone"
+    - "minecraft:cobbled_deepslate"
+    - "minecraft:stone"
+    - "minecraft:deepslate"
+    - "minecraft:diorite"
+    - "minecraft:andesite"
+    - "minecraft:granite"
+    - "minecraft:tuff"
+    - "minecraft:gravel"
+    - "minecraft:sand"
+    - "minecraft:dirt"
+    - "minecraft:netherrack"
+    - "minecraft:basalt"
+    - "minecraft:blackstone"
+    - "minecraft:flint"
+  inventory_drop_junk_keywords:
+    - "cobblestone"
+    - "cobbled_deepslate"
+    - "deepslate"
+    - "diorite"
+    - "andesite"
+    - "granite"
+    - "tuff"
+    - "netherrack"
+  inventory_keep_item_keywords:
+    - "pickaxe"
+    - "hammer"
+    - "paxel"
+    - "drill"
+    - "gadget"
+    - "torch"
+    - "food"
+    - "bread"
+    - "carrot"
+    - "apple"
+    - "potato"
+    - "stew"
+    - "bucket"
+    - "crafting_table"
+    - "furnace"
+    - "chest"
+    - "backpack"
+  enable_safety_monitoring: true
+  min_health: 10.0
+  min_food_level: 8
+  min_air_supply: 40
+  pause_on_fire: true
+  pause_in_lava: true
+  avoid_players_while_mining: true
+  nearby_player_min_distance: 96.0
+  safety_recover_timeout_seconds: 45.0
+  safety_poll_seconds: 1.0
+  pre_task_safety_wait_seconds: 120.0
+  idle_success_phrases:
+    - "Goal reached"
+    - "Pathing complete"
+    - "Done"
+  failure_phrases:
+    - "unable to path"
+    - "no path"
+    - "cannot find"
+    - "failed"
+    - "too many arguments"
+    - "usage:"
+  min_phrase_confidence: 0.45
+  required_consecutive_matches: 2
+  poll_seconds: 1.0
+  idle_timeout_seconds: 90.0
+
